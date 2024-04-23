@@ -13,5 +13,5 @@ Through this platform, users will also be able to rate games, view changes in th
 
 This two-week sprint will focus on setting up the project infrastructure, integrating with the Steam API, developing key features, and preparing for a preliminary deployment. Our goal is to create a robust application that not only meets the functional requirements but also delivers a seamless and enjoyable user experience.
   
-![steam](./img/store_home_share.jpg "steam")   
+![steam](./steam-dashboard/public/img/readme.jpg "steam")   
 
