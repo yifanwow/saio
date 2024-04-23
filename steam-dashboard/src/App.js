@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeLoggedIn from './HomeLoggedIn';
 import HomeLoggedOut from './HomeLoggedOut';
 import LoginPage from './LoginPage';
@@ -10,8 +10,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={isLoggedIn ? <HomeLoggedIn /> : <HomeLoggedOut />} />
-        <Route path="/login" element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} />
+        
+        <Route exact path="/" element={<HomeLoggedOut />} />
+        <Route path="/home" element={<HomeLoggedIn />} />
       </Routes>
     </Router>
   );
