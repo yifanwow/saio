@@ -6,7 +6,10 @@ function HomeLoggedIn() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const username = params.get('username');
-  const registerDate = "X"; // This should be calculated or fetched
+  const avatarUrl = params.get('avatar');
+  const registerDate = params.get('registerDate');
+  localStorage.setItem('avatarUrl', avatarUrl);
+  localStorage.setItem('registerDate', registerDate);
 
   // State to manage background positions
   const [bg1Position, setBg1Position] = useState(0);
@@ -50,7 +53,7 @@ function HomeLoggedIn() {
     width: '170px',
     height: '170px',
     borderRadius: '50%',
-    backgroundImage: "url('/path/to/avatar.jpg')",
+    backgroundImage: "url('avatarUrl')",
     backgroundSize: 'cover',
     boxShadow: '0 2px 8px rgba(0,0,0,0.6)',
     marginBottom: '30px',
