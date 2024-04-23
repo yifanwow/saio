@@ -6,10 +6,33 @@ function HomeLoggedIn() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const username = params.get('username');
-  const avatarUrl = params.get('avatar');
-  const registerDate = params.get('registerDate');
-  localStorage.setItem('avatarUrl', avatarUrl);
-  localStorage.setItem('registerDate', registerDate);
+  
+  // Use state to manage avatar and registerDate fetched from localStorage
+  const [userInfo, setUserInfo] = useState(null);
+
+  // Update localStorage only when parameters change
+  useEffect(() => {
+    fetchUserInfo();
+  }, []); // Fetch user info once when component mounts
+
+  const fetchUserInfo = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/data.json',{
+        method: 'GET',
+        headers: {
+          'Origin': 'http://localhost:3000',
+        }
+      });
+      if (response.ok) {
+        const data = await response.json();
+        setUserInfo(data);
+      } else {
+        console.log('Failed to fetch data:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
 
   // State to manage background positions
   const [bg1Position, setBg1Position] = useState(0);
@@ -53,9 +76,9 @@ function HomeLoggedIn() {
     width: '170px',
     height: '170px',
     borderRadius: '50%',
-    backgroundImage: "url('avatarUrl')",
+    backgroundImage: userInfo ? `url('${userInfo.avatarUrl}')` : 'none', // Correctly formatted URL
     backgroundSize: 'cover',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.6)',
+    boxShadow: '0 9px 9px rgba(0,0,0,0.6)',
     marginBottom: '30px',
     zIndex: 1
   };
@@ -76,7 +99,9 @@ function HomeLoggedIn() {
         <h2 className="subtitle is-1" style={{ color: '#f0ebfa', letterSpacing: '1.2px', fontSize: '1.7rem' }}>
           Welcome back, {username}
         </h2>
-        <p>Today is {registerDate} days since you joined Steam.</p>
+        {userInfo && (
+        <p className="subtitle is-6">Today is {userInfo.date} days since you joined Steam.</p>
+      )}
       </div>
     </div>
   );
