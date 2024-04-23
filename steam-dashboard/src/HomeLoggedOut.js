@@ -1,8 +1,10 @@
 import React from 'react';
+import 'bulma/css/bulma.css';
 
 const homeStyle = {
   display: 'flex',
   height: '100vh',
+  boxSizing: 'border-box'
 };
 
 const leftContainerStyle = {
@@ -21,13 +23,12 @@ const textGroupStyle = {
   marginBottom: '2.7rem', // Provide some spacing between the text and the form
 };
 const titleGroupStyle = {
-  fontSize: '2.7em',
+  fontSize: '3.5rem',
   marginBottom: '0rem', // Provide some spacing between the text and the form
 };
 
 const SteamStyle = {
   color: '#cb9dff', 
-  
 };
 
 const AIOStyle = {
@@ -36,12 +37,13 @@ const AIOStyle = {
 
 const inputButtonContainerStyle = {
   display: 'flex', // Use flexbox for horizontal layout
-  alignItems: 'stretch', // Stretch the items to fill the container height
+  alignItems: 'left', // Stretch the items to fill the container height
   background: '#121212', // Dark background for the input
-  borderRadius: '5px',
-  border: '1px solid #4a4d54',
+  borderRadius: '11px',
+  border: '2px solid #4a4d54',
   overflow: 'hidden', // Prevents child elements from overflowing
-  marginBottom: '1.3rem'
+  marginBottom: '1.3rem',
+  width: '77%',
 };
 
 const inputStyle = {
@@ -52,15 +54,17 @@ const inputStyle = {
   outline: 'none',
   color: '#fff', // Text color for the input
   backgroundColor: '#121212',
+  width: '30%',
 };
 
 const buttonStyle = {
-  padding: '10px 15px',
+  padding: '10px 27px',
   border: 'none',
   backgroundColor: '#2c2242',
   color: '#fff',
   borderRadius: '0', // Reset border-radius as the container now controls this
   cursor: 'pointer',
+
 };
 
 const GitHubStyle ={
@@ -76,6 +80,7 @@ function HomeLoggedOut() {
   // Function to handle the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    window.location.href = 'http://localhost:3001/auth/steam';
     // Perform your login logic here
   };
 
@@ -91,7 +96,7 @@ function HomeLoggedOut() {
           <p>All in one place</p>
         </div>
         <form onSubmit={handleSubmit} style={inputButtonContainerStyle}>
-          <input type="email" placeholder="Steam ID" style={inputStyle} />
+          <input type="text" placeholder="Steam ID" style={inputStyle} />
           <button type="submit" style={buttonStyle}>Login</button>
         </form>
         <div style={GitHubStyle}>
