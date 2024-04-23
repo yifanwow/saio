@@ -55,7 +55,9 @@ app.get('/auth/steam/return',
     console.log(req.user._json.steamid);
     console.log(req.user._json.avatar);
     const username = req.user.displayName || 'User'; // Fallback to 'User' if displayName is not available
-    res.redirect(`http://localhost:3000/home?username=${encodeURIComponent(username)}`); // You should redirect the user to your frontend application with the user's data.
+    // In your /auth/steam/return route
+    res.redirect(`http://localhost:3000/home?username=${encodeURIComponent(username)}&avatar=${encodeURIComponent(req.user._json.avatar)}&registerDate=${encodeURIComponent(registerDate)}`);
+
   });
 
 // Start server
