@@ -110,7 +110,7 @@ async function fetchUserAccountData(steamID, apiKey) {
 
 
       const gameId1 = 113020; //test
-      const gameId2 = 1497440; //test
+      const gameId2 = 570; //test
       const filters = 'price_overview';
       const gameIdsParam = `${gameId1},${gameId2}`;
       axios.get(`https://store.steampowered.com/api/appdetails`, {
@@ -167,12 +167,18 @@ async function fetchUserAccountData(steamID, apiKey) {
 
 async function fetchUserGameList(steamID, apiKey) {
   try {
-    const responseGames = await axios.get(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${apiKey}&steamid=${steamID}`);
+    const responseGames = await axios.get(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/`, {
+      params: {
+        key: apiKey,
+        steamid: steamID,
+        include_appinfo: 1,
+        format: 'json'
+      }
+    });
+
     if (responseGames.data && responseGames.data.response) {
-      const gameIDs = responseGames.data.response.games.map(game => game.appid);
-      // 将游戏 App ID 存储到 JSON 文件中
-      const filePath = path.join(__dirname, 'public', 'user_games.json');
-      fs.writeFileSync(filePath, JSON.stringify(gameIDs));
+      const gameListFilePath = path.join(__dirname, 'public', 'user_games.json');
+      fs.writeFileSync(gameListFilePath, JSON.stringify(responseGames.data));
       console.log('User game list stored successfully.');
     } else {
       console.error('Failed to fetch user game list: Invalid response data');
