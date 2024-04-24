@@ -27,7 +27,7 @@ router.get('/auth/steam/return',
       const steamID = req.user._json.steamid;
       const apiKey = process.env.STEAM_API_KEY;
 
-      const { gameCount, accountValue, totalGameHours } = await fetchUserAccountData(steamID);
+      const { gameCount, accountValue, totalGameHours } = await fetchUserAccountData(steamID, apiKey);
 
 
       // const responseAccount = await axios.get(`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${apiKey}&steamids=${steamID}`);
@@ -65,11 +65,11 @@ router.get('/auth/steam/return',
   });
 
 
-async function fetchUserAccountData(steamID) {
-  const apiKey = process.env.STEAM_API_KEY;
+async function fetchUserAccountData(steamID, apiKey) {
   let gameCount = 0;
   let accountValue = 0;
   let totalGameHours = 0;
+  const userGameIdsData = fs.readFileSync('./public/user_games.json', 'utf8');
 
   try {
     const responseGames = await axios.get(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v1`, {
@@ -92,20 +92,66 @@ async function fetchUserAccountData(steamID) {
       }
       // Get game prices
 
-      const appId = 113020;
-      const responseGamePrices = await axios.get(`https://store.steampowered.com/api/appdetails`, {
+
+      // const userGameIds = JSON.parse(userGameIdsData);
+      // const params = {
+      //   appids: userGameIds.join(',') // 将游戏 ID 数组连接成一个逗号分隔的字符串
+      // };
+
+      // axios.get('https://store.steampowered.com/api/appdetails', { params })
+      //   .then(response => {
+      //     
+      //     console.log(response.data);
+      //   })
+      //   .catch(error => {
+      //     
+      //     console.error('Error fetching game prices:', error);
+      //   });
+
+
+      const gameId1 = 113020; //test
+      const gameId2 = 1497440; //test
+      const filters = 'price_overview';
+      const gameIdsParam = `${gameId1},${gameId2}`;
+      axios.get(`https://store.steampowered.com/api/appdetails`, {
         params: {
-          appids: appId
+          appids: gameIdsParam,
+          filters: filters
         }
-      });
-      // Add each game's price to the account value
-      if (responseGamePrices.data && responseGamePrices.data[appId] && responseGamePrices.data[appId].data && responseGamePrices.data[appId].data.price_overview && responseGamePrices.data[appId].data.price_overview.final) {
-        const gamePrice = responseGamePrices.data[appId].data.price_overview.final;
-        accountValue += gamePrice;
-        console.log('Game price:', gamePrice);
-      } else {
-        console.error('Failed to fetch game price: Invalid response data');
-      }
+      })
+        .then(response => {
+          if (response.status === 200) {
+            const gamePrices = response.data;
+            console.log('Game prices:', gamePrices);
+            if (gamePrices[gameId1] && gamePrices[gameId1].data && gamePrices[gameId1].data.price_overview && gamePrices[gameId1].data.price_overview.final) {
+              const game1Price = gamePrices[gameId1].data.price_overview.final;
+              console.log('Game 1 price:', game1Price);
+            }
+            if (gamePrices[gameId2] && gamePrices[gameId2].data && gamePrices[gameId2].data.price_overview && gamePrices[gameId2].data.price_overview.final) {
+              const game2Price = gamePrices[gameId2].data.price_overview.final;
+              console.log('Game 2 price:', game2Price);
+            }
+          } else {
+            console.error('Error fetching game prices: Unexpected status code', response.status);
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching game prices:', error);
+        });
+      // const appId = 113020;//
+      // const responseGamePrices = await axios.get(`https://store.steampowered.com/api/appdetails`, {
+      //   params: {
+      //     appids: appId
+      //   }
+      // });
+      // // Add each game's price to the account value
+      // if (responseGamePrices.data && responseGamePrices.data[appId] && responseGamePrices.data[appId].data && responseGamePrices.data[appId].data.price_overview && responseGamePrices.data[appId].data.price_overview.final) {
+      //   const gamePrice = responseGamePrices.data[appId].data.price_overview.final;
+      //   accountValue += gamePrice;
+      //   console.log('Game price:', gamePrice);
+      // } else {
+      //   console.error('Failed to fetch game price: Invalid response data');
+      // }
 
 
       console.log('Account value:', accountValue);
