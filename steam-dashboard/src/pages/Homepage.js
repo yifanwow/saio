@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import UserProfileCard from '../components/UserProfileCard';
+import './Homepage.css'; // 导入 Homepage 组件的 CSS 文件
+import ProfileBackground_big from './../components/ProfileBackground_big.js';
 
 const Homepage = () => {
   const [userInfo, setUserInfo] = useState(null);
+  const [showProfile, setShowProfile] = useState(false);
 
   useEffect(() => {
     const fetchUserInfo = async () => {
@@ -21,6 +24,7 @@ const Homepage = () => {
           const userData = data.users.find(user => user.steamid === username);
           setUserInfo(userData);
           console.log('User data fetched successfully:', userData);
+          setShowProfile(true);
         } else {
           console.log('Failed to fetch data:', response.statusText);
         }
@@ -33,8 +37,14 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div>
-      {userInfo && <UserProfileCard userInfo={userInfo} />}
+    <div className='background'> { }
+        <ProfileBackground_big />
+      {/* 使用 showProfile 状态来控制是否渲染 UserProfileCard */}
+      {showProfile && (
+        <div className="fade-in">
+          <UserProfileCard userInfo={userInfo} />
+        </div>
+      )}
     </div>
   );
 };

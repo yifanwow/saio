@@ -9,6 +9,7 @@ const UserProfileCard = ({ userInfo }) => {
     justifyContent: 'center',
     alignItems: 'center',
     width: '50%',
+    boxShadow: '9px 0px 55px rgba(0, 0, 0, 0.7)',
     height: '100vh',
     // Include ProfileBackground as the background
   };
