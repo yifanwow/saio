@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bulma/css/bulma.css';
 import { useLocation } from 'react-router-dom';
+import WelcomePage from './components/WelcomePage';
 
 function HomeLoggedIn() {
   const location = useLocation();
@@ -93,20 +94,18 @@ function HomeLoggedIn() {
     zIndex: 1
   };
 
+  const instructionTextStyle = {
+
+    position: 'absolute',
+    bottom: '20px', // Adjust the value as needed for your layout
+    width: '100%',
+    textAlign: 'center',
+    color: 'rgba(255, 255, 255, 0.3)',
+    textShadow: '2px 2px 4px rgba(0,0,0,0.5)'
+  };
+
   return (
-    <div style={containerStyle}>
-      <div style={{ ...bgStyle, top: `${bg1Position}%` }}></div>
-      <div style={{ ...bgStyle, top: `${bg2Position - 100}%` }}></div>
-      <div style={avatarStyle}></div>
-      <div style={textStyle}>
-        <h2 className="subtitle is-1" style={{ color: '#f0ebfa', letterSpacing: '1.2px', fontSize: '1.7rem' }}>
-          Welcome back, {userInfo && userInfo.personaname}
-        </h2>
-        {userInfo && (
-        <p className="subtitle is-6">Today is {userInfo.date} days since you joined Steam.</p>
-      )}
-      </div>
-    </div>
+    <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} /> // 使用 WelcomePage 组件
   );
 }
 
