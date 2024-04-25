@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 function HomeLoggedIn() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
-  const username = params.get('username');
+  const username = params.get('steamid');
   
   // Use state to manage avatar and registerDate fetched from localStorage
   const [userInfo, setUserInfo] = useState(null);
@@ -15,7 +15,7 @@ function HomeLoggedIn() {
     fetchUserInfo();
   }, []); // Fetch user info once when component mounts
 
-  const fetchUserInfo = async (userId) => {
+  const fetchUserInfo = async () => {
     try {
       const response = await fetch('http://localhost:3001/users_summary.json',{
         method: 'GET',
@@ -25,8 +25,10 @@ function HomeLoggedIn() {
       });
       if (response.ok) {
         const data = await response.json();
-        const userData = data.users.find(user => user.steamid === userId);
+        console.log('userID: ', username);
+        const userData = data.users.find(user => user.steamid === username);
         setUserInfo(userData);
+        console.log('User data fetched successfully:', userData);
       } else {
         console.log('Failed to fetch data:', response.statusText);
       }
@@ -77,7 +79,7 @@ function HomeLoggedIn() {
     width: '170px',
     height: '170px',
     borderRadius: '50%',
-    backgroundImage: userInfo ? `url('${userInfo.avatarUrl}')` : 'none', // Correctly formatted URL
+    backgroundImage: userInfo ? `url('${userInfo.avatarfull}')` : 'none', // Correctly formatted URL
     backgroundSize: 'cover',
     boxShadow: '0 9px 9px rgba(0,0,0,0.6)',
     marginBottom: '30px',
@@ -98,7 +100,7 @@ function HomeLoggedIn() {
       <div style={avatarStyle}></div>
       <div style={textStyle}>
         <h2 className="subtitle is-1" style={{ color: '#f0ebfa', letterSpacing: '1.2px', fontSize: '1.7rem' }}>
-          Welcome back, {username}
+          Welcome back, {userInfo.personaname}
         </h2>
         {userInfo && (
         <p className="subtitle is-6">Today is {userInfo.date} days since you joined Steam.</p>
