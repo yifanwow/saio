@@ -15,9 +15,9 @@ function HomeLoggedIn() {
     fetchUserInfo();
   }, []); // Fetch user info once when component mounts
 
-  const fetchUserInfo = async () => {
+  const fetchUserInfo = async (userId) => {
     try {
-      const response = await fetch('http://localhost:3001/data.json',{
+      const response = await fetch('http://localhost:3001/users_summary.json',{
         method: 'GET',
         headers: {
           'Origin': 'http://localhost:3000',
@@ -25,7 +25,8 @@ function HomeLoggedIn() {
       });
       if (response.ok) {
         const data = await response.json();
-        setUserInfo(data);
+        const userData = data.users.find(user => user.steamid === userId);
+        setUserInfo(userData);
       } else {
         console.log('Failed to fetch data:', response.statusText);
       }
