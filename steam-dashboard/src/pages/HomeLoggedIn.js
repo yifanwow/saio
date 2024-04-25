@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bulma/css/bulma.css';
 import { useLocation } from 'react-router-dom';
 import WelcomePage from '../components/WelcomePage';
+import Header from '../components/Header';
 
 function HomeLoggedIn() {
   const location = useLocation();
@@ -59,7 +60,10 @@ function HomeLoggedIn() {
   }, [bg1Position, bg2Position]);
 
   return (
-    <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} /> // 使用 WelcomePage 组件
+    <div>
+      <Header />
+      <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} />
+    </div>
   );
 }
 
