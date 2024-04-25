@@ -48,15 +48,38 @@ router.get('/auth/steam/return',
         //registerDate: calculateRegisterDate(req.user._json.created)
       };
 
-      const filePath = path.join(__dirname, 'public', 'data.json'); // 确保路径正确
-      fs.writeFile(filePath, JSON.stringify(req.session.user), (err) => {
-        if (err) {
-          console.error('Failed to write user data to JSON file:', err);
-        } else {
-          console.log('User data updated successfully.');
-        }
-        res.redirect(`http://localhost:3000/home?username=${encodeURIComponent(username)}`);
-      });
+      //获取用户信息
+      const response = await axios.get(`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamID}`);
+      const user = response.data.response.players[0];
+      console.log(user); // Get the first player object
+
+      //检查本地是否已经有数据文件
+      const filePath = path.join(__dirname, 'public', 'users_summary.json'); // 确保路径正确
+      //如果没有 则创建一个空的文件
+      if (!fs.existsSync(filePath)) {
+        fs.writeFileSync(filePath, JSON.stringify({ users: [] }));
+        console.log('Created users_summary.json file.');
+      }
+     // 读取数据文件
+
+      const jsonData = fs.readFileSync(filePath, 'utf8');
+      let parsedData = JSON.parse(jsonData);
+      // Ensure that 'users' property exists in the parsed data
+      const existingUserIndex = parsedData.users.findIndex(user => user.steamid === steamID);
+      if (existingUserIndex !== -1) {
+        // Update user data if the user exists
+        parsedData.users[existingUserIndex] = user;
+        console.log('User data updated successfully.');
+      } else {
+        // Add new user data if the user doesn't exist
+        parsedData.users.push(user);
+        console.log('New user added successfully.');
+      }
+  
+      // Write the updated user data back to users_summary.json file
+      fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
+      res.redirect(`http://localhost:3000/home?username=${encodeURIComponent(username)}`);
+      
     } catch (error) {
       console.error('Error fetching additional user data:', error);
     }
@@ -107,7 +130,6 @@ async function fetchUserAccountData(steamID, apiKey) {
     });
     if (response.status === 200) {
       const gamePrices = response.data;
-      console.log('Game prices:', gamePrices);
     
       // Update game prices in the parsedData object
       parsedData.response.games.forEach(game => {
