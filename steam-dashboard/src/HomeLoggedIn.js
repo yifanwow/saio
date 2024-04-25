@@ -13,7 +13,7 @@ function HomeLoggedIn() {
   // Update localStorage only when parameters change
   useEffect(() => {
     fetchUserInfo();
-  }, []); // Fetch user info once when component mounts
+  }, [username]); // Fetch user info once when component mounts
 
   const fetchUserInfo = async () => {
     try {
@@ -100,7 +100,7 @@ function HomeLoggedIn() {
       <div style={avatarStyle}></div>
       <div style={textStyle}>
         <h2 className="subtitle is-1" style={{ color: '#f0ebfa', letterSpacing: '1.2px', fontSize: '1.7rem' }}>
-          Welcome back, {userInfo.personaname}
+          Welcome back, {userInfo && userInfo.personaname}
         </h2>
         {userInfo && (
         <p className="subtitle is-6">Today is {userInfo.date} days since you joined Steam.</p>

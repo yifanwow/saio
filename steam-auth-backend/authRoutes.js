@@ -39,14 +39,7 @@ router.get('/auth/steam/return',
 
 
       // Save user data to session by add data to the json file.
-      req.session.user = {
-        username: req.user.displayName,
-        avatarUrl: req.user._json.avatarfull,
-        date: daysDiff,
-        gameCount: gameCount,
-        totalGameHours: totalGameHours,
-        //registerDate: calculateRegisterDate(req.user._json.created)
-      };
+
 
       //获取用户信息
       const response = await axios.get(`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamID}`);
@@ -60,7 +53,7 @@ router.get('/auth/steam/return',
         fs.writeFileSync(filePath, JSON.stringify({ users: [] }));
         console.log('Created users_summary.json file.');
       }
-     // 读取数据文件
+      // 读取数据文件
 
       const jsonData = fs.readFileSync(filePath, 'utf8');
       let parsedData = JSON.parse(jsonData);
@@ -69,17 +62,31 @@ router.get('/auth/steam/return',
       if (existingUserIndex !== -1) {
         // Update user data if the user exists
         parsedData.users[existingUserIndex] = user;
+        parsedData.users[existingUserIndex] = {
+          ...user,
+          date: daysDiff,
+          gameCount: gameCount,
+          totalGameHours: totalGameHours,
+          accountValue: accountValue
+        };
         console.log('User data updated successfully.');
       } else {
         // Add new user data if the user doesn't exist
         parsedData.users.push(user);
+        parsedData.users[existingUserIndex] = {
+          ...user,
+          date: daysDiff,
+          gameCount: gameCount,
+          totalGameHours: totalGameHours,
+          accountValue: accountValue
+        };
         console.log('New user added successfully.');
       }
-  
+
       // Write the updated user data back to users_summary.json file
       fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
       res.redirect(`http://localhost:3000/home?steamid=${encodeURIComponent(steamID)}`);
-      
+
     } catch (error) {
       console.error('Error fetching additional user data:', error);
     }
@@ -106,7 +113,7 @@ async function fetchUserAccountData(steamID, apiKey) {
         // Assuming game is an object and you want to add a price property to it
         const gameId = game.appid;
         game.price = 0; // Assume all games are free
-        game.grid = 'https://steamcdn-a.akamaihd.net/steam/apps/'+gameId+'/library_600x900_2x.jpg';
+        game.grid = 'https://steamcdn-a.akamaihd.net/steam/apps/' + gameId + '/library_600x900_2x.jpg';
       });
 
       // Write the modified data back to the JSON file
@@ -130,19 +137,22 @@ async function fetchUserAccountData(steamID, apiKey) {
     });
     if (response.status === 200) {
       const gamePrices = response.data;
-    
+
       // Update game prices in the parsedData object
       parsedData.response.games.forEach(game => {
         const gameId = game.appid;
+        const playtime = game.playtime_forever;
+        totalGameHours = totalGameHours + playtime;
         if (gamePrices[gameId] && gamePrices[gameId].data && gamePrices[gameId].data.price_overview && gamePrices[gameId].data.price_overview.final) {
           const gamePrice = gamePrices[gameId].data.price_overview.final;
           game.price = gamePrice; // Update the price property of the game
+          accountValue = accountValue + gamePrice;
           console.log(`Game ${gameId} price:`, gamePrice);
         } else {
           console.log(`No price data found for game ${gameId}`);
         }
       });
-    
+
       // Write the modified parsedData object back to the file
       fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
       console.log('Game prices updated and saved to user_games.json');
@@ -155,7 +165,7 @@ async function fetchUserAccountData(steamID, apiKey) {
   } catch (error) {
     console.error('Error fetching additional user data:', error);
   }
-
+  totalGameHours = Math.floor(totalGameHours / 60);
   return { gameCount, accountValue, totalGameHours };
 
 }
