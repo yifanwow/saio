@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomeLoggedIn from './HomeLoggedIn';
+import HomeLoggedIn from './pages/HomeLoggedIn';
 import HomeLoggedOut from './pages/HomeLoggedOut';
 import LoginPage from './LoginPage';
 
@@ -17,5 +17,5 @@ function App() {
     </Router>
   );
 }
-
+//if use did not login,or visit home page, it will show the login page
 export default App;
