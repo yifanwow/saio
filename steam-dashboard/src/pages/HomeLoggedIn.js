@@ -1,3 +1,4 @@
+// HomeLoggedIn.js
 import React, { useState, useEffect } from 'react';
 import 'bulma/css/bulma.css';
 import { useLocation } from 'react-router-dom';
@@ -59,10 +60,17 @@ function HomeLoggedIn() {
     return () => clearInterval(interval);
   }, [bg1Position, bg2Position]);
 
+  // Remove the unused variable 'showWelcomePage'
+  const [, setShowWelcomePage] = useState(true);
+
+  const handleHideWelcomePage = () => {
+    setShowWelcomePage(false);
+  };
+
   return (
     <div>
-      <Header />
-      <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} />
+      {/* {<Header/>} */}
+      <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} setShowWelcomePage={handleHideWelcomePage} />
     </div>
   );
 }
