@@ -81,7 +81,9 @@ async function fetchUserAccountData(steamID, apiKey) {
       // Modify each game object to add a 'price' property
       parsedData.response.games.forEach(game => {
         // Assuming game is an object and you want to add a price property to it
+        const gameId = game.appid;
         game.price = 0; // Assume all games are free
+        game.grid = 'https://steamcdn-a.akamaihd.net/steam/apps/'+gameId+'/library_600x900_2x.jpg';
       });
 
       // Write the modified data back to the JSON file
@@ -91,23 +93,7 @@ async function fetchUserAccountData(steamID, apiKey) {
       console.error('Error: Invalid data structure in user_games.json');
     }
 
-    // Get game prices
-
-
-    // const userGameIds = JSON.parse(userGameIdsData);
-    // const params = {
-    //   appids: userGameIds.join(',') // 将游戏 ID 数组连接成一个逗号分隔的字符串
-    // };
-
-    // axios.get('https://store.steampowered.com/api/appdetails', { params })
-    //   .then(response => {
-    //     
-    //     console.log(response.data);
-    //   })
-    //   .catch(error => {
-    //     
-    //     console.error('Error fetching game prices:', error);
-    //   });
+    // Get game prices from the Steam API
 
     const gameIds = JSON.parse(jsonData).response.games.map(game => game.appid);
     const gameIdsParam = gameIds.join(',');
@@ -141,24 +127,6 @@ async function fetchUserAccountData(steamID, apiKey) {
     } else {
       console.error('Error fetching game prices: Unexpected status code', response.status);
     }
-
-
-
-    // const appId = 113020;//
-    // const responseGamePrices = await axios.get(`https://store.steampowered.com/api/appdetails`, {
-    //   params: {
-    //     appids: appId
-    //   }
-    // });
-    // // Add each game's price to the account value
-    // if (responseGamePrices.data && responseGamePrices.data[appId] && responseGamePrices.data[appId].data && responseGamePrices.data[appId].data.price_overview && responseGamePrices.data[appId].data.price_overview.final) {
-    //   const gamePrice = responseGamePrices.data[appId].data.price_overview.final;
-    //   accountValue += gamePrice;
-    //   console.log('Game price:', gamePrice);
-    // } else {
-    //   console.error('Failed to fetch game price: Invalid response data');
-    // }
-
 
     console.log('Account value:', accountValue);
 

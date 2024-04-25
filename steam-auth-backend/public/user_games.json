@@ -13,7 +13,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/50/library_600x900_2x.jpg"
       },
       {
         "appid": 70,
@@ -26,7 +27,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1588905612,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/70/library_600x900_2x.jpg"
       },
       {
         "appid": 220,
@@ -40,7 +42,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1589085049,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/220/library_600x900_2x.jpg"
       },
       {
         "appid": 340,
@@ -53,7 +56,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/340/library_600x900_2x.jpg"
       },
       {
         "appid": 320,
@@ -66,7 +70,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/320/library_600x900_2x.jpg"
       },
       {
         "appid": 360,
@@ -79,7 +84,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/360/library_600x900_2x.jpg"
       },
       {
         "appid": 380,
@@ -93,7 +99,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/380/library_600x900_2x.jpg"
       },
       {
         "appid": 400,
@@ -107,7 +114,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/400/library_600x900_2x.jpg"
       },
       {
         "appid": 420,
@@ -121,7 +129,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/420/library_600x900_2x.jpg"
       },
       {
         "appid": 500,
@@ -139,7 +148,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/500/library_600x900_2x.jpg"
       },
       {
         "appid": 3590,
@@ -153,7 +163,8 @@
         "playtime_deck_forever": 4,
         "rtime_last_played": 1662581679,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/3590/library_600x900_2x.jpg"
       },
       {
         "appid": 40700,
@@ -167,7 +178,8 @@
         "playtime_deck_forever": 69,
         "rtime_last_played": 1666443489,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/40700/library_600x900_2x.jpg"
       },
       {
         "appid": 20900,
@@ -180,7 +192,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1558206615,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/20900/library_600x900_2x.jpg"
       },
       {
         "appid": 550,
@@ -198,7 +211,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/550/library_600x900_2x.jpg"
       },
       {
         "appid": 33230,
@@ -211,7 +225,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1575414802,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/33230/library_600x900_2x.jpg"
       },
       {
         "appid": 47870,
@@ -224,7 +239,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1618721651,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/47870/library_600x900_2x.jpg"
       },
       {
         "appid": 48190,
@@ -237,7 +253,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/48190/library_600x900_2x.jpg"
       },
       {
         "appid": 620,
@@ -252,7 +269,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/620/library_600x900_2x.jpg"
       },
       {
         "appid": 20920,
@@ -267,7 +285,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/20920/library_600x900_2x.jpg"
       },
       {
         "appid": 48000,
@@ -281,7 +300,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1566488380,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/48000/library_600x900_2x.jpg"
       },
       {
         "appid": 201870,
@@ -294,7 +314,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/201870/library_600x900_2x.jpg"
       },
       {
         "appid": 206440,
@@ -308,7 +329,8 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1676349574,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/206440/library_600x900_2x.jpg"
       },
       {
         "appid": 204360,
@@ -322,7 +344,8 @@
         "playtime_deck_forever": 17,
         "rtime_last_played": 1680375846,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/204360/library_600x900_2x.jpg"
       },
       {
         "appid": 219950,
@@ -336,7 +359,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/219950/library_600x900_2x.jpg"
       },
       {
         "appid": 12110,
@@ -349,7 +373,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1649930038,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/12110/library_600x900_2x.jpg"
       },
       {
         "appid": 12240,
@@ -362,7 +387,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/12240/library_600x900_2x.jpg"
       },
       {
         "appid": 227300,
@@ -376,7 +402,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1550121739,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/227300/library_600x900_2x.jpg"
       },
       {
         "appid": 230410,
@@ -394,7 +421,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/230410/library_600x900_2x.jpg"
       },
       {
         "appid": 233450,
@@ -413,7 +441,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/233450/library_600x900_2x.jpg"
       },
       {
         "appid": 113020,
@@ -428,7 +457,8 @@
         "rtime_last_played": 1564122700,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/113020/library_600x900_2x.jpg"
       },
       {
         "appid": 242760,
@@ -446,7 +476,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/242760/library_600x900_2x.jpg"
       },
       {
         "appid": 218620,
@@ -460,7 +491,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1587909954,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/218620/library_600x900_2x.jpg"
       },
       {
         "appid": 251570,
@@ -478,7 +510,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/251570/library_600x900_2x.jpg"
       },
       {
         "appid": 252110,
@@ -492,7 +525,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1673186292,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/252110/library_600x900_2x.jpg"
       },
       {
         "appid": 242050,
@@ -505,7 +539,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1575414410,
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/242050/library_600x900_2x.jpg"
       },
       {
         "appid": 261570,
@@ -519,7 +554,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1583093204,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/261570/library_600x900_2x.jpg"
       },
       {
         "appid": 108600,
@@ -532,7 +568,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1545791101,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/108600/library_600x900_2x.jpg"
       },
       {
         "appid": 268910,
@@ -546,7 +583,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1629782645,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/268910/library_600x900_2x.jpg"
       },
       {
         "appid": 235460,
@@ -560,7 +598,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/235460/library_600x900_2x.jpg"
       },
       {
         "appid": 271590,
@@ -577,7 +616,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/271590/library_600x900_2x.jpg"
       },
       {
         "appid": 274190,
@@ -595,7 +635,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/274190/library_600x900_2x.jpg"
       },
       {
         "appid": 278080,
@@ -609,7 +650,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1692019985,
         "playtime_disconnected": 3,
-        "price": 4999
+        "price": 4999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/278080/library_600x900_2x.jpg"
       },
       {
         "appid": 250180,
@@ -624,7 +666,8 @@
         "rtime_last_played": 1697947398,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/250180/library_600x900_2x.jpg"
       },
       {
         "appid": 280160,
@@ -642,7 +685,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/280160/library_600x900_2x.jpg"
       },
       {
         "appid": 286000,
@@ -657,7 +701,8 @@
         "rtime_last_played": 1582901054,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/286000/library_600x900_2x.jpg"
       },
       {
         "appid": 286160,
@@ -671,7 +716,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1611073972,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/286160/library_600x900_2x.jpg"
       },
       {
         "appid": 238460,
@@ -686,7 +732,8 @@
         "rtime_last_played": 1696566321,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/238460/library_600x900_2x.jpg"
       },
       {
         "appid": 237930,
@@ -700,7 +747,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/237930/library_600x900_2x.jpg"
       },
       {
         "appid": 300380,
@@ -718,7 +766,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/300380/library_600x900_2x.jpg"
       },
       {
         "appid": 95400,
@@ -732,7 +781,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1640412467,
         "playtime_disconnected": 0,
-        "price": 1199
+        "price": 1199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/95400/library_600x900_2x.jpg"
       },
       {
         "appid": 303310,
@@ -746,7 +796,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1624
+        "price": 1624,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/303310/library_600x900_2x.jpg"
       },
       {
         "appid": 304430,
@@ -760,7 +811,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/304430/library_600x900_2x.jpg"
       },
       {
         "appid": 311690,
@@ -774,7 +826,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1675829518,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/311690/library_600x900_2x.jpg"
       },
       {
         "appid": 312670,
@@ -792,7 +845,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 4999
+        "price": 4999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/312670/library_600x900_2x.jpg"
       },
       {
         "appid": 312990,
@@ -805,7 +859,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1659499122,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/312990/library_600x900_2x.jpg"
       },
       {
         "appid": 203160,
@@ -819,7 +874,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/203160/library_600x900_2x.jpg"
       },
       {
         "appid": 320760,
@@ -836,7 +892,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/320760/library_600x900_2x.jpg"
       },
       {
         "appid": 323190,
@@ -853,7 +910,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/323190/library_600x900_2x.jpg"
       },
       {
         "appid": 323850,
@@ -867,7 +925,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1638088021,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/323850/library_600x900_2x.jpg"
       },
       {
         "appid": 324160,
@@ -881,7 +940,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 4499
+        "price": 4499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/324160/library_600x900_2x.jpg"
       },
       {
         "appid": 326460,
@@ -896,7 +956,8 @@
         "rtime_last_played": 1657421505,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/326460/library_600x900_2x.jpg"
       },
       {
         "appid": 289650,
@@ -909,7 +970,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/289650/library_600x900_2x.jpg"
       },
       {
         "appid": 305620,
@@ -923,7 +985,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1399
+        "price": 1399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/305620/library_600x900_2x.jpg"
       },
       {
         "appid": 333600,
@@ -941,7 +1004,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/333600/library_600x900_2x.jpg"
       },
       {
         "appid": 282070,
@@ -958,7 +1022,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/282070/library_600x900_2x.jpg"
       },
       {
         "appid": 341800,
@@ -973,7 +1038,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/341800/library_600x900_2x.jpg"
       },
       {
         "appid": 326480,
@@ -991,7 +1057,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/326480/library_600x900_2x.jpg"
       },
       {
         "appid": 311560,
@@ -1004,7 +1071,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/311560/library_600x900_2x.jpg"
       },
       {
         "appid": 354380,
@@ -1017,7 +1085,8 @@
         "playtime_deck_forever": 5,
         "rtime_last_played": 1663005166,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/354380/library_600x900_2x.jpg"
       },
       {
         "appid": 255710,
@@ -1031,7 +1100,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1569147314,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/255710/library_600x900_2x.jpg"
       },
       {
         "appid": 359840,
@@ -1045,7 +1115,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 159
+        "price": 159,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/359840/library_600x900_2x.jpg"
       },
       {
         "appid": 232090,
@@ -1059,7 +1130,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/232090/library_600x900_2x.jpg"
       },
       {
         "appid": 360940,
@@ -1073,7 +1145,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1554424845,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/360940/library_600x900_2x.jpg"
       },
       {
         "appid": 365670,
@@ -1086,7 +1159,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1710553737,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/365670/library_600x900_2x.jpg"
       },
       {
         "appid": 367450,
@@ -1100,7 +1174,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1664429673,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/367450/library_600x900_2x.jpg"
       },
       {
         "appid": 367520,
@@ -1114,7 +1189,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1590128582,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/367520/library_600x900_2x.jpg"
       },
       {
         "appid": 371140,
@@ -1128,7 +1204,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1590326674,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/371140/library_600x900_2x.jpg"
       },
       {
         "appid": 322330,
@@ -1141,7 +1218,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/322330/library_600x900_2x.jpg"
       },
       {
         "appid": 269670,
@@ -1156,7 +1234,8 @@
         "rtime_last_played": 1634427968,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/269670/library_600x900_2x.jpg"
       },
       {
         "appid": 230230,
@@ -1170,7 +1249,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/230230/library_600x900_2x.jpg"
       },
       {
         "appid": 373420,
@@ -1184,7 +1264,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/373420/library_600x900_2x.jpg"
       },
       {
         "appid": 385800,
@@ -1202,7 +1283,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/385800/library_600x900_2x.jpg"
       },
       {
         "appid": 386940,
@@ -1216,7 +1298,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704072974,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/386940/library_600x900_2x.jpg"
       },
       {
         "appid": 290340,
@@ -1231,7 +1314,8 @@
         "playtime_deck_forever": 985,
         "rtime_last_played": 1713741810,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/290340/library_600x900_2x.jpg"
       },
       {
         "appid": 291550,
@@ -1245,7 +1329,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/291550/library_600x900_2x.jpg"
       },
       {
         "appid": 391540,
@@ -1258,7 +1343,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/391540/library_600x900_2x.jpg"
       },
       {
         "appid": 400080,
@@ -1272,7 +1358,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 374
+        "price": 374,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/400080/library_600x900_2x.jpg"
       },
       {
         "appid": 365450,
@@ -1289,7 +1376,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/365450/library_600x900_2x.jpg"
       },
       {
         "appid": 412830,
@@ -1303,7 +1391,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/412830/library_600x900_2x.jpg"
       },
       {
         "appid": 420110,
@@ -1321,7 +1410,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/420110/library_600x900_2x.jpg"
       },
       {
         "appid": 420290,
@@ -1339,7 +1429,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/420290/library_600x900_2x.jpg"
       },
       {
         "appid": 368500,
@@ -1352,7 +1443,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/368500/library_600x900_2x.jpg"
       },
       {
         "appid": 429330,
@@ -1366,12 +1458,13 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703301708,
         "playtime_disconnected": 0,
-        "price": 249
+        "price": 249,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/429330/library_600x900_2x.jpg"
       },
       {
         "appid": 431960,
         "name": "Wallpaper Engine",
-        "playtime_2weeks": 19943,
+        "playtime_2weeks": 19928,
         "playtime_forever": 664073,
         "img_icon_url": "72edaed9d748c6cf7397ffb1c83f0b837b9ebd9d",
         "has_community_visible_stats": true,
@@ -1381,7 +1474,8 @@
         "playtime_deck_forever": 8141,
         "rtime_last_played": 1714017405,
         "playtime_disconnected": 12,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/431960/library_600x900_2x.jpg"
       },
       {
         "appid": 391220,
@@ -1395,7 +1489,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/391220/library_600x900_2x.jpg"
       },
       {
         "appid": 424280,
@@ -1410,7 +1505,8 @@
         "rtime_last_played": 1631415760,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/424280/library_600x900_2x.jpg"
       },
       {
         "appid": 437920,
@@ -1425,7 +1521,8 @@
         "rtime_last_played": 1708977579,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/437920/library_600x900_2x.jpg"
       },
       {
         "appid": 438100,
@@ -1438,7 +1535,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1592920340,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/438100/library_600x900_2x.jpg"
       },
       {
         "appid": 442120,
@@ -1452,7 +1550,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/442120/library_600x900_2x.jpg"
       },
       {
         "appid": 445980,
@@ -1466,7 +1565,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1657350090,
         "playtime_disconnected": 0,
-        "price": 1599
+        "price": 1599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/445980/library_600x900_2x.jpg"
       },
       {
         "appid": 447530,
@@ -1483,7 +1583,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/447530/library_600x900_2x.jpg"
       },
       {
         "appid": 460790,
@@ -1502,7 +1603,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/460790/library_600x900_2x.jpg"
       },
       {
         "appid": 460950,
@@ -1520,7 +1622,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/460950/library_600x900_2x.jpg"
       },
       {
         "appid": 464060,
@@ -1534,7 +1637,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/464060/library_600x900_2x.jpg"
       },
       {
         "appid": 207140,
@@ -1548,7 +1652,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1697960807,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/207140/library_600x900_2x.jpg"
       },
       {
         "appid": 471810,
@@ -1562,7 +1667,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703561072,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/471810/library_600x900_2x.jpg"
       },
       {
         "appid": 475550,
@@ -1580,7 +1686,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1399
+        "price": 1399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/475550/library_600x900_2x.jpg"
       },
       {
         "appid": 477160,
@@ -1594,7 +1701,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703307394,
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/477160/library_600x900_2x.jpg"
       },
       {
         "appid": 302670,
@@ -1611,7 +1719,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/302670/library_600x900_2x.jpg"
       },
       {
         "appid": 491950,
@@ -1628,7 +1737,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/491950/library_600x900_2x.jpg"
       },
       {
         "appid": 504130,
@@ -1643,7 +1753,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/504130/library_600x900_2x.jpg"
       },
       {
         "appid": 504920,
@@ -1657,7 +1768,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/504920/library_600x900_2x.jpg"
       },
       {
         "appid": 319630,
@@ -1671,7 +1783,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/319630/library_600x900_2x.jpg"
       },
       {
         "appid": 506500,
@@ -1685,7 +1798,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1659493349,
         "playtime_disconnected": 0,
-        "price": 1699
+        "price": 1699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/506500/library_600x900_2x.jpg"
       },
       {
         "appid": 508440,
@@ -1699,7 +1813,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1619646580,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/508440/library_600x900_2x.jpg"
       },
       {
         "appid": 289070,
@@ -1713,7 +1828,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/289070/library_600x900_2x.jpg"
       },
       {
         "appid": 522210,
@@ -1727,7 +1843,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 149
+        "price": 149,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/522210/library_600x900_2x.jpg"
       },
       {
         "appid": 292030,
@@ -1745,7 +1862,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/292030/library_600x900_2x.jpg"
       },
       {
         "appid": 527230,
@@ -1759,7 +1877,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1593211216,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/527230/library_600x900_2x.jpg"
       },
       {
         "appid": 311730,
@@ -1773,7 +1892,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/311730/library_600x900_2x.jpg"
       },
       {
         "appid": 469820,
@@ -1791,7 +1911,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/469820/library_600x900_2x.jpg"
       },
       {
         "appid": 544330,
@@ -1805,7 +1926,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/544330/library_600x900_2x.jpg"
       },
       {
         "appid": 553640,
@@ -1819,7 +1941,8 @@
         "playtime_deck_forever": 70,
         "rtime_last_played": 1664239141,
         "playtime_disconnected": 0,
-        "price": 384
+        "price": 384,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/553640/library_600x900_2x.jpg"
       },
       {
         "appid": 555220,
@@ -1833,7 +1956,8 @@
         "playtime_deck_forever": 67,
         "rtime_last_played": 1684194033,
         "playtime_disconnected": 0,
-        "price": 1199
+        "price": 1199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/555220/library_600x900_2x.jpg"
       },
       {
         "appid": 507490,
@@ -1847,7 +1971,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/507490/library_600x900_2x.jpg"
       },
       {
         "appid": 557340,
@@ -1865,7 +1990,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/557340/library_600x900_2x.jpg"
       },
       {
         "appid": 8500,
@@ -1878,7 +2004,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/8500/library_600x900_2x.jpg"
       },
       {
         "appid": 562220,
@@ -1892,7 +2019,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1593921594,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/562220/library_600x900_2x.jpg"
       },
       {
         "appid": 572430,
@@ -1910,7 +2038,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/572430/library_600x900_2x.jpg"
       },
       {
         "appid": 578310,
@@ -1924,7 +2053,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1547880396,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/578310/library_600x900_2x.jpg"
       },
       {
         "appid": 588650,
@@ -1942,7 +2072,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/588650/library_600x900_2x.jpg"
       },
       {
         "appid": 593700,
@@ -1956,7 +2087,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/593700/library_600x900_2x.jpg"
       },
       {
         "appid": 601840,
@@ -1973,7 +2105,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/601840/library_600x900_2x.jpg"
       },
       {
         "appid": 602520,
@@ -1991,7 +2124,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/602520/library_600x900_2x.jpg"
       },
       {
         "appid": 605920,
@@ -2005,7 +2139,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/605920/library_600x900_2x.jpg"
       },
       {
         "appid": 609490,
@@ -2019,12 +2154,13 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/609490/library_600x900_2x.jpg"
       },
       {
         "appid": 616720,
         "name": "Live2DViewerEX",
-        "playtime_2weeks": 19615,
+        "playtime_2weeks": 19600,
         "playtime_forever": 922962,
         "img_icon_url": "eaf779fd309b4fc47a67247666c43dfe566187fc",
         "playtime_windows_forever": 922962,
@@ -2033,7 +2169,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1714017405,
         "playtime_disconnected": 930,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/616720/library_600x900_2x.jpg"
       },
       {
         "appid": 621060,
@@ -2047,7 +2184,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1625755956,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/621060/library_600x900_2x.jpg"
       },
       {
         "appid": 632360,
@@ -2061,7 +2199,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1706519816,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/632360/library_600x900_2x.jpg"
       },
       {
         "appid": 632470,
@@ -2078,7 +2217,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/632470/library_600x900_2x.jpg"
       },
       {
         "appid": 641990,
@@ -2092,7 +2232,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1688287530,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/641990/library_600x900_2x.jpg"
       },
       {
         "appid": 644560,
@@ -2112,7 +2253,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/644560/library_600x900_2x.jpg"
       },
       {
         "appid": 644570,
@@ -2131,7 +2273,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/644570/library_600x900_2x.jpg"
       },
       {
         "appid": 646570,
@@ -2146,7 +2289,8 @@
         "rtime_last_played": 1670490590,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/646570/library_600x900_2x.jpg"
       },
       {
         "appid": 666220,
@@ -2160,7 +2304,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1546740054,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/666220/library_600x900_2x.jpg"
       },
       {
         "appid": 668630,
@@ -2174,7 +2319,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/668630/library_600x900_2x.jpg"
       },
       {
         "appid": 673750,
@@ -2187,7 +2333,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704066543,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/673750/library_600x900_2x.jpg"
       },
       {
         "appid": 674940,
@@ -2201,7 +2348,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1696573023,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/674940/library_600x900_2x.jpg"
       },
       {
         "appid": 304930,
@@ -2215,7 +2363,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1545957362,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/304930/library_600x900_2x.jpg"
       },
       {
         "appid": 683320,
@@ -2229,7 +2378,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1673062649,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/683320/library_600x900_2x.jpg"
       },
       {
         "appid": 686200,
@@ -2247,7 +2397,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1399
+        "price": 1399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/686200/library_600x900_2x.jpg"
       },
       {
         "appid": 698780,
@@ -2260,7 +2411,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1640400450,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/698780/library_600x900_2x.jpg"
       },
       {
         "appid": 705120,
@@ -2278,7 +2430,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/705120/library_600x900_2x.jpg"
       },
       {
         "appid": 435150,
@@ -2292,7 +2445,8 @@
         "playtime_deck_forever": 129,
         "rtime_last_played": 1693731714,
         "playtime_disconnected": 0,
-        "price": 4499
+        "price": 4499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/435150/library_600x900_2x.jpg"
       },
       {
         "appid": 732370,
@@ -2306,7 +2460,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1630919737,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/732370/library_600x900_2x.jpg"
       },
       {
         "appid": 466240,
@@ -2324,7 +2479,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/466240/library_600x900_2x.jpg"
       },
       {
         "appid": 736190,
@@ -2338,7 +2494,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1685077909,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/736190/library_600x900_2x.jpg"
       },
       {
         "appid": 582160,
@@ -2352,7 +2509,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/582160/library_600x900_2x.jpg"
       },
       {
         "appid": 738510,
@@ -2371,7 +2529,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/738510/library_600x900_2x.jpg"
       },
       {
         "appid": 739630,
@@ -2385,7 +2544,8 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1701023970,
         "playtime_disconnected": 0,
-        "price": 1399
+        "price": 1399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/739630/library_600x900_2x.jpg"
       },
       {
         "appid": 740570,
@@ -2399,7 +2559,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 59
+        "price": 59,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/740570/library_600x900_2x.jpg"
       },
       {
         "appid": 743450,
@@ -2416,7 +2577,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1199
+        "price": 1199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/743450/library_600x900_2x.jpg"
       },
       {
         "appid": 755790,
@@ -2433,7 +2595,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/755790/library_600x900_2x.jpg"
       },
       {
         "appid": 759940,
@@ -2447,7 +2610,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1558998148,
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/759940/library_600x900_2x.jpg"
       },
       {
         "appid": 763890,
@@ -2461,7 +2625,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1625843439,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/763890/library_600x900_2x.jpg"
       },
       {
         "appid": 774861,
@@ -2478,12 +2643,13 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/774861/library_600x900_2x.jpg"
       },
       {
         "appid": 786520,
         "name": "SAO Utils: Beta",
-        "playtime_2weeks": 19952,
+        "playtime_2weeks": 19937,
         "playtime_forever": 1572340,
         "img_icon_url": "d527c45dab38c87f3eabf8bf943388a3cfb62d26",
         "has_community_visible_stats": true,
@@ -2493,12 +2659,13 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1714016848,
         "playtime_disconnected": 3344,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/786520/library_600x900_2x.jpg"
       },
       {
         "appid": 877280,
         "name": "SAO Utils 2: Progressive",
-        "playtime_2weeks": 19952,
+        "playtime_2weeks": 19936,
         "playtime_forever": 273942,
         "img_icon_url": "ab16d51fcd68f9b86c1313fe1d9beb0e563afce1",
         "playtime_windows_forever": 273942,
@@ -2507,7 +2674,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1714016848,
         "playtime_disconnected": 3336,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/877280/library_600x900_2x.jpg"
       },
       {
         "appid": 788770,
@@ -2520,7 +2688,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1574780655,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/788770/library_600x900_2x.jpg"
       },
       {
         "appid": 790740,
@@ -2533,7 +2702,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1614195954,
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/790740/library_600x900_2x.jpg"
       },
       {
         "appid": 792040,
@@ -2547,7 +2717,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1099
+        "price": 1099,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/792040/library_600x900_2x.jpg"
       },
       {
         "appid": 795100,
@@ -2565,7 +2736,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/795100/library_600x900_2x.jpg"
       },
       {
         "appid": 799960,
@@ -2578,7 +2750,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1711312123,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/799960/library_600x900_2x.jpg"
       },
       {
         "appid": 464920,
@@ -2592,7 +2765,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/464920/library_600x900_2x.jpg"
       },
       {
         "appid": 804700,
@@ -2606,7 +2780,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 974
+        "price": 974,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/804700/library_600x900_2x.jpg"
       },
       {
         "appid": 819030,
@@ -2624,7 +2799,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/819030/library_600x900_2x.jpg"
       },
       {
         "appid": 825630,
@@ -2638,7 +2814,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1749
+        "price": 1749,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/825630/library_600x900_2x.jpg"
       },
       {
         "appid": 843380,
@@ -2652,7 +2829,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1689260964,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/843380/library_600x900_2x.jpg"
       },
       {
         "appid": 852480,
@@ -2672,7 +2850,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/852480/library_600x900_2x.jpg"
       },
       {
         "appid": 880940,
@@ -2686,7 +2865,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704078904,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/880940/library_600x900_2x.jpg"
       },
       {
         "appid": 881100,
@@ -2700,7 +2880,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1654362011,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/881100/library_600x900_2x.jpg"
       },
       {
         "appid": 728880,
@@ -2714,7 +2895,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1657419242,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/728880/library_600x900_2x.jpg"
       },
       {
         "appid": 892970,
@@ -2727,7 +2909,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1613947792,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/892970/library_600x900_2x.jpg"
       },
       {
         "appid": 893850,
@@ -2741,7 +2924,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1604002560,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/893850/library_600x900_2x.jpg"
       },
       {
         "appid": 895140,
@@ -2754,7 +2938,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1638672871,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/895140/library_600x900_2x.jpg"
       },
       {
         "appid": 899970,
@@ -2772,7 +2957,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/899970/library_600x900_2x.jpg"
       },
       {
         "appid": 905340,
@@ -2786,7 +2972,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703563139,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/905340/library_600x900_2x.jpg"
       },
       {
         "appid": 906200,
@@ -2800,7 +2987,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/906200/library_600x900_2x.jpg"
       },
       {
         "appid": 921590,
@@ -2814,7 +3002,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/921590/library_600x900_2x.jpg"
       },
       {
         "appid": 779340,
@@ -2832,7 +3021,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/779340/library_600x900_2x.jpg"
       },
       {
         "appid": 930910,
@@ -2846,7 +3036,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/930910/library_600x900_2x.jpg"
       },
       {
         "appid": 933940,
@@ -2860,7 +3051,8 @@
         "playtime_deck_forever": 2,
         "rtime_last_played": 1695329236,
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/933940/library_600x900_2x.jpg"
       },
       {
         "appid": 730,
@@ -2878,7 +3070,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/730/library_600x900_2x.jpg"
       },
       {
         "appid": 937170,
@@ -2892,7 +3085,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1692019985,
         "playtime_disconnected": 1,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/937170/library_600x900_2x.jpg"
       },
       {
         "appid": 939400,
@@ -2906,7 +3100,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1674441552,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/939400/library_600x900_2x.jpg"
       },
       {
         "appid": 939600,
@@ -2926,7 +3121,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/939600/library_600x900_2x.jpg"
       },
       {
         "appid": 942970,
@@ -2943,7 +3139,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/942970/library_600x900_2x.jpg"
       },
       {
         "appid": 945360,
@@ -2957,7 +3154,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1601740661,
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/945360/library_600x900_2x.jpg"
       },
       {
         "appid": 945460,
@@ -2976,7 +3174,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/945460/library_600x900_2x.jpg"
       },
       {
         "appid": 955050,
@@ -2994,7 +3193,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/955050/library_600x900_2x.jpg"
       },
       {
         "appid": 1178830,
@@ -3012,7 +3212,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1178830/library_600x900_2x.jpg"
       },
       {
         "appid": 960090,
@@ -3026,7 +3227,8 @@
         "playtime_deck_forever": 17,
         "rtime_last_played": 1680413158,
         "playtime_disconnected": 0,
-        "price": 1399
+        "price": 1399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/960090/library_600x900_2x.jpg"
       },
       {
         "appid": 960910,
@@ -3045,7 +3247,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/960910/library_600x900_2x.jpg"
       },
       {
         "appid": 960990,
@@ -3063,7 +3266,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/960990/library_600x900_2x.jpg"
       },
       {
         "appid": 961440,
@@ -3081,7 +3285,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/961440/library_600x900_2x.jpg"
       },
       {
         "appid": 565110,
@@ -3096,7 +3301,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/565110/library_600x900_2x.jpg"
       },
       {
         "appid": 304390,
@@ -3109,7 +3315,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1606952593,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/304390/library_600x900_2x.jpg"
       },
       {
         "appid": 654310,
@@ -3122,7 +3329,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/654310/library_600x900_2x.jpg"
       },
       {
         "appid": 965680,
@@ -3136,7 +3344,8 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1704071777,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/965680/library_600x900_2x.jpg"
       },
       {
         "appid": 967050,
@@ -3151,7 +3360,8 @@
         "rtime_last_played": 1562315196,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/967050/library_600x900_2x.jpg"
       },
       {
         "appid": 973760,
@@ -3165,7 +3375,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1670509195,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/973760/library_600x900_2x.jpg"
       },
       {
         "appid": 35140,
@@ -3179,7 +3390,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/35140/library_600x900_2x.jpg"
       },
       {
         "appid": 200260,
@@ -3193,7 +3405,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/200260/library_600x900_2x.jpg"
       },
       {
         "appid": 208650,
@@ -3207,7 +3420,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/208650/library_600x900_2x.jpg"
       },
       {
         "appid": 984110,
@@ -3220,7 +3434,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1555117955,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/984110/library_600x900_2x.jpg"
       },
       {
         "appid": 992310,
@@ -3236,7 +3451,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/992310/library_600x900_2x.jpg"
       },
       {
         "appid": 994280,
@@ -3250,7 +3466,8 @@
         "playtime_deck_forever": 3,
         "rtime_last_played": 1664234821,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/994280/library_600x900_2x.jpg"
       },
       {
         "appid": 370280,
@@ -3264,7 +3481,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1583287497,
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/370280/library_600x900_2x.jpg"
       },
       {
         "appid": 1002560,
@@ -3283,7 +3501,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1002560/library_600x900_2x.jpg"
       },
       {
         "appid": 1007350,
@@ -3300,7 +3519,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1007350/library_600x900_2x.jpg"
       },
       {
         "appid": 278360,
@@ -3314,7 +3534,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/278360/library_600x900_2x.jpg"
       },
       {
         "appid": 893180,
@@ -3333,7 +3554,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/893180/library_600x900_2x.jpg"
       },
       {
         "appid": 1015730,
@@ -3353,7 +3575,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1015730/library_600x900_2x.jpg"
       },
       {
         "appid": 1016920,
@@ -3368,7 +3591,8 @@
         "rtime_last_played": 1594847691,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1016920/library_600x900_2x.jpg"
       },
       {
         "appid": 1021770,
@@ -3381,7 +3605,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704311389,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1021770/library_600x900_2x.jpg"
       },
       {
         "appid": 524220,
@@ -3395,7 +3620,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/524220/library_600x900_2x.jpg"
       },
       {
         "appid": 752590,
@@ -3413,7 +3639,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/752590/library_600x900_2x.jpg"
       },
       {
         "appid": 343710,
@@ -3427,7 +3654,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/343710/library_600x900_2x.jpg"
       },
       {
         "appid": 1034140,
@@ -3447,7 +3675,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1034140/library_600x900_2x.jpg"
       },
       {
         "appid": 1048660,
@@ -3461,7 +3690,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1652496337,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1048660/library_600x900_2x.jpg"
       },
       {
         "appid": 1051310,
@@ -3475,7 +3705,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1656889109,
         "playtime_disconnected": 0,
-        "price": 1699
+        "price": 1699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1051310/library_600x900_2x.jpg"
       },
       {
         "appid": 1054430,
@@ -3489,7 +3720,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1681266668,
         "playtime_disconnected": 0,
-        "price": 659
+        "price": 659,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1054430/library_600x900_2x.jpg"
       },
       {
         "appid": 1056690,
@@ -3503,7 +3735,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1056690/library_600x900_2x.jpg"
       },
       {
         "appid": 1057090,
@@ -3517,7 +3750,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 989
+        "price": 989,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1057090/library_600x900_2x.jpg"
       },
       {
         "appid": 1057240,
@@ -3530,7 +3764,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1590080373,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1057240/library_600x900_2x.jpg"
       },
       {
         "appid": 1057680,
@@ -3547,7 +3782,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1057680/library_600x900_2x.jpg"
       },
       {
         "appid": 1062090,
@@ -3560,7 +3796,8 @@
         "playtime_deck_forever": 118,
         "rtime_last_played": 1682157598,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1062090/library_600x900_2x.jpg"
       },
       {
         "appid": 1062160,
@@ -3574,7 +3811,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1062160/library_600x900_2x.jpg"
       },
       {
         "appid": 1070020,
@@ -3588,7 +3826,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1070020/library_600x900_2x.jpg"
       },
       {
         "appid": 1074170,
@@ -3602,7 +3841,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1074170/library_600x900_2x.jpg"
       },
       {
         "appid": 1082430,
@@ -3619,7 +3859,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1082430/library_600x900_2x.jpg"
       },
       {
         "appid": 1084600,
@@ -3633,7 +3874,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1709270560,
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1084600/library_600x900_2x.jpg"
       },
       {
         "appid": 1091500,
@@ -3652,7 +3894,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1091500/library_600x900_2x.jpg"
       },
       {
         "appid": 703080,
@@ -3666,7 +3909,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 4499
+        "price": 4499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/703080/library_600x900_2x.jpg"
       },
       {
         "appid": 1097150,
@@ -3680,7 +3924,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1659309620,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1097150/library_600x900_2x.jpg"
       },
       {
         "appid": 1100260,
@@ -3695,7 +3940,8 @@
         "rtime_last_played": 1589433777,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1599
+        "price": 1599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1100260/library_600x900_2x.jpg"
       },
       {
         "appid": 1102130,
@@ -3709,7 +3955,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1587175701,
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1102130/library_600x900_2x.jpg"
       },
       {
         "appid": 285900,
@@ -3723,7 +3970,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/285900/library_600x900_2x.jpg"
       },
       {
         "appid": 1124980,
@@ -3740,7 +3988,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1124980/library_600x900_2x.jpg"
       },
       {
         "appid": 1140610,
@@ -3753,7 +4002,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1140610/library_600x900_2x.jpg"
       },
       {
         "appid": 1150730,
@@ -3771,7 +4021,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1150730/library_600x900_2x.jpg"
       },
       {
         "appid": 310560,
@@ -3785,7 +4036,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/310560/library_600x900_2x.jpg"
       },
       {
         "appid": 1160330,
@@ -3799,7 +4051,8 @@
         "playtime_deck_forever": 13,
         "rtime_last_played": 1704927925,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1160330/library_600x900_2x.jpg"
       },
       {
         "appid": 1161870,
@@ -3817,7 +4070,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1161870/library_600x900_2x.jpg"
       },
       {
         "appid": 522040,
@@ -3830,7 +4084,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/522040/library_600x900_2x.jpg"
       },
       {
         "appid": 1172470,
@@ -3844,7 +4099,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1652502388,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1172470/library_600x900_2x.jpg"
       },
       {
         "appid": 1172620,
@@ -3858,7 +4114,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1595598078,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1172620/library_600x900_2x.jpg"
       },
       {
         "appid": 1174180,
@@ -3875,7 +4132,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 2399
+        "price": 2399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1174180/library_600x900_2x.jpg"
       },
       {
         "appid": 203770,
@@ -3889,7 +4147,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/203770/library_600x900_2x.jpg"
       },
       {
         "appid": 997070,
@@ -3903,7 +4162,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/997070/library_600x900_2x.jpg"
       },
       {
         "appid": 1184140,
@@ -3916,7 +4176,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1674163120,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1184140/library_600x900_2x.jpg"
       },
       {
         "appid": 490860,
@@ -3930,7 +4191,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/490860/library_600x900_2x.jpg"
       },
       {
         "appid": 707010,
@@ -3948,7 +4210,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/707010/library_600x900_2x.jpg"
       },
       {
         "appid": 1192640,
@@ -3968,7 +4231,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1192640/library_600x900_2x.jpg"
       },
       {
         "appid": 220820,
@@ -3982,7 +4246,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/220820/library_600x900_2x.jpg"
       },
       {
         "appid": 231430,
@@ -3996,7 +4261,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/231430/library_600x900_2x.jpg"
       },
       {
         "appid": 1200110,
@@ -4014,7 +4280,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1200110/library_600x900_2x.jpg"
       },
       {
         "appid": 1202310,
@@ -4032,7 +4299,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1202310/library_600x900_2x.jpg"
       },
       {
         "appid": 418270,
@@ -4046,7 +4314,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/418270/library_600x900_2x.jpg"
       },
       {
         "appid": 1145360,
@@ -4060,7 +4329,8 @@
         "playtime_deck_forever": 4,
         "rtime_last_played": 1682430021,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1145360/library_600x900_2x.jpg"
       },
       {
         "appid": 1206610,
@@ -4074,7 +4344,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703295758,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1206610/library_600x900_2x.jpg"
       },
       {
         "appid": 489520,
@@ -4088,7 +4359,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/489520/library_600x900_2x.jpg"
       },
       {
         "appid": 582890,
@@ -4102,7 +4374,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/582890/library_600x900_2x.jpg"
       },
       {
         "appid": 1212620,
@@ -4120,7 +4393,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1212620/library_600x900_2x.jpg"
       },
       {
         "appid": 1217060,
@@ -4134,7 +4408,8 @@
         "playtime_deck_forever": 14,
         "rtime_last_played": 1708768303,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1217060/library_600x900_2x.jpg"
       },
       {
         "appid": 1222140,
@@ -4152,7 +4427,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1222140/library_600x900_2x.jpg"
       },
       {
         "appid": 1225780,
@@ -4166,7 +4442,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1609092913,
         "playtime_disconnected": 0,
-        "price": 899
+        "price": 899,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1225780/library_600x900_2x.jpg"
       },
       {
         "appid": 1227890,
@@ -4182,7 +4459,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1227890/library_600x900_2x.jpg"
       },
       {
         "appid": 567730,
@@ -4197,7 +4475,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/567730/library_600x900_2x.jpg"
       },
       {
         "appid": 397540,
@@ -4216,7 +4495,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/397540/library_600x900_2x.jpg"
       },
       {
         "appid": 1222680,
@@ -4230,7 +4510,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1664692930,
         "playtime_disconnected": 0,
-        "price": 6999
+        "price": 6999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1222680/library_600x900_2x.jpg"
       },
       {
         "appid": 1249200,
@@ -4247,7 +4528,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1249200/library_600x900_2x.jpg"
       },
       {
         "appid": 582660,
@@ -4260,7 +4542,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/582660/library_600x900_2x.jpg"
       },
       {
         "appid": 706220,
@@ -4273,7 +4556,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/706220/library_600x900_2x.jpg"
       },
       {
         "appid": 1258340,
@@ -4293,7 +4577,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 519
+        "price": 519,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1258340/library_600x900_2x.jpg"
       },
       {
         "appid": 952060,
@@ -4311,7 +4596,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/952060/library_600x900_2x.jpg"
       },
       {
         "appid": 952070,
@@ -4325,7 +4611,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/952070/library_600x900_2x.jpg"
       },
       {
         "appid": 1260320,
@@ -4339,7 +4626,8 @@
         "playtime_deck_forever": 43,
         "rtime_last_played": 1710734818,
         "playtime_disconnected": 0,
-        "price": 1399
+        "price": 1399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1260320/library_600x900_2x.jpg"
       },
       {
         "appid": 1262350,
@@ -4357,7 +4645,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1262350/library_600x900_2x.jpg"
       },
       {
         "appid": 406970,
@@ -4371,7 +4660,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1590128673,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/406970/library_600x900_2x.jpg"
       },
       {
         "appid": 1245620,
@@ -4389,12 +4679,13 @@
           5
         ],
         "playtime_disconnected": 5,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1245620/library_600x900_2x.jpg"
       },
       {
         "appid": 1267910,
         "name": "Melvor Idle",
-        "playtime_2weeks": 19808,
+        "playtime_2weeks": 19793,
         "playtime_forever": 294290,
         "img_icon_url": "88eca64c662c128de095b4e452881398ac71969c",
         "has_community_visible_stats": true,
@@ -4404,7 +4695,8 @@
         "playtime_deck_forever": 18246,
         "rtime_last_played": 1714017405,
         "playtime_disconnected": 717,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1267910/library_600x900_2x.jpg"
       },
       {
         "appid": 555000,
@@ -4423,7 +4715,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/555000/library_600x900_2x.jpg"
       },
       {
         "appid": 797410,
@@ -4437,7 +4730,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/797410/library_600x900_2x.jpg"
       },
       {
         "appid": 760620,
@@ -4451,7 +4745,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/760620/library_600x900_2x.jpg"
       },
       {
         "appid": 442070,
@@ -4465,7 +4760,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/442070/library_600x900_2x.jpg"
       },
       {
         "appid": 289690,
@@ -4479,7 +4775,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/289690/library_600x900_2x.jpg"
       },
       {
         "appid": 588210,
@@ -4493,7 +4790,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/588210/library_600x900_2x.jpg"
       },
       {
         "appid": 1125480,
@@ -4507,7 +4805,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1199
+        "price": 1199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1125480/library_600x900_2x.jpg"
       },
       {
         "appid": 814200,
@@ -4521,7 +4820,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 49
+        "price": 49,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/814200/library_600x900_2x.jpg"
       },
       {
         "appid": 628950,
@@ -4535,7 +4835,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/628950/library_600x900_2x.jpg"
       },
       {
         "appid": 1158500,
@@ -4548,7 +4849,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1299
+        "price": 1299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1158500/library_600x900_2x.jpg"
       },
       {
         "appid": 702150,
@@ -4562,7 +4864,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/702150/library_600x900_2x.jpg"
       },
       {
         "appid": 1278390,
@@ -4578,7 +4881,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1278390/library_600x900_2x.jpg"
       },
       {
         "appid": 335190,
@@ -4592,7 +4896,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/335190/library_600x900_2x.jpg"
       },
       {
         "appid": 390710,
@@ -4607,7 +4912,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 899
+        "price": 899,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/390710/library_600x900_2x.jpg"
       },
       {
         "appid": 282800,
@@ -4622,7 +4928,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/282800/library_600x900_2x.jpg"
       },
       {
         "appid": 420740,
@@ -4636,7 +4943,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 49
+        "price": 49,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/420740/library_600x900_2x.jpg"
       },
       {
         "appid": 618140,
@@ -4651,7 +4959,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/618140/library_600x900_2x.jpg"
       },
       {
         "appid": 1281800,
@@ -4665,7 +4974,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1281800/library_600x900_2x.jpg"
       },
       {
         "appid": 600430,
@@ -4679,7 +4989,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/600430/library_600x900_2x.jpg"
       },
       {
         "appid": 699240,
@@ -4693,7 +5004,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/699240/library_600x900_2x.jpg"
       },
       {
         "appid": 348510,
@@ -4707,12 +5019,13 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/348510/library_600x900_2x.jpg"
       },
       {
         "appid": 1284410,
         "name": "GWENT: The Witcher Card Game",
-        "playtime_2weeks": 510,
+        "playtime_2weeks": 495,
         "playtime_forever": 84225,
         "img_icon_url": "3e089897714dfc658a5e62246c342e2826a708e1",
         "has_community_visible_stats": true,
@@ -4722,7 +5035,8 @@
         "playtime_deck_forever": 1408,
         "rtime_last_played": 1712883539,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1284410/library_600x900_2x.jpg"
       },
       {
         "appid": 680360,
@@ -4736,7 +5050,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1199
+        "price": 1199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/680360/library_600x900_2x.jpg"
       },
       {
         "appid": 1078000,
@@ -4749,7 +5064,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1078000/library_600x900_2x.jpg"
       },
       {
         "appid": 1289310,
@@ -4767,7 +5083,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1289310/library_600x900_2x.jpg"
       },
       {
         "appid": 727020,
@@ -4782,7 +5099,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/727020/library_600x900_2x.jpg"
       },
       {
         "appid": 368180,
@@ -4796,7 +5114,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/368180/library_600x900_2x.jpg"
       },
       {
         "appid": 1282690,
@@ -4813,7 +5132,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1282690/library_600x900_2x.jpg"
       },
       {
         "appid": 1299120,
@@ -4831,7 +5151,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1299120/library_600x900_2x.jpg"
       },
       {
         "appid": 308600,
@@ -4849,7 +5170,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/308600/library_600x900_2x.jpg"
       },
       {
         "appid": 1299980,
@@ -4862,7 +5184,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1680558381,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1299980/library_600x900_2x.jpg"
       },
       {
         "appid": 441380,
@@ -4876,7 +5199,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1299
+        "price": 1299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/441380/library_600x900_2x.jpg"
       },
       {
         "appid": 34330,
@@ -4890,7 +5214,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/34330/library_600x900_2x.jpg"
       },
       {
         "appid": 1076280,
@@ -4904,7 +5229,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1076280/library_600x900_2x.jpg"
       },
       {
         "appid": 435790,
@@ -4918,7 +5244,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/435790/library_600x900_2x.jpg"
       },
       {
         "appid": 1326000,
@@ -4936,7 +5263,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1326000/library_600x900_2x.jpg"
       },
       {
         "appid": 310360,
@@ -4950,7 +5278,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/310360/library_600x900_2x.jpg"
       },
       {
         "appid": 640590,
@@ -4964,7 +5293,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/640590/library_600x900_2x.jpg"
       },
       {
         "appid": 1329410,
@@ -4977,7 +5307,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1702314136,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1329410/library_600x900_2x.jpg"
       },
       {
         "appid": 1329500,
@@ -4992,7 +5323,8 @@
         "rtime_last_played": 1710626752,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1329500/library_600x900_2x.jpg"
       },
       {
         "appid": 579110,
@@ -5006,7 +5338,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/579110/library_600x900_2x.jpg"
       },
       {
         "appid": 1048540,
@@ -5020,7 +5353,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1048540/library_600x900_2x.jpg"
       },
       {
         "appid": 242700,
@@ -5034,7 +5368,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/242700/library_600x900_2x.jpg"
       },
       {
         "appid": 1347430,
@@ -5054,7 +5389,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1347430/library_600x900_2x.jpg"
       },
       {
         "appid": 1350650,
@@ -5074,7 +5410,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1399
+        "price": 1399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1350650/library_600x900_2x.jpg"
       },
       {
         "appid": 1367550,
@@ -5088,7 +5425,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1669204099,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1367550/library_600x900_2x.jpg"
       },
       {
         "appid": 1368430,
@@ -5106,7 +5444,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1368430/library_600x900_2x.jpg"
       },
       {
         "appid": 1368440,
@@ -5119,7 +5458,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1368440/library_600x900_2x.jpg"
       },
       {
         "appid": 1368450,
@@ -5132,7 +5472,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1368450/library_600x900_2x.jpg"
       },
       {
         "appid": 1371720,
@@ -5149,7 +5490,8 @@
           5
         ],
         "playtime_disconnected": 20,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1371720/library_600x900_2x.jpg"
       },
       {
         "appid": 266310,
@@ -5162,7 +5504,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/266310/library_600x900_2x.jpg"
       },
       {
         "appid": 1372830,
@@ -5180,7 +5523,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 649
+        "price": 649,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1372830/library_600x900_2x.jpg"
       },
       {
         "appid": 1379830,
@@ -5198,7 +5542,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1379830/library_600x900_2x.jpg"
       },
       {
         "appid": 822800,
@@ -5211,7 +5556,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/822800/library_600x900_2x.jpg"
       },
       {
         "appid": 1382070,
@@ -5225,7 +5571,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1699120703,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1382070/library_600x900_2x.jpg"
       },
       {
         "appid": 895040,
@@ -5238,7 +5585,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/895040/library_600x900_2x.jpg"
       },
       {
         "appid": 1385730,
@@ -5256,7 +5604,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1385730/library_600x900_2x.jpg"
       },
       {
         "appid": 1406020,
@@ -5274,7 +5623,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1406020/library_600x900_2x.jpg"
       },
       {
         "appid": 209630,
@@ -5288,7 +5638,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/209630/library_600x900_2x.jpg"
       },
       {
         "appid": 919220,
@@ -5302,7 +5653,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/919220/library_600x900_2x.jpg"
       },
       {
         "appid": 1419170,
@@ -5315,7 +5667,8 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1712460451,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1419170/library_600x900_2x.jpg"
       },
       {
         "appid": 1419750,
@@ -5331,7 +5684,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1419750/library_600x900_2x.jpg"
       },
       {
         "appid": 465760,
@@ -5345,7 +5699,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/465760/library_600x900_2x.jpg"
       },
       {
         "appid": 358270,
@@ -5358,7 +5713,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1606873000,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/358270/library_600x900_2x.jpg"
       },
       {
         "appid": 325180,
@@ -5371,7 +5727,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 3199
+        "price": 3199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/325180/library_600x900_2x.jpg"
       },
       {
         "appid": 1426210,
@@ -5385,7 +5742,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1683334873,
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1426210/library_600x900_2x.jpg"
       },
       {
         "appid": 1113560,
@@ -5403,7 +5761,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1113560/library_600x900_2x.jpg"
       },
       {
         "appid": 34270,
@@ -5417,7 +5776,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1602301826,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/34270/library_600x900_2x.jpg"
       },
       {
         "appid": 1455840,
@@ -5432,7 +5792,8 @@
         "rtime_last_played": 1656468982,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 979
+        "price": 979,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1455840/library_600x900_2x.jpg"
       },
       {
         "appid": 1461770,
@@ -5450,7 +5811,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 649
+        "price": 649,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1461770/library_600x900_2x.jpg"
       },
       {
         "appid": 1462790,
@@ -5464,7 +5826,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1299
+        "price": 1299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1462790/library_600x900_2x.jpg"
       },
       {
         "appid": 1463120,
@@ -5484,7 +5847,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1463120/library_600x900_2x.jpg"
       },
       {
         "appid": 368230,
@@ -5498,7 +5862,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/368230/library_600x900_2x.jpg"
       },
       {
         "appid": 1466640,
@@ -5512,7 +5877,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1996
+        "price": 1996,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1466640/library_600x900_2x.jpg"
       },
       {
         "appid": 1466690,
@@ -5530,7 +5896,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1466690/library_600x900_2x.jpg"
       },
       {
         "appid": 1483870,
@@ -5543,7 +5910,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1666456928,
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1483870/library_600x900_2x.jpg"
       },
       {
         "appid": 1508570,
@@ -5562,7 +5930,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 1899
+        "price": 1899,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1508570/library_600x900_2x.jpg"
       },
       {
         "appid": 1509960,
@@ -5575,7 +5944,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1656130814,
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1509960/library_600x900_2x.jpg"
       },
       {
         "appid": 1517850,
@@ -5595,7 +5965,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1517850/library_600x900_2x.jpg"
       },
       {
         "appid": 537800,
@@ -5610,7 +5981,8 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/537800/library_600x900_2x.jpg"
       },
       {
         "appid": 1437820,
@@ -5623,7 +5995,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 99
+        "price": 99,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1437820/library_600x900_2x.jpg"
       },
       {
         "appid": 1523390,
@@ -5641,7 +6014,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 649
+        "price": 649,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1523390/library_600x900_2x.jpg"
       },
       {
         "appid": 1528130,
@@ -5658,7 +6032,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1528130/library_600x900_2x.jpg"
       },
       {
         "appid": 616560,
@@ -5675,7 +6050,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/616560/library_600x900_2x.jpg"
       },
       {
         "appid": 1557740,
@@ -5689,7 +6065,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704310679,
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1557740/library_600x900_2x.jpg"
       },
       {
         "appid": 1180660,
@@ -5706,7 +6083,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1180660/library_600x900_2x.jpg"
       },
       {
         "appid": 43110,
@@ -5723,7 +6101,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/43110/library_600x900_2x.jpg"
       },
       {
         "appid": 1140630,
@@ -5737,7 +6116,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1140630/library_600x900_2x.jpg"
       },
       {
         "appid": 351510,
@@ -5751,7 +6131,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/351510/library_600x900_2x.jpg"
       },
       {
         "appid": 1568590,
@@ -5765,7 +6146,8 @@
         "playtime_deck_forever": 4,
         "rtime_last_played": 1689264985,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1568590/library_600x900_2x.jpg"
       },
       {
         "appid": 435120,
@@ -5779,7 +6161,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 67
+        "price": 67,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/435120/library_600x900_2x.jpg"
       },
       {
         "appid": 1618230,
@@ -5797,7 +6180,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1618230/library_600x900_2x.jpg"
       },
       {
         "appid": 1624540,
@@ -5811,7 +6195,8 @@
         "playtime_deck_forever": 57,
         "rtime_last_played": 1705819747,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1624540/library_600x900_2x.jpg"
       },
       {
         "appid": 94300,
@@ -5825,7 +6210,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/94300/library_600x900_2x.jpg"
       },
       {
         "appid": 1634680,
@@ -5838,7 +6224,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1694498959,
         "playtime_disconnected": 0,
-        "price": 399
+        "price": 399,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1634680/library_600x900_2x.jpg"
       },
       {
         "appid": 1088850,
@@ -5856,7 +6243,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1088850/library_600x900_2x.jpg"
       },
       {
         "appid": 424840,
@@ -5870,7 +6258,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/424840/library_600x900_2x.jpg"
       },
       {
         "appid": 1022310,
@@ -5884,7 +6273,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1022310/library_600x900_2x.jpg"
       },
       {
         "appid": 297130,
@@ -5898,7 +6288,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/297130/library_600x900_2x.jpg"
       },
       {
         "appid": 1669980,
@@ -5912,7 +6303,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1688484414,
         "playtime_disconnected": 0,
-        "price": 879
+        "price": 879,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1669980/library_600x900_2x.jpg"
       },
       {
         "appid": 1689910,
@@ -5929,7 +6321,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1689910/library_600x900_2x.jpg"
       },
       {
         "appid": 1706850,
@@ -5949,7 +6342,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1706850/library_600x900_2x.jpg"
       },
       {
         "appid": 1711950,
@@ -5963,7 +6357,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703388071,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1711950/library_600x900_2x.jpg"
       },
       {
         "appid": 1721470,
@@ -5976,7 +6371,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1640417938,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1721470/library_600x900_2x.jpg"
       },
       {
         "appid": 1240440,
@@ -5990,7 +6386,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1639282838,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1240440/library_600x900_2x.jpg"
       },
       {
         "appid": 1732180,
@@ -6010,7 +6407,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 1099
+        "price": 1099,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1732180/library_600x900_2x.jpg"
       },
       {
         "appid": 1737100,
@@ -6030,7 +6428,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1737100/library_600x900_2x.jpg"
       },
       {
         "appid": 475150,
@@ -6044,7 +6443,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/475150/library_600x900_2x.jpg"
       },
       {
         "appid": 283270,
@@ -6057,7 +6457,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/283270/library_600x900_2x.jpg"
       },
       {
         "appid": 1785150,
@@ -6075,7 +6476,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1785150/library_600x900_2x.jpg"
       },
       {
         "appid": 1787820,
@@ -6089,7 +6491,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1787820/library_600x900_2x.jpg"
       },
       {
         "appid": 1788100,
@@ -6106,7 +6509,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1788100/library_600x900_2x.jpg"
       },
       {
         "appid": 1794680,
@@ -6121,7 +6525,8 @@
         "playtime_deck_forever": 128,
         "rtime_last_played": 1713782010,
         "playtime_disconnected": 263,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1794680/library_600x900_2x.jpg"
       },
       {
         "appid": 1802870,
@@ -6141,7 +6546,8 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 599
+        "price": 599,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1802870/library_600x900_2x.jpg"
       },
       {
         "appid": 1815570,
@@ -6155,7 +6561,8 @@
         "playtime_deck_forever": 17,
         "rtime_last_played": 1687322517,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1815570/library_600x900_2x.jpg"
       },
       {
         "appid": 1817070,
@@ -6169,7 +6576,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1817070/library_600x900_2x.jpg"
       },
       {
         "appid": 1832640,
@@ -6183,7 +6591,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1653431360,
         "playtime_disconnected": 0,
-        "price": 199
+        "price": 199,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1832640/library_600x900_2x.jpg"
       },
       {
         "appid": 1868140,
@@ -6197,7 +6606,8 @@
         "playtime_deck_forever": 1706,
         "rtime_last_played": 1708242418,
         "playtime_disconnected": 111,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1868140/library_600x900_2x.jpg"
       },
       {
         "appid": 1880330,
@@ -6211,7 +6621,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 879
+        "price": 879,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1880330/library_600x900_2x.jpg"
       },
       {
         "appid": 1893810,
@@ -6228,7 +6639,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1893810/library_600x900_2x.jpg"
       },
       {
         "appid": 1896170,
@@ -6248,7 +6660,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1896170/library_600x900_2x.jpg"
       },
       {
         "appid": 1902490,
@@ -6261,7 +6674,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1902490/library_600x900_2x.jpg"
       },
       {
         "appid": 520720,
@@ -6275,7 +6689,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/520720/library_600x900_2x.jpg"
       },
       {
         "appid": 1942280,
@@ -6289,7 +6704,8 @@
         "playtime_deck_forever": 270,
         "rtime_last_played": 1701023562,
         "playtime_disconnected": 20,
-        "price": 499
+        "price": 499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1942280/library_600x900_2x.jpg"
       },
       {
         "appid": 1997040,
@@ -6302,7 +6718,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1672204569,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1997040/library_600x900_2x.jpg"
       },
       {
         "appid": 346110,
@@ -6316,7 +6733,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1582944384,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/346110/library_600x900_2x.jpg"
       },
       {
         "appid": 407530,
@@ -6329,7 +6747,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/407530/library_600x900_2x.jpg"
       },
       {
         "appid": 1313140,
@@ -6346,7 +6765,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1313140/library_600x900_2x.jpg"
       },
       {
         "appid": 2074800,
@@ -6360,7 +6780,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1688814993,
         "playtime_disconnected": 0,
-        "price": 1899
+        "price": 1899,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/2074800/library_600x900_2x.jpg"
       },
       {
         "appid": 699920,
@@ -6379,7 +6800,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 799
+        "price": 799,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/699920/library_600x900_2x.jpg"
       },
       {
         "appid": 223850,
@@ -6394,7 +6816,8 @@
         "rtime_last_played": 1698536789,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 3499
+        "price": 3499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/223850/library_600x900_2x.jpg"
       },
       {
         "appid": 2109460,
@@ -6414,7 +6837,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/2109460/library_600x900_2x.jpg"
       },
       {
         "appid": 552500,
@@ -6432,7 +6856,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 2999
+        "price": 2999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/552500/library_600x900_2x.jpg"
       },
       {
         "appid": 40990,
@@ -6449,7 +6874,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/40990/library_600x900_2x.jpg"
       },
       {
         "appid": 1416050,
@@ -6463,7 +6889,8 @@
         "playtime_deck_forever": 11,
         "rtime_last_played": 1673379092,
         "playtime_disconnected": 464,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1416050/library_600x900_2x.jpg"
       },
       {
         "appid": 1515950,
@@ -6477,7 +6904,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1515950/library_600x900_2x.jpg"
       },
       {
         "appid": 1448440,
@@ -6495,7 +6923,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1448440/library_600x900_2x.jpg"
       },
       {
         "appid": 368260,
@@ -6509,7 +6938,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704202828,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/368260/library_600x900_2x.jpg"
       },
       {
         "appid": 2296990,
@@ -6523,7 +6953,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/2296990/library_600x900_2x.jpg"
       },
       {
         "appid": 493540,
@@ -6537,7 +6968,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/493540/library_600x900_2x.jpg"
       },
       {
         "appid": 1712840,
@@ -6551,7 +6983,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999
+        "price": 999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1712840/library_600x900_2x.jpg"
       },
       {
         "appid": 1144770,
@@ -6569,7 +7002,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1144770/library_600x900_2x.jpg"
       },
       {
         "appid": 226620,
@@ -6583,7 +7017,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/226620/library_600x900_2x.jpg"
       },
       {
         "appid": 1071870,
@@ -6597,7 +7032,8 @@
         "playtime_deck_forever": 38,
         "rtime_last_played": 1705021456,
         "playtime_disconnected": 0,
-        "price": 1499
+        "price": 1499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1071870/library_600x900_2x.jpg"
       },
       {
         "appid": 43160,
@@ -6614,7 +7050,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/43160/library_600x900_2x.jpg"
       },
       {
         "appid": 489630,
@@ -6628,7 +7065,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 3999
+        "price": 3999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/489630/library_600x900_2x.jpg"
       },
       {
         "appid": 383270,
@@ -6642,7 +7080,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 299
+        "price": 299,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/383270/library_600x900_2x.jpg"
       },
       {
         "appid": 1086940,
@@ -6662,7 +7101,8 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 5999
+        "price": 5999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1086940/library_600x900_2x.jpg"
       },
       {
         "appid": 2589790,
@@ -6675,7 +7115,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 0
+        "price": 0,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/2589790/library_600x900_2x.jpg"
       },
       {
         "appid": 2676840,
@@ -6689,7 +7130,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1709347991,
         "playtime_disconnected": 0,
-        "price": 699
+        "price": 699,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/2676840/library_600x900_2x.jpg"
       },
       {
         "appid": 383180,
@@ -6703,7 +7145,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1999
+        "price": 1999,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/383180/library_600x900_2x.jpg"
       },
       {
         "appid": 235900,
@@ -6716,7 +7159,8 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2499
+        "price": 2499,
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/235900/library_600x900_2x.jpg"
       }
     ]
   }
