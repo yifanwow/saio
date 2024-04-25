@@ -21,7 +21,11 @@
       "gameid": "877280",
       "loccountrycode": "CN",
       "locstatecode": "07",
-      "loccityid": 9971
+      "loccityid": 9971,
+      "date": 2063,
+      "gameCount": 0,
+      "totalGameHours": 68579,
+      "accountValue": 548098
     }
   ]
 }
