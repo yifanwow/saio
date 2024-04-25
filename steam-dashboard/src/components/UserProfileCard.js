@@ -8,7 +8,7 @@ const UserProfileCard = ({ userInfo }) => {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '50%',
+    width: '100%',
     boxShadow: '9px 0px 55px rgba(0, 0, 0, 0.7)',
     height: '100vh',
     // Include ProfileBackground as the background
