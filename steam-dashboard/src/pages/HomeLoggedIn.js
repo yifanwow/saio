@@ -69,7 +69,7 @@ function HomeLoggedIn() {
       const params = new URLSearchParams();
     params.append('steamid', username); // steamID 是用户的ID
     window.location.href = `/Homepage?${params.toString()}`;
-  }, 1900);
+  }, 1700);
   };
 
   return (
