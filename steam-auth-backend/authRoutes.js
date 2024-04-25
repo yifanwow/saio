@@ -26,7 +26,7 @@ router.get('/auth/steam/return',
 
       const steamID = req.user._json.steamid;
       const apiKey = process.env.STEAM_API_KEY;
-
+      await fetchUserparsedData(steamID, apiKey);
       const { gameCount, accountValue, totalGameHours } = await fetchUserAccountData(steamID, apiKey);
 
 
@@ -47,7 +47,7 @@ router.get('/auth/steam/return',
         totalGameHours: totalGameHours,
         //registerDate: calculateRegisterDate(req.user._json.created)
       };
-      fetchUserGameList(steamID, apiKey);
+
       const filePath = path.join(__dirname, 'public', 'data.json'); // 确保路径正确
       fs.writeFile(filePath, JSON.stringify(req.session.user), (err) => {
         if (err) {
@@ -72,90 +72,96 @@ async function fetchUserAccountData(steamID, apiKey) {
   const userGameIdsData = fs.readFileSync('./public/user_games.json', 'utf8');
 
   try {
-    const responseGames = await axios.get(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v1`, {
+    const filePath = path.join(__dirname, 'public', 'user_games.json');
+    const jsonData = fs.readFileSync(filePath, 'utf8');
+    let parsedData = JSON.parse(jsonData);
+
+    // Ensure that 'response' and 'games' properties exist in the parsed data
+    if (parsedData.response && Array.isArray(parsedData.response.games)) {
+      // Modify each game object to add a 'price' property
+      parsedData.response.games.forEach(game => {
+        // Assuming game is an object and you want to add a price property to it
+        game.price = 0; // Assume all games are free
+      });
+
+      // Write the modified data back to the JSON file
+      fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
+      console.log('All games updated with price tag in user_games.json');
+    } else {
+      console.error('Error: Invalid data structure in user_games.json');
+    }
+
+    // Get game prices
+
+
+    // const userGameIds = JSON.parse(userGameIdsData);
+    // const params = {
+    //   appids: userGameIds.join(',') // 将游戏 ID 数组连接成一个逗号分隔的字符串
+    // };
+
+    // axios.get('https://store.steampowered.com/api/appdetails', { params })
+    //   .then(response => {
+    //     
+    //     console.log(response.data);
+    //   })
+    //   .catch(error => {
+    //     
+    //     console.error('Error fetching game prices:', error);
+    //   });
+
+    const gameIds = JSON.parse(jsonData).response.games.map(game => game.appid);
+    const gameIdsParam = gameIds.join(',');
+
+    const filters = 'price_overview';
+    const response = await axios.get('https://store.steampowered.com/api/appdetails', {
       params: {
-        key: apiKey,
-        steamid: steamID
+        appids: gameIdsParam,
+        filters: filters
       }
     });
-
-    if (responseGames.data && responseGames.data.response) {
-      // Get game count
-      gameCount = responseGames.data.response.game_count;
-      console.log('Game count:', gameCount);
-
-      // Calculate total game hours
-      if (responseGames.data && responseGames.data.response && responseGames.data.response.total_count > 0) {
-        totalGameHours = responseGames.data.response.games.reduce((acc, game) => acc + game.playtime_forever, 0);
-        totalGameHours = Math.floor(totalGameHours / 60);
-        console.log('Total game hours:', totalGameHours);
-      }
-      // Get game prices
-
-
-      // const userGameIds = JSON.parse(userGameIdsData);
-      // const params = {
-      //   appids: userGameIds.join(',') // 将游戏 ID 数组连接成一个逗号分隔的字符串
-      // };
-
-      // axios.get('https://store.steampowered.com/api/appdetails', { params })
-      //   .then(response => {
-      //     
-      //     console.log(response.data);
-      //   })
-      //   .catch(error => {
-      //     
-      //     console.error('Error fetching game prices:', error);
-      //   });
-
-
-      const gameId1 = 113020; //test
-      const gameId2 = 570; //test
-      const filters = 'price_overview';
-      const gameIdsParam = `${gameId1},${gameId2}`;
-      axios.get(`https://store.steampowered.com/api/appdetails`, {
-        params: {
-          appids: gameIdsParam,
-          filters: filters
+    if (response.status === 200) {
+      const gamePrices = response.data;
+      console.log('Game prices:', gamePrices);
+    
+      // Update game prices in the parsedData object
+      parsedData.response.games.forEach(game => {
+        const gameId = game.appid;
+        if (gamePrices[gameId] && gamePrices[gameId].data && gamePrices[gameId].data.price_overview && gamePrices[gameId].data.price_overview.final) {
+          const gamePrice = gamePrices[gameId].data.price_overview.final;
+          game.price = gamePrice; // Update the price property of the game
+          console.log(`Game ${gameId} price:`, gamePrice);
+        } else {
+          console.log(`No price data found for game ${gameId}`);
         }
-      })
-        .then(response => {
-          if (response.status === 200) {
-            const gamePrices = response.data;
-            console.log('Game prices:', gamePrices);
-            if (gamePrices[gameId1] && gamePrices[gameId1].data && gamePrices[gameId1].data.price_overview && gamePrices[gameId1].data.price_overview.final) {
-              const game1Price = gamePrices[gameId1].data.price_overview.final;
-              console.log('Game 1 price:', game1Price);
-            }
-            if (gamePrices[gameId2] && gamePrices[gameId2].data && gamePrices[gameId2].data.price_overview && gamePrices[gameId2].data.price_overview.final) {
-              const game2Price = gamePrices[gameId2].data.price_overview.final;
-              console.log('Game 2 price:', game2Price);
-            }
-          } else {
-            console.error('Error fetching game prices: Unexpected status code', response.status);
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching game prices:', error);
-        });
-      // const appId = 113020;//
-      // const responseGamePrices = await axios.get(`https://store.steampowered.com/api/appdetails`, {
-      //   params: {
-      //     appids: appId
-      //   }
-      // });
-      // // Add each game's price to the account value
-      // if (responseGamePrices.data && responseGamePrices.data[appId] && responseGamePrices.data[appId].data && responseGamePrices.data[appId].data.price_overview && responseGamePrices.data[appId].data.price_overview.final) {
-      //   const gamePrice = responseGamePrices.data[appId].data.price_overview.final;
-      //   accountValue += gamePrice;
-      //   console.log('Game price:', gamePrice);
-      // } else {
-      //   console.error('Failed to fetch game price: Invalid response data');
-      // }
-
-
-      console.log('Account value:', accountValue);
+      });
+    
+      // Write the modified parsedData object back to the file
+      fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
+      console.log('Game prices updated and saved to user_games.json');
+    } else {
+      console.error('Error fetching game prices: Unexpected status code', response.status);
     }
+
+
+
+    // const appId = 113020;//
+    // const responseGamePrices = await axios.get(`https://store.steampowered.com/api/appdetails`, {
+    //   params: {
+    //     appids: appId
+    //   }
+    // });
+    // // Add each game's price to the account value
+    // if (responseGamePrices.data && responseGamePrices.data[appId] && responseGamePrices.data[appId].data && responseGamePrices.data[appId].data.price_overview && responseGamePrices.data[appId].data.price_overview.final) {
+    //   const gamePrice = responseGamePrices.data[appId].data.price_overview.final;
+    //   accountValue += gamePrice;
+    //   console.log('Game price:', gamePrice);
+    // } else {
+    //   console.error('Failed to fetch game price: Invalid response data');
+    // }
+
+
+    console.log('Account value:', accountValue);
+
   } catch (error) {
     console.error('Error fetching additional user data:', error);
   }
@@ -165,7 +171,7 @@ async function fetchUserAccountData(steamID, apiKey) {
 }
 
 
-async function fetchUserGameList(steamID, apiKey) {
+async function fetchUserparsedData(steamID, apiKey) {
   try {
     const responseGames = await axios.get(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/`, {
       params: {
@@ -177,8 +183,13 @@ async function fetchUserGameList(steamID, apiKey) {
     });
 
     if (responseGames.data && responseGames.data.response) {
-      const gameListFilePath = path.join(__dirname, 'public', 'user_games.json');
-      fs.writeFileSync(gameListFilePath, JSON.stringify(responseGames.data));
+      const parsedDataFilePath = path.join(__dirname, 'public', 'user_games.json');
+      if (!fs.existsSync(parsedDataFilePath)) {
+        // If the file doesn't exist, create an empty file with the same name
+        fs.writeFileSync(parsedDataFilePath, '{}');
+        console.log('Created empty user_games.json file.');
+      }
+      fs.writeFileSync(parsedDataFilePath, JSON.stringify(responseGames.data));
       console.log('User game list stored successfully.');
     } else {
       console.error('Failed to fetch user game list: Invalid response data');
