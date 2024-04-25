@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeLoggedIn from './HomeLoggedIn';
-import HomeLoggedOut from './HomeLoggedOut';
+import HomeLoggedOut from './pages/HomeLoggedOut';
 import LoginPage from './LoginPage';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         
-        <Route exact path="/" element={<HomeLoggedOut />} />
+        <Route path="/" element={isLoggedIn ? <HomeLoggedIn /> : <HomeLoggedOut />} />
         <Route path="/home" element={<HomeLoggedIn />} />
       </Routes>
     </Router>
