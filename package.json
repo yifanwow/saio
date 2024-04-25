@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "bulma": "^1.0.0",
-    "express-session": "^1.18.0"
+    "express-session": "^1.18.0",
+    "three": "^0.163.0",
+    "vanta": "^0.5.24"
   }
 }

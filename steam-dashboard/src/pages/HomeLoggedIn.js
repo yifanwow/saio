@@ -1,4 +1,3 @@
-// HomeLoggedIn.js
 import React, { useState, useEffect } from 'react';
 import 'bulma/css/bulma.css';
 import { useLocation } from 'react-router-dom';
@@ -66,17 +65,17 @@ function HomeLoggedIn() {
 
   const handleHideWelcomePage = () => {
     setShowWelcomePage(false);
+    setTimeout(() => {
+      const params = new URLSearchParams();
+    params.append('steamid', username); // steamID 是用户的ID
+    window.location.href = `/Homepage?${params.toString()}`;
+  }, 1900);
   };
 
   return (
-    <div>{userInfo ? (
-      <>
-        <UserProfileCard userInfo={userInfo} />
-        <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} setShowWelcomePage={handleHideWelcomePage} />
-      </>
-    ) : (
-      <div>Loading...</div>
-    )}
+    <div>
+      {/* {<Header/>} */}
+      <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} setShowWelcomePage={handleHideWelcomePage} />
     </div>
 
   );
