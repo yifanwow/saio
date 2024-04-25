@@ -1,67 +1,101 @@
 import React from 'react';
+import ProfileBackground from './ProfileBackground';
 
 const UserProfileCard = ({ userInfo }) => {
   const containerStyle = {
-    position: 'fixed',
+    position: 'relative',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     width: '50%',
     height: '100vh',
-    background: 'linear-gradient(to left, #23144f, #030712)', // 紫黑色渐变背景
+    // Include ProfileBackground as the background
+  };
+
+
+  const avatarArea = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    height: '70%',
   };
 
   const avatarStyle = {
-    width: '39vh',
-    height: '39vh',
+    width: '25vh',
+    height: '25vh',
     borderRadius: '50%',
-    boxShadow: '0px 11px 19px rgba(0, 0, 0, 0.7)',
+    boxShadow: '0px 0px 25px rgba(0, 0, 0, 0.77)',
     marginBottom: '20px',
   };
-const nameStyle = {
+
+  const nameStyle = {
     fontSize: '2.5rem',
     color: '#fff',
-    marginBottom: '20px',
-}
-  const textContainerStyle = {
+    fontWeight: 550,
+    letterSpacing: '7px',
+    textShadow: '0px 0px 19px rgba(0, 0, 0, 0.9)',
+    marginBottom: '77px',
+  };
+  const dataSectionStyle = {
     display: 'flex',
-    justifyContent: 'space-between',
-    textAlign: 'left',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    textShadow: '0px 3px 13px rgba(0, 0, 0, 0.77)',
+    textAlign: 'center',
   };
 
-  const titleStyle = {
-    fontWeight: 'bold',
-    marginRight: '10px',
-    fontSize: '1.5rem',
+  const dataContainerStyle = {
+    display: 'flex',
+    letterSpacing: '3px',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '0 50px', // Add spacing between columns
   };
 
-  const textStyle = {
-    fontWeight: 'bold',
-    marginRight: '20px',
+  const dataValueStyle = {
+    fontSize: '2.1rem',
+   
     color: '#fff',
-    fontSize: '1.5rem',
+    letterSpacing: '7px',
+    fontWeight: 'bold',
+    marginBottom: '5px', // Adjust as needed
+  };
+
+  const dataLabelStyle = {
+    fontSize: '1.3rem',
+    fontWeight: '550',
+    textTransform: 'uppercase',
+    color: '#fff',
+    marginBottom: '20px', // Adjust as needed
   };
 
   return (
     <div style={containerStyle}>
-      
-        <img src={userInfo.avatarfull} alt="Avatar" style={avatarStyle} />
-        <h1 style={nameStyle}>{userInfo.personaname}</h1>
-        <div style={textContainerStyle}>
-          <div>
-            <div style={{ ...titleStyle, textAlign: 'right' }}>Game owner:</div>
-            <div style={{ ...titleStyle, textAlign: 'right' }}>Game hour:</div>
-            <div style={{ ...titleStyle, textAlign: 'right' }}>Game value:</div>
-          </div>
-          <div style={{ textAlign: 'left' }}>
-            
-            <div style={textStyle}>{userInfo.gameCount}</div>
-            <div style={textStyle}>{userInfo.totalGameHours} Hours</div>
-            <div style={textStyle}>{userInfo.accountValue}</div>
-          </div>
+      <ProfileBackground />
+      <div style={avatarArea}>
+      <img src={userInfo.avatarfull} alt="Avatar" style={avatarStyle} />
+      <p style={nameStyle}>{userInfo.personaname}</p>
+      </div>
+      <div style={dataSectionStyle}>
+        <div style={dataContainerStyle}>
+          <span style={dataValueStyle}>{userInfo.gameCount}</span>
+          <span style={dataLabelStyle}>Game owner</span>
         </div>
-      
+        <div style={dataContainerStyle}>
+          <span style={dataValueStyle}>{userInfo.totalGameHours}</span>
+          <span style={dataLabelStyle}>Game hours</span>
+        </div>
+        <div style={dataContainerStyle}>
+          <span style={dataValueStyle}>{userInfo.accountValue}</span>
+          <span style={dataLabelStyle}>Game value</span>
+        </div>
+      </div>
     </div>
   );
 };
