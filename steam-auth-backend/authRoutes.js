@@ -105,6 +105,7 @@ async function fetchUserAccountData(steamID, apiKey) {
     const filePath = path.join(__dirname, 'public', 'user_games.json');
     const jsonData = fs.readFileSync(filePath, 'utf8');
     let parsedData = JSON.parse(jsonData);
+    gameCount = parsedData.response.game_count;
 
     // Ensure that 'response' and 'games' properties exist in the parsed data
     if (parsedData.response && Array.isArray(parsedData.response.games)) {
