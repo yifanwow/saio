@@ -7,17 +7,17 @@ function Header() {
 }
 
 const headerStyle = {
-  position: 'fixed',
-  top: '15px', // Adjust as needed
+  position: 'relative',
+  top: '5vh',
   left: '0',
-  right: '0', // 将右侧设置为0，使其充满整个宽度
-  margin: 'auto', // 水平居中
+  right: '0',
+  margin: 'auto',
   width: '90%',
-  height: '7%',
-  backgroundColor: 'rgba(240, 240, 240, 0.3)', // 半透明白色背景
-  backdropFilter: 'blur(7px)', // 高斯模糊
+  height: '50px',  
+  backgroundColor: 'rgba(240, 240, 240, 0.5)', // 半透明白色背景
+  backdropFilter: 'blur(11px)', // 高斯模糊
   borderRadius: '17px',
-  boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+  boxShadow: '0px 0px 11px rgba(0, 0, 0, 0.37)',
   zIndex: '999', // 确保在最上层
 };
 
