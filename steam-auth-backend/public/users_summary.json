@@ -11,21 +11,21 @@
       "avatarmedium": "https://avatars.steamstatic.com/c7af6181e6793f2165fd63d76078b745f674c6bf_medium.jpg",
       "avatarfull": "https://avatars.steamstatic.com/c7af6181e6793f2165fd63d76078b745f674c6bf_full.jpg",
       "avatarhash": "c7af6181e6793f2165fd63d76078b745f674c6bf",
-      "lastlogoff": 1714077453,
-      "personastate": 4,
+      "lastlogoff": 1714381648,
+      "personastate": 1,
       "realname": "Yifan Yu",
       "primaryclanid": "103582791463803414",
       "timecreated": 1535721067,
       "personastateflags": 0,
-      "gameextrainfo": "SAO Utils 2: Progressive",
-      "gameid": "877280",
+      "gameextrainfo": "Melvor Idle",
+      "gameid": "1267910",
       "loccountrycode": "CN",
       "locstatecode": "07",
       "loccityid": 9971,
-      "date": 2065,
+      "date": 2067,
       "gameCount": 444,
-      "totalGameHours": 68795,
-      "accountValue": 532098
+      "totalGameHours": 69076,
+      "accountValue": 529130
     },
     {
       "steamid": "76561199243800576",
@@ -47,6 +47,26 @@
       "gameCount": 37,
       "totalGameHours": 507,
       "accountValue": 56726
+    },
+    {
+      "steamid": "76561199411939366",
+      "communityvisibilitystate": 3,
+      "profilestate": 1,
+      "personaname": "你在",
+      "profileurl": "https://steamcommunity.com/id/yifanwow/",
+      "avatar": "https://avatars.steamstatic.com/b4122d4babada8818537e8e334d0596283ab4eec.jpg",
+      "avatarmedium": "https://avatars.steamstatic.com/b4122d4babada8818537e8e334d0596283ab4eec_medium.jpg",
+      "avatarfull": "https://avatars.steamstatic.com/b4122d4babada8818537e8e334d0596283ab4eec_full.jpg",
+      "avatarhash": "b4122d4babada8818537e8e334d0596283ab4eec",
+      "lastlogoff": 1707152536,
+      "personastate": 0,
+      "primaryclanid": "103582791429521408",
+      "timecreated": 1665983811,
+      "personastateflags": 0,
+      "date": 560,
+      "gameCount": 444,
+      "totalGameHours": 68617,
+      "accountValue": 529130
     }
   ]
 }
