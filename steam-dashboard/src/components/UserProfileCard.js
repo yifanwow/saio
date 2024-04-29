@@ -86,7 +86,7 @@ const UserProfileCard = ({ userInfo }) => {
       <div style={dataSectionStyle}>
         <div style={dataContainerStyle}>
           <span style={dataValueStyle}>{userInfo.gameCount}</span>
-          <span style={dataLabelStyle}>Game owner</span>
+          <span style={dataLabelStyle}>Game owned</span>
         </div>
         <div style={dataContainerStyle}>
           <span style={dataValueStyle}>{userInfo.totalGameHours}</span>

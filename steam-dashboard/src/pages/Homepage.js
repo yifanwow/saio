@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import UserProfileCard from '../components/UserProfileCard';
-import './Homepage.css'; // 导入 Homepage 组件的 CSS 文件
-import ProfileBackground_big from './../components/ProfileBackground_big.js';
+import './Homepage.css';
+import ProfileBackground_big from '../components/ProfileBackground_big.js';
 import Header from '../components/Header.js';
+import GameGrid from '../components/GameGrid.js';
 
 const Homepage = () => {
     const [userInfo, setUserInfo] = useState(null);
     const [showProfile, setShowProfile] = useState(false);
+    const [games, setGames] = useState([]); // 添加状态来存储游戏数据
 
     useEffect(() => {
+        // 获取用户信息
         const fetchUserInfo = async () => {
             try {
                 const response = await fetch('http://localhost:3001/users_summary.json', {
@@ -34,7 +37,31 @@ const Homepage = () => {
             }
         };
 
+        // 获取游戏信息
+        const fetchGames = async () => {
+            try {
+                const response = await fetch('http://localhost:3001/users_games.json', {
+                    method: 'GET',
+                    headers: {
+                        'Origin': 'http://localhost:3000',
+                    }
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    const initialGameIds = [1091500, 1145360, 1284410, 1200110, 1817070, 12110, 447530, 303310, 1113560];
+                    const gamesToShow = data.response.games.filter(game => initialGameIds.includes(game.appid));
+                    setGames(gamesToShow);
+                } else {
+                    console.error('Failed to fetch games:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error fetching games data:', error);
+            }
+        };
+
         fetchUserInfo();
+        fetchGames();
     }, []);
 
     return (
@@ -49,9 +76,9 @@ const Homepage = () => {
             </div>
 
             {/* 右半部分 */}
-            <div style={{ width: '50vw' }}>
+            <div style={{ width: '50vw'}}>
                 <div className="fade-in"><Header /></div>
-                
+                <div style={{ marginTop: '60px'}}><GameGrid games={games} /> </div> {/* 添加 GameGrid 组件来显示游戏 */}
             </div>
             <ProfileBackground_big />
         </div>

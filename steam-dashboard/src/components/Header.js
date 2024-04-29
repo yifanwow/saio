@@ -29,7 +29,7 @@ const headerContainerStyle = {
 };
 
 const buttonStyle = {
-  padding: '15px 40px',   // 按钮内部间距
+  padding: '13px 30px',   // 按钮内部间距
   background: 'none',    // 透明背景
  // border: '2px solid white', // 白色边框
   borderRadius: '10px',  // 圆角

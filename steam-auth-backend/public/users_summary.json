@@ -11,7 +11,7 @@
       "avatarmedium": "https://avatars.steamstatic.com/c7af6181e6793f2165fd63d76078b745f674c6bf_medium.jpg",
       "avatarfull": "https://avatars.steamstatic.com/c7af6181e6793f2165fd63d76078b745f674c6bf_full.jpg",
       "avatarhash": "c7af6181e6793f2165fd63d76078b745f674c6bf",
-      "lastlogoff": 1714001019,
+      "lastlogoff": 1714077453,
       "personastate": 4,
       "realname": "Yifan Yu",
       "primaryclanid": "103582791463803414",
@@ -22,10 +22,31 @@
       "loccountrycode": "CN",
       "locstatecode": "07",
       "loccityid": 9971,
-      "date": 2064,
+      "date": 2065,
       "gameCount": 444,
-      "totalGameHours": 68617,
-      "accountValue": 548098
+      "totalGameHours": 68795,
+      "accountValue": 532098
+    },
+    {
+      "steamid": "76561199243800576",
+      "communityvisibilitystate": 3,
+      "profilestate": 1,
+      "personaname": "RaeTS",
+      "commentpermission": 2,
+      "profileurl": "https://steamcommunity.com/profiles/76561199243800576/",
+      "avatar": "https://avatars.steamstatic.com/902885a22681dcdae102163cbc852e7c42f4c93d.jpg",
+      "avatarmedium": "https://avatars.steamstatic.com/902885a22681dcdae102163cbc852e7c42f4c93d_medium.jpg",
+      "avatarfull": "https://avatars.steamstatic.com/902885a22681dcdae102163cbc852e7c42f4c93d_full.jpg",
+      "avatarhash": "902885a22681dcdae102163cbc852e7c42f4c93d",
+      "lastlogoff": 1713990424,
+      "personastate": 0,
+      "primaryclanid": "103582791429521408",
+      "timecreated": 1644733106,
+      "personastateflags": 0,
+      "date": 803,
+      "gameCount": 37,
+      "totalGameHours": 507,
+      "accountValue": 56726
     }
   ]
 }
