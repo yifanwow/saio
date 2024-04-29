@@ -1,9 +1,9 @@
 .game-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  align-items: center;
-  margin-top: 7vh;
+  justify-content: center;
+  align-items: left;
+  margin-top: 3vh;
   /* 与上方元素的间距 */
   margin-bottom: 20px;
   /* 与下方元素的间距 */
