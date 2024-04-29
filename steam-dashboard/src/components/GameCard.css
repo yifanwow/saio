@@ -1,28 +1,55 @@
 .game-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+  max-width: 200px;
+  /* 最大宽度为游戏海报的宽度 */
 }
 
-  
-  .game-card:hover {
-    transform: scale(1.5);  /* 放大动画效果 */
-  }
-  
-  .game-image {
-    width: 200px;
-    height: width*1.5px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .game-name {
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 11px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
+.game-card:hover {
+  transform: scale(1.5);
+  /* 放大动画效果 */
+}
+
+.game-image {
+  width: 100%;
+  /* 宽度占满父容器 */
+  height: auto;
+  /* 自适应高度 */
+  max-width: 200px;
+  /* 最大宽度为200px */
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* GameCard.css */
+.game-name {
+  margin-top: 10px;
+  color: white;
+  font-size: 13px;
+  /* 根据需要调整 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  /* 海报宽度 */
+}
+
+/* 在hover时显示完整的游戏名称 */
+.game-name:hover {
+  overflow: visible;
+  white-space: normal;
+  text-overflow: clip;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: max-content;
+  max-width: 300px;
+  /* 可以调整为需要的最大宽度 */
+}

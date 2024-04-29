@@ -1,6 +1,10 @@
 .game-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  margin-top: 7vh;
+  /* 与上方元素的间距 */
+  margin-bottom: 20px;
+  /* 与下方元素的间距 */
+}
