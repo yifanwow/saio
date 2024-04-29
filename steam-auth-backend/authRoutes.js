@@ -59,6 +59,7 @@ router.get('/auth/steam/return',
       let parsedData = JSON.parse(jsonData);
       // Ensure that 'users' property exists in the parsed data
       const existingUserIndex = parsedData.users.findIndex(user => user.steamid === steamID);
+      console.log('existingUserIndex:  ' + existingUserIndex);
       if (existingUserIndex !== -1) {
         // Update user data if the user exists
         parsedData.users[existingUserIndex] = user;
@@ -99,10 +100,10 @@ async function fetchUserAccountData(steamID, apiKey) {
   let gameCount = 0;
   let accountValue = 0;
   let totalGameHours = 0;
-  const userGameIdsData = fs.readFileSync('./public/user_games.json', 'utf8');
+  const userGameIdsData = fs.readFileSync('./public/users_games.json', 'utf8');
 
   try {
-    const filePath = path.join(__dirname, 'public', 'user_games.json');
+    const filePath = path.join(__dirname, 'public', 'users_games.json');
     const jsonData = fs.readFileSync(filePath, 'utf8');
     let parsedData = JSON.parse(jsonData);
     gameCount = parsedData.response.game_count;
@@ -119,9 +120,9 @@ async function fetchUserAccountData(steamID, apiKey) {
 
       // Write the modified data back to the JSON file
       fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
-      console.log('All games updated with price tag in user_games.json');
+      console.log('All games updated with price tag in users_games.json');
     } else {
-      console.error('Error: Invalid data structure in user_games.json');
+      console.error('Error: Invalid data structure in users_games.json');
     }
 
     // Get game prices from the Steam API
@@ -156,7 +157,7 @@ async function fetchUserAccountData(steamID, apiKey) {
 
       // Write the modified parsedData object back to the file
       fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
-      console.log('Game prices updated and saved to user_games.json');
+      console.log('Game prices updated and saved to users_games.json');
     } else {
       console.error('Error fetching game prices: Unexpected status code', response.status);
     }
