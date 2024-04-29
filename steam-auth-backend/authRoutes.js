@@ -60,28 +60,29 @@ router.get('/auth/steam/return',
       // Ensure that 'users' property exists in the parsed data
       const existingUserIndex = parsedData.users.findIndex(user => user.steamid === steamID);
       console.log('existingUserIndex:  ' + existingUserIndex);
-      if (existingUserIndex !== -1) {
-        // Update user data if the user exists
-        parsedData.users[existingUserIndex] = user;
-        parsedData.users[existingUserIndex] = {
+      console.log('date:  ' + daysDiff, 'gameCount:  ' + gameCount, 'totalGameHours:  ' + totalGameHours, 'accountValue:  ' + accountValue);
+
+
+      if (existingUserIndex === -1) {
+        const newUser = {
           ...user,
+          date: daysDiff,
+          gameCount: gameCount,
+          totalGameHours: totalGameHours,
+          accountValue: accountValue
+        };
+        parsedData.users.push(newUser);
+        console.log('New user added successfully!!');
+      } else {
+        // Update user data if the user exists
+        parsedData.users[existingUserIndex] = {
+          ...parsedData.users[existingUserIndex],
           date: daysDiff,
           gameCount: gameCount,
           totalGameHours: totalGameHours,
           accountValue: accountValue
         };
         console.log('User data updated successfully.');
-      } else {
-        // Add new user data if the user doesn't exist
-        parsedData.users.push(user);
-        parsedData.users[existingUserIndex] = {
-          ...user,
-          date: daysDiff,
-          gameCount: gameCount,
-          totalGameHours: totalGameHours,
-          accountValue: accountValue
-        };
-        console.log('New user added successfully.');
       }
 
       // Write the updated user data back to users_summary.json file
@@ -175,6 +176,7 @@ async function fetchUserAccountData(steamID, apiKey) {
 
 async function fetchUserparsedData(steamID, apiKey) {
   try {
+    console.log(`Requesting games for steamID ${steamID} from Steam API: https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamID}&include_appinfo=1&format=json`);
     const responseGames = await axios.get(`https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/`, {
       params: {
         key: apiKey,
@@ -185,11 +187,11 @@ async function fetchUserparsedData(steamID, apiKey) {
     });
 
     if (responseGames.data && responseGames.data.response) {
-      const parsedDataFilePath = path.join(__dirname, 'public', 'user_games.json');
+      const parsedDataFilePath = path.join(__dirname, 'public', 'users_games.json');
       if (!fs.existsSync(parsedDataFilePath)) {
         // If the file doesn't exist, create an empty file with the same name
         fs.writeFileSync(parsedDataFilePath, '{}');
-        console.log('Created empty user_games.json file.');
+        console.log('Created empty users_games.json file.');
       }
       fs.writeFileSync(parsedDataFilePath, JSON.stringify(responseGames.data));
       console.log('User game list stored successfully.');
