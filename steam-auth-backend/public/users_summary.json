@@ -24,7 +24,7 @@
       "loccityid": 9971,
       "date": 2067,
       "gameCount": 444,
-      "totalGameHours": 69076,
+      "totalGameHours": 69077,
       "accountValue": 529130
     },
     {
@@ -64,9 +64,33 @@
       "timecreated": 1665983811,
       "personastateflags": 0,
       "date": 560,
-      "gameCount": 444,
-      "totalGameHours": 68617,
-      "accountValue": 529130
+      "totalGameHours": 0,
+      "accountValue": 0
+    },
+    {
+      "steamid": "76561199006162466",
+      "communityvisibilitystate": 3,
+      "profilestate": 1,
+      "personaname": "鱼背水",
+      "commentpermission": 1,
+      "profileurl": "https://steamcommunity.com/id/yifanowo/",
+      "avatar": "https://avatars.steamstatic.com/83576b84ced2d1aec867e2fff32f12b97566e87c.jpg",
+      "avatarmedium": "https://avatars.steamstatic.com/83576b84ced2d1aec867e2fff32f12b97566e87c_medium.jpg",
+      "avatarfull": "https://avatars.steamstatic.com/83576b84ced2d1aec867e2fff32f12b97566e87c_full.jpg",
+      "avatarhash": "83576b84ced2d1aec867e2fff32f12b97566e87c",
+      "lastlogoff": 1707204846,
+      "personastate": 0,
+      "realname": "余一凡",
+      "primaryclanid": "103582791463803414",
+      "timecreated": 1575014192,
+      "personastateflags": 0,
+      "loccountrycode": "CN",
+      "locstatecode": "07",
+      "loccityid": 9971,
+      "date": 1613,
+      "gameCount": 41,
+      "totalGameHours": 0,
+      "accountValue": 39570
     }
   ]
 }
