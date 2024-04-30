@@ -7,6 +7,7 @@
 - Display user inventory games
 - Text scrolling effect
 - UI/UX layout
+- Logo design
 
 **Pending:**
 - Support user modification of game posters
