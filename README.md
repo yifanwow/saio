@@ -15,3 +15,7 @@ This two-week sprint will focus on setting up the project infrastructure, integr
   
 ![steam](./steam-dashboard/public/img/readme.jpg "steam")   
 
+### How to test
+run install npm
+run npm start
+run node app.js
