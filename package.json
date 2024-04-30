@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node steam-auth-backend/server.js",
+    "start": "node steam-auth-backend/app.js",
     "build": "cd steam-dashboard && npm install && npm run build && cd ../steam-auth-backend && npm install"
   },
   "dependencies": {
