@@ -6,6 +6,7 @@ const SteamStrategy = require('passport-steam').Strategy;
 const session = require('express-session');
 const cors = require('cors');
 const app = express();
+const path = require('path');
 
 const corsOptions = {
   origin: 'http://localhost:3000',
@@ -23,7 +24,7 @@ passport.use(new SteamStrategy({
     realm: 'http://localhost:3001/',
     apiKey: process.env.STEAM_API_KEY
   },
-  function(identifier, profile, done) {
+    function(identifier, profile, done) {
     // asynchronous verification, for effect...
     process.nextTick(function () {
       profile.identifier = identifier;
@@ -50,6 +51,15 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(authRoutes);
+
+// 在所有API路由之后，提供静态文件
+app.use(express.static(path.join(__dirname, '../steam-dashboard/build')));
+
+// 所有未匹配到的路由都会发送前端的index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../steam-dashboard/build', 'index.html'));
+});
+
 
 // Start server
 const PORT = process.env.PORT || 3001;
