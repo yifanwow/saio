@@ -87,7 +87,7 @@ router.get('/auth/steam/return',
 
       // Write the updated user data back to users_summary.json file
       fs.writeFileSync(filePath, JSON.stringify(parsedData, null, 2));
-      res.redirect(`http://localhost:3000/home?steamid=${encodeURIComponent(steamID)}`);
+      res.redirect(process.env.FRONTEND_URL + `home?steamid=${encodeURIComponent(steamID)}`);
 
     } catch (error) {
       console.error('Error fetching additional user data:', error);
@@ -202,7 +202,5 @@ async function fetchUserparsedData(steamID, apiKey) {
     console.error('Error fetching user game list:', error);
   }
 }
-
-
 
 module.exports = router;

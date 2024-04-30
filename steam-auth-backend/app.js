@@ -9,7 +9,7 @@ const app = express();
 const path = require('path');
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   allowedHeaders: 'Content-Type,Authorization'
@@ -20,8 +20,8 @@ app.use(cors(corsOptions));
 app.use(express.static('public'));
 // Configure the Steam strategy for use by Passport.
 passport.use(new SteamStrategy({
-    returnURL: 'http://localhost:3001/auth/steam/return',
-    realm: 'http://localhost:3001/',
+    returnURL: process.env.STEAM_RETURN_URL || 'http://localhost:3001/auth/steam/return',
+    realm: process.env.STEAM_REALM || 'http://localhost:3001/',
     apiKey: process.env.STEAM_API_KEY
   },
     function(identifier, profile, done) {
