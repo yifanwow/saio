@@ -22,10 +22,10 @@
       "loccountrycode": "CN",
       "locstatecode": "07",
       "loccityid": 9971,
-      "date": 2067,
+      "date": 2068,
       "gameCount": 444,
-      "totalGameHours": 69079,
-      "accountValue": 529130
+      "totalGameHours": 69149,
+      "accountValue": 542775
     },
     {
       "steamid": "76561199243800576",
@@ -90,7 +90,7 @@
       "date": 1613,
       "gameCount": 41,
       "totalGameHours": 0,
-      "accountValue": 39570
+      "accountValue": 41370
     }
   ]
 }

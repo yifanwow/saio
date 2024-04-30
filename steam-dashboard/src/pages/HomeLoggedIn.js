@@ -77,6 +77,7 @@ function HomeLoggedIn() {
       {/* {<Header/>} */}
       <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} setShowWelcomePage={handleHideWelcomePage} />
     </div>
+    
 
   );
 }
