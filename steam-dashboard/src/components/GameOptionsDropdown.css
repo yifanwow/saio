@@ -1,0 +1,28 @@
+.dropdown-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.options-menu {
+    position: absolute;
+    right: 0;
+    background: white;
+    list-style: none;
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.options-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.options-menu li:hover {
+    background-color: #f0f0f0;
+}

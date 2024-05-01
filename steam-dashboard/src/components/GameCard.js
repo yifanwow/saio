@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './GameCard.css'; // 确保你已经引入了CSS文件
+import GameOptionsDropdown from './GameOptionsDropdown';
 
 function GameCard({ game }) {
   const textRef = useRef(null);
@@ -14,8 +15,6 @@ function GameCard({ game }) {
     }
   }, []);
 
-
-
   return (
     <div className="game-card">
       <img src={game.grid} alt={game.name} className="game-image" />
@@ -25,6 +24,7 @@ function GameCard({ game }) {
           className={`game-name ${isLongText ? 'long-text' : ''}`}
         >
           {game.name.toUpperCase()}
+          
         </div>
       </div>
     </div>
