@@ -76,3 +76,43 @@
   display: inline-block;
   /* 由于文本需要移动，因此将其设置为 inline-block */
 }
+
+.option-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 30px;
+  height: 30px;
+  background: "url('/img/ICON/favicon.ico') no-repeat center center";
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.game-card:hover .option-button {
+  opacity: 1;
+}
+
+.options-menu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  bottom: 40px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.options-menu.active {
+  display: block;
+}
+
+.option-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.option-item:hover {
+  background-color: #f0f0f0;
+}
