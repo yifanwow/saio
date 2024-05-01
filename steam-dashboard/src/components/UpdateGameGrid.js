@@ -1,26 +1,8 @@
+// UpdateGameGrid.js
 import React, { useState } from 'react';
 
-function UpdateGameGrid({ appId }) {
+function UpdateGameGrid({ appId, onSubmit }) {
   const [newGridUrl, setNewGridUrl] = useState('');
-
-  const onUpdateGrid = (appid, newGridUrl) => {
-    fetch('/api/update-grid', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ appid, newGridUrl })
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      alert('Grid URL updated successfully.');
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      alert('Failed to update grid URL.');
-    });
-  };
 
   return (
     <div>
@@ -30,7 +12,7 @@ function UpdateGameGrid({ appId }) {
         onChange={e => setNewGridUrl(e.target.value)}
         placeholder="Enter new grid URL"
       />
-      <button onClick={() => onUpdateGrid(appId, newGridUrl)}>
+      <button onClick={() => onSubmit(appId, newGridUrl)}>
         Update Grid
       </button>
     </div>
