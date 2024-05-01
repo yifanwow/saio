@@ -3,7 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2vw;
+  margin-top: 1vw;
+  margin-right: 2vw;
+  margin-bottom: 1vw;
+  margin-left: 2vw;
   transition: transform 0.7s ease-in-out;
   max-width: 11vw;
   min-width: 5vw;
@@ -19,11 +22,12 @@
 .game-image {
   width: 100%;
   /* 宽度占满父容器 */
-  height: auto;
+  height: 100%;
   /* 自适应高度 */
   /* 最大宽度为200px */
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.77);
+  object-fit: cover;
 }
 
 .game-name-container {
@@ -39,11 +43,11 @@
 .game-name {
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.801);
-  font-size: 13px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   /* 根据需要调整 */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 200px;
@@ -72,4 +76,51 @@
   animation: scrollText 20s linear infinite;
   display: inline-block;
   /* 由于文本需要移动，因此将其设置为 inline-block */
+}
+
+.option-button {
+  position: absolute;
+  right: 0.5vw;
+  top: 0.5vw;
+  width: 2vh;
+  height: 2vh;
+  background: url(../../public/img/ICON/icons-menu-480.png) no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.game-card:hover .option-button {
+  opacity: 0.7;
+}
+
+.options-menu {
+  visibility: hidden; /* 初始设置为不可见 */
+  opacity: 0; /* 初始透明度为0 */
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear; /* 注意顺序和延迟设置 */
+  color: white;
+  font-size: 0.8rem;
+}
+
+
+.options-menu.active {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* 当变为可见时，无延迟 */
+}
+
+.option-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.option-item:hover {
+  background-color: #333; /* 悬停时的背景色 */
 }

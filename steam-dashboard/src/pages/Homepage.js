@@ -4,12 +4,12 @@ import './Homepage.css';
 import ProfileBackground_big from '../components/ProfileBackground_big.js';
 import Header from '../components/Header.js';
 import GameGrid from '../components/GameGrid.js';
-
 const Homepage = () => {
     const [userInfo, setUserInfo] = useState(null);
     const [showProfile, setShowProfile] = useState(false);
     const [games, setGames] = useState([]); // 添加状态来存储游戏数据
 
+    console.log('API Base URL:', process.env.REACT_APP_API_BASE);
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
@@ -80,8 +80,8 @@ const Homepage = () => {
 
             {/* 右半部分 */}
             <div style={{ width: '50vw' }}>
-                <div className="fade-in"><Header /></div>
-                <div style={{ marginTop: '60px' }}><GameGrid games={games} /> </div> {/* 添加 GameGrid 组件来显示游戏 */}
+                <div className="fade-in"><Header/></div>
+                <div style={{ marginTop: '0px' }}><GameGrid games={games} /> </div> {/* 添加 GameGrid 组件来显示游戏 */}
             </div>
             <ProfileBackground_big />
         </div>
