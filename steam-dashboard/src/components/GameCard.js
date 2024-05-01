@@ -24,25 +24,22 @@ function GameCard({ game }) {
       textRef.current.innerText = clonedText;
     }
   }, []);
-
   return (
-    <div className="game-card">
+    <div className="game-card" onMouseLeave={() => setMenuVisible(false)}>
       <img src={game.grid} alt={game.name} className="game-image" />
-      <div className="option-button" onClick={toggleMenu} ></div>
+      <div className="option-button" onClick={toggleMenu}></div>
       <div className="game-name-container">
         <div
           ref={textRef}
           className={`game-name ${isLongText ? 'long-text' : ''}`}
         >
           {game.name.toUpperCase()}
-          
         </div>
       </div>      
-      {menuVisible && (
-        <div className="options-menu">
-          <div className="option-item" onClick={handleChangeGrid}>Change grid post</div>
-          <div className="option-item">Rating</div>
-        </div>)}
+      <div className={`options-menu ${menuVisible ? 'active' : ''}`}>
+        <div className="option-item" onClick={handleChangeGrid}>Change grid post</div>
+        <div className="option-item">Rating</div>
+      </div>
     </div>
   );
 }

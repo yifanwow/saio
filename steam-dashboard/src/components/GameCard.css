@@ -80,9 +80,9 @@
 .option-button {
   position: absolute;
   right: 0.5vw;
-  bottom: 3.5vh;
-  width: 30px;
-  height: 30px;
+  top: 0.5vw;
+  width: 2vh;
+  height: 2vh;
   background: url(../../public/img/ICON/icons-menu-480.png) no-repeat center center;
   background-size: cover;
   opacity: 0;
@@ -94,18 +94,25 @@
 }
 
 .options-menu {
-  display: none;
+  visibility: hidden; /* 初始设置为不可见 */
+  opacity: 0; /* 初始透明度为0 */
   position: absolute;
   right: 10px;
-  bottom: 40px;
-  background: white;
+  top: 40px;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear; /* 注意顺序和延迟设置 */
+  color: white;
+  font-size: 0.8rem;
 }
 
+
 .options-menu.active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s; /* 当变为可见时，无延迟 */
 }
 
 .option-item {
@@ -114,5 +121,5 @@
 }
 
 .option-item:hover {
-  background-color: #f0f0f0;
+  background-color: #333; /* 悬停时的背景色 */
 }
