@@ -17,10 +17,10 @@ function HomeLoggedIn() {
   useEffect(() => {
     fetchUserInfo();
   }, [username]); // Fetch user info once when component mounts
-
+  console.log('API Base URL:', process.env.REACT_APP_API_BASE);
   const fetchUserInfo = async () => {
     try {
-      const response = await fetch('http://localhost:3001/users_summary.json', {
+      const response = await fetch(`${process.env.REACT_APP_API_BASE}/users_summary.json`, {
         method: 'GET',
         headers: {
           'Accept': 'application/json',
