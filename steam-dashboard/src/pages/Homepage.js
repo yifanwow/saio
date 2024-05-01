@@ -4,12 +4,12 @@ import './Homepage.css';
 import ProfileBackground_big from '../components/ProfileBackground_big.js';
 import Header from '../components/Header.js';
 import GameGrid from '../components/GameGrid.js';
-
 const Homepage = () => {
     const [userInfo, setUserInfo] = useState(null);
     const [showProfile, setShowProfile] = useState(false);
     const [games, setGames] = useState([]); // 添加状态来存储游戏数据
 
+    console.log('API Base URL:', process.env.REACT_APP_API_BASE);
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
