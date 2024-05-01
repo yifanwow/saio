@@ -1,10 +1,20 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './GameCard.css'; // 确保你已经引入了CSS文件
-import GameOptionsDropdown from './GameOptionsDropdown';
+import UpdateGameGrid from './UpdateGameGrid';
 
 function GameCard({ game }) {
   const textRef = useRef(null);
   const [isLongText, setIsLongText] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
+
+  const handleChangeGrid = () => {
+    const newGridUrl = prompt("Please enter the new grid URL:");
+    UpdateGameGrid(game.appid, newGridUrl);
+  };
 
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
@@ -18,6 +28,7 @@ function GameCard({ game }) {
   return (
     <div className="game-card">
       <img src={game.grid} alt={game.name} className="game-image" />
+      <div className="option-button" onClick={toggleMenu} ></div>
       <div className="game-name-container">
         <div
           ref={textRef}
@@ -26,7 +37,12 @@ function GameCard({ game }) {
           {game.name.toUpperCase()}
           
         </div>
-      </div>
+      </div>      
+      {menuVisible && (
+        <div className="options-menu">
+          <div className="option-item" onClick={handleChangeGrid}>Change grid post</div>
+          <div className="option-item">Rating</div>
+        </div>)}
     </div>
   );
 }
