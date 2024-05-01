@@ -79,6 +79,7 @@ const GitHubStyle ={
 
 function HomeLoggedOut() {
   // Function to handle the form submission
+  console.log('API Base URL:', process.env.REACT_APP_API_BASE_URL);
   const handleSubmit = (e) => {
     e.preventDefault();
     window.location.href = authUrl;

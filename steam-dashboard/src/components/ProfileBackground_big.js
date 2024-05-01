@@ -26,7 +26,7 @@ const ProfileBackground = () => {
         };
     }, []);
 
-    return <div ref={vantaRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100vh', zIndex: -7 }}></div>;
+    return <div ref={vantaRef} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: -7 }}></div>;
 };
 
 export default ProfileBackground;
