@@ -9,7 +9,6 @@ const UserProfileCard = ({ userInfo }) => {
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-    boxShadow: '9px 0px 55px rgba(0, 0, 0, 0.7)',
     height: '100vh',
     padding: '0 5vw', 
     // Include ProfileBackground as the background
@@ -82,7 +81,7 @@ const UserProfileCard = ({ userInfo }) => {
 
   return (
     <div style={containerStyle}>
-      <ProfileBackground />
+      <ProfileBackground/>
       <div style={avatarArea}>
       <img src={userInfo.avatarfull} alt="Avatar" style={avatarStyle} />
       <p style={nameStyle}>{userInfo.personaname}</p>
