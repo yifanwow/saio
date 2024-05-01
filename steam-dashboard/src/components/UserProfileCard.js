@@ -11,6 +11,7 @@ const UserProfileCard = ({ userInfo }) => {
     width: '100%',
     boxShadow: '9px 0px 55px rgba(0, 0, 0, 0.7)',
     height: '100vh',
+    padding: '0 5vw', 
     // Include ProfileBackground as the background
   };
 
@@ -33,47 +34,50 @@ const UserProfileCard = ({ userInfo }) => {
   };
 
   const nameStyle = {
-    fontSize: '2.5rem',
+    fontSize: 'clamp(2rem, 2.5vw, 2.5rem)', // Adjusts between 2rem and 2.5rem based on viewport width
     color: '#fff',
     fontWeight: 550,
-    letterSpacing: '7px',
-    textShadow: '0px 0px 19px rgba(0, 0, 0, 0.9)',
+    letterSpacing: '3px',
+    textShadow: '0px 0px 1.9vw rgba(0, 0, 0, 0.91)',
     marginBottom: '77px',
   };
+
+  
   const dataSectionStyle = {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'space-between', // This will evenly space the three child elements
     alignItems: 'center',
     width: '100%',
-    textShadow: '0px 3px 13px rgba(0, 0, 0, 0.77)',
+    textShadow: '0px 3px 0.7vw rgba(0, 0, 0, 0.79)',
     textAlign: 'center',
+    padding: '0 0px',
   };
-
   const dataContainerStyle = {
+    width: '30%',
     display: 'flex',
-    letterSpacing: '3px',
     flexDirection: 'column',
-    justifyContent: 'center',
     alignItems: 'center',
-    margin: '0 50px', // Add spacing between columns
+    
   };
-
   const dataValueStyle = {
-    fontSize: '2.1rem',
-   
+    fontSize: 'clamp(0.5rem, 2.1vw, 3.1rem)', // Adjusted for better responsiveness
     color: '#fff',
-    letterSpacing: '7px',
+    letterSpacing: 'clamp(-5px, 0.5vw, 9px)',
     fontWeight: 'bold',
-    marginBottom: '5px', // Adjust as needed
+    marginBottom: '1.5vh',
   };
-
   const dataLabelStyle = {
-    fontSize: '1.3rem',
+    fontSize: 'clamp(0.7rem, 1.3vw, 1.3rem)',
     fontWeight: '550',
     textTransform: 'uppercase',
     color: '#fff',
-    marginBottom: '20px', // Adjust as needed
+    letterSpacing: 'clamp(-5px, 0.5vw, 7px)',// Adjusted margin for visual balance
+    marginBottom: '5px', // Consistent bottom margin for a cleaner look
+  };
+  const dataLabelStyle2 = {
+    ...dataLabelStyle, // Inherits properties from dataLabelStyle
+    marginBottom: '1vh', // Additional spacing for the lower label
   };
 
   return (
@@ -86,15 +90,18 @@ const UserProfileCard = ({ userInfo }) => {
       <div style={dataSectionStyle}>
         <div style={dataContainerStyle}>
           <span style={dataValueStyle}>{userInfo.gameCount}</span>
-          <span style={dataLabelStyle}>Game owned</span>
+          <span style={dataLabelStyle}>Game</span>
+          <span style={dataLabelStyle2}>Owned</span>
         </div>
         <div style={dataContainerStyle}>
           <span style={dataValueStyle}>{userInfo.totalGameHours}</span>
-          <span style={dataLabelStyle}>Game hours</span>
+          <span style={dataLabelStyle}>Game</span>
+          <span style={dataLabelStyle2}>hours</span>
         </div>
         <div style={dataContainerStyle}>
           <span style={dataValueStyle}>{userInfo.accountValue}</span>
-          <span style={dataLabelStyle}>Game value</span>
+          <span style={dataLabelStyle}>Game</span>
+          <span style={dataLabelStyle2}>Value</span>
         </div>
       </div>
     </div>
