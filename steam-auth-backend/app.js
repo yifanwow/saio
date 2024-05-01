@@ -21,7 +21,7 @@ app.use(express.static('public'));
 // Configure the Steam strategy for use by Passport.
 passport.use(new SteamStrategy({
     returnURL: process.env.STEAM_RETURN_URL || 'http://localhost:3001/auth/steam/return',
-    realm: process.env.STEAM_REALM || 'http://localhost:3001/',
+    realm: process.env.STEAM_REALM || 'http://localhost:3001/', 
     apiKey: process.env.STEAM_API_KEY
   },
     function(identifier, profile, done) {
