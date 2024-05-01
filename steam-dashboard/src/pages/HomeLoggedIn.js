@@ -9,7 +9,7 @@ function HomeLoggedIn() {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const username = params.get('steamid');
-  
+
   // Use state to manage avatar and registerDate fetched from localStorage
   const [userInfo, setUserInfo] = useState(null);
 
@@ -17,13 +17,13 @@ function HomeLoggedIn() {
   useEffect(() => {
     fetchUserInfo();
   }, [username]); // Fetch user info once when component mounts
-
+  console.log('API Base URL:', process.env.REACT_APP_API_BASE);
   const fetchUserInfo = async () => {
     try {
-      const response = await fetch('http://localhost:3001/users_summary.json',{
+      const response = await fetch(`${process.env.REACT_APP_API_BASE}/users_summary.json`, {
         method: 'GET',
         headers: {
-          'Origin': 'http://localhost:3000',
+          'Accept': 'application/json',
         }
       });
       if (response.ok) {
@@ -67,9 +67,9 @@ function HomeLoggedIn() {
     setShowWelcomePage(false);
     setTimeout(() => {
       const params = new URLSearchParams();
-    params.append('steamid', username); // steamID 是用户的ID
-    window.location.href = `/Homepage?${params.toString()}`;
-  }, 1700);
+      params.append('steamid', username); // steamID 是用户的ID
+      window.location.href = `/Homepage?${params.toString()}`;
+    }, 1700);
   };
 
   return (
@@ -77,7 +77,7 @@ function HomeLoggedIn() {
       {/* {<Header/>} */}
       <WelcomePage userInfo={userInfo} bg1Position={bg1Position} bg2Position={bg2Position} setShowWelcomePage={handleHideWelcomePage} />
     </div>
-    
+
 
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
 
+const authUrl = process.env.REACT_APP_API_BASE_URL;
 const homeStyle = {
   display: 'flex',
   height: '100vh',
@@ -80,7 +81,7 @@ function HomeLoggedOut() {
   // Function to handle the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = 'http://localhost:3001/auth/steam';
+    window.location.href = authUrl;
     // Perform your login logic here
   };
 
