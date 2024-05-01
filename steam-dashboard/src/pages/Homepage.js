@@ -17,11 +17,8 @@ const Homepage = () => {
         // 获取用户信息
         const fetchUserInfo = async () => {
             try {
-                const response = await fetch('http://localhost:3001/users_summary.json', {
+                const response = await fetch(`${process.env.REACT_APP_API_BASE}/users_summary.json`, {
                     method: 'GET',
-                    headers: {
-                        'Origin': 'http://localhost:3000',
-                    }
                 });
                 if (response.ok) {
                     const data = await response.json();
@@ -42,11 +39,8 @@ const Homepage = () => {
         // 获取游戏信息
         const fetchGames = async () => {
             try {
-                const response = await fetch('http://localhost:3001/users_games.json', {
+                const response = await fetch(`${process.env.REACT_APP_API_BASE}/users_games.json`, {
                     method: 'GET',
-                    headers: {
-                        'Origin': 'http://localhost:3000',
-                    }
                 });
 
                 if (response.ok) {
