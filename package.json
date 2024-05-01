@@ -1,6 +1,12 @@
 {
+  "scripts": {
+    "start": "node steam-auth-backend/app.js",
+    "build": "cd steam-dashboard && npm install && npm run build && cd ../steam-auth-backend && npm install"
+  },
   "dependencies": {
     "bulma": "^1.0.0",
-    "express-session": "^1.18.0"
+    "express-session": "^1.18.0",
+    "three": "^0.163.0",
+    "vanta": "^0.5.24"
   }
 }

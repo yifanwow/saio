@@ -1,0 +1,13 @@
+.game-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1000;
+  justify-content: center;
+  align-items: left;
+  margin-top: 3vh;
+  /* 与上方元素的间距 */
+  margin-bottom: 20px;
+  /* 与下方元素的间距 */
+
+}
