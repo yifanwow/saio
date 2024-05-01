@@ -22,11 +22,12 @@
 .game-image {
   width: 100%;
   /* 宽度占满父容器 */
-  height: auto;
+  height: 100%;
   /* 自适应高度 */
   /* 最大宽度为200px */
   border-radius: 10px;
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.77);
+  object-fit: cover;
 }
 
 .game-name-container {
