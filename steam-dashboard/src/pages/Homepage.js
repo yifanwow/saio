@@ -80,8 +80,8 @@ const Homepage = () => {
 
             {/* 右半部分 */}
             <div style={{ width: '50vw' }}>
-                <div className="fade-in"><Header /></div>
-                <div style={{ marginTop: '60px' }}><GameGrid games={games} /> </div> {/* 添加 GameGrid 组件来显示游戏 */}
+                <div className="fade-in"><Header/></div>
+                <div style={{ marginTop: '0px' }}><GameGrid games={games} /> </div> {/* 添加 GameGrid 组件来显示游戏 */}
             </div>
             <ProfileBackground_big />
         </div>

@@ -15,12 +15,14 @@ const headerContainerStyle = {
   justifyContent: 'space-around', // 将按钮均匀分布在容器中
   alignItems: 'center',   // 垂直居中按钮
   position: 'relative',
-  top: '3vh',
+  top: '3.9vh',
   left: '0',
   right: '0',
+  bottom: '0',
   margin: 'auto',
   width: '70%',
-  height: '50px',
+  height: '2.7vh',
+  marginBottom: '5vh', 
 
   // 高斯模糊
   borderRadius: '17px',
@@ -29,18 +31,18 @@ const headerContainerStyle = {
 };
 
 const buttonStyle = {
-  padding: '13px 30px',   // 按钮内部间距
+  padding: '1.3vh 2vw',   // 按钮内部间距
   background: 'none',    // 透明背景
   // border: '2px solid white', // 白色边框
-  borderRadius: '10px',  // 圆角
+  borderRadius: '2vw',  // 圆角
   cursor: 'pointer',     // 鼠标样式变为指针
   color: 'white',
   backgroundColor: 'rgba(240, 240, 240, 0.5)',
-  boxShadow: '0px 0px 11px rgba(0, 0, 0, 0.37)',
+  boxShadow: '0px 0px 11px rgba(0, 0, 0, 0.57)',
   backdropFilter: 'blur(11px)',       // 文字颜色
-  fontSize: '16px',      // 字号
+  fontSize: 'clamp(0.7rem, 1vw, 2.7rem)',      // 字号
   fontWeight: 'bold',     // 字体加粗
-  textShadow: '0px 0px 7px rgba(0, 0, 0, 0.7)'
+  textShadow: '0px 0px 0.7vw rgba(0, 0, 0, 0.95)'
 
 };
 
