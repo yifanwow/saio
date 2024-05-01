@@ -22,7 +22,7 @@ const headerContainerStyle = {
   margin: 'auto',
   width: '70%',
   height: '2.7vh',
-  marginBottom: '5vh', 
+  marginBottom: '7vh', 
 
   // 高斯模糊
   borderRadius: '17px',
