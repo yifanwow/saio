@@ -130,7 +130,7 @@
   flex-wrap: wrap;
   padding: 5px;
   position: absolute;
-  top: 85%; 
+  bottom: 35px; /* Adjust this to position just below the image */
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.6);
