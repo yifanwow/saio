@@ -101,7 +101,7 @@ async function fetchUserAccountData(steamID, apiKey) {
   let gameCount = 0;
   let accountValue = 0;
   let totalGameHours = 0;
-  const userGameIdsData = fs.readFileSync('./public/users_games.json', 'utf8');
+  const IdsData = fs.readFileSync('./public/users_games.json', 'utf8');
 
   try {
     const filePath = path.join(__dirname, 'public', 'users_games.json');
