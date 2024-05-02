@@ -1,17 +1,19 @@
 import React from 'react';
 
-import { useNavigate } from 'react-router-dom';
-function Header() {
-  const navigate =useNavigate()
+function Header({ current, onChange }) {
   const handleClick = (val) => {
-    navigate(`/${val}`)
+    if (val === current) {
+      onChange('grid')
+    } else {
+      onChange(val)
+    }
   }
   return (
-    <div style={headerContainerStyle}>library
-      <button style={buttonStyle} onClick={()=>handleClick('ranking')}>RANKING</button>
-      <button style={buttonStyle} onClick={()=>handleClick('Librarypage')}>LIBRARY</button>
-
-      <button style={buttonStyle}>SETTING</button>
+    <div style={headerContainerStyle}>
+      <button style={buttonStyle} onClick={() => handleClick('rank')}>RANKING</button>
+      <button style={buttonStyle} onClick={() => handleClick('library')}>LIBRARY</button>
+      {/* {Delete this Setting stuff} */}
+      {/* <button style={buttonStyle}>SETTING</button>  */}
     </div>
   );
 }
@@ -28,7 +30,7 @@ const headerContainerStyle = {
   margin: 'auto',
   width: '70%',
   height: '2.7vh',
-  marginBottom: '7vh', 
+  marginBottom: '7vh',
 
   // 高斯模糊
   borderRadius: '17px',
