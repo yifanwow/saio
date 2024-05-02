@@ -6,14 +6,13 @@ function GameCard({ game }) {
   const textRef = useRef(null);
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
-  // const [editTagVisible, setEditTagVisible] = useState(false);
   const [imageUrl, setImageUrl] = useState(game.grid);
-  //const [inputVisible, setInputVisible] = useState(false);
-  //const [tags, setTags] = useState(game.categories || []); // Assuming categories are passed in the game object
-  //const [inputValue, setInputValue] = useState('');
+  const [inputVisible, setInputVisible] = useState(false);
+  const [tags, setTags] = useState(game.categories || []); // Assuming categories are passed in the game object
+  const [inputValue, setInputValue] = useState('');
 
-  const [tagVisible, setCategoryVisible] = useState(false);
-  const [category, setCategory] = useState(game.category);
+  // const [tagVisible, setCategoryVisible] = useState(false);
+  // const [category, setCategory] = useState(game.category);
 
 
   const toggleMenu = () => {
