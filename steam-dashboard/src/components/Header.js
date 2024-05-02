@@ -1,10 +1,16 @@
 import React from 'react';
 
+import { useNavigate } from 'react-router-dom';
 function Header() {
+  const navigate =useNavigate()
+  const handleClick = (val) => {
+    navigate(`/${val}`)
+  }
   return (
-    <div style={headerContainerStyle}>
-      <button style={buttonStyle}>RANKING</button>
-      <button style={buttonStyle}>LIBRARIES</button>
+    <div style={headerContainerStyle}>library
+      <button style={buttonStyle} onClick={()=>handleClick('ranking')}>RANKING</button>
+      <button style={buttonStyle} onClick={()=>handleClick('Librarypage')}>LIBRARY</button>
+
       <button style={buttonStyle}>SETTING</button>
     </div>
   );
