@@ -1,12 +1,27 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './GameCard.css'; // 确保你已经引入了CSS文件
 import UpdateGameGrid from './UpdateGameGrid';
+import Rating from '@mui/material/Rating'; // Import the Rating Component
+import FavoriteIcon from '@mui/icons-material/Favorite'; 
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import { styled } from '@mui/material/styles';
+
+const StyledRating = styled(Rating)({
+  '& .MuiRating-iconFilled': {
+    color: '#ff6d75',
+  },
+  '& .MuiRating-iconHover': {
+    color: '#ff3d47',
+  },
+});
 
 function GameCard({ game }) {
   const textRef = useRef(null);
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
   const [imageUrl, setImageUrl] = useState(game.grid);
+  const [ratingVisible, setRatingVisible] = useState(false);
+  const [rating, setRating] = useState(2); // State to hold the rating
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
@@ -37,6 +52,11 @@ function GameCard({ game }) {
     const newGridUrl = prompt("Please enter the new grid URL:");
     onUpdateGrid(game.appid, newGridUrl);
   };
+
+  const toggleRating = () => {
+    setRatingVisible(!ratingVisible);
+  };
+
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
       setIsLongText(true); // 如果文本宽度超出容器宽度，则启动滚动
@@ -54,10 +74,21 @@ function GameCard({ game }) {
         <div ref={textRef} className={`game-name ${isLongText ? 'long-text' : ''}`}>
           {game.name.toUpperCase()}
         </div>
+        
       </div>
+      <div className="game-rate-container">
+        <StyledRating
+        name="customized-color"
+        defaultValue={2}
+        getLabelText={(value) => `${value} Heart${value !== 1 ? 's' : ''}`}
+        precision={0.5}
+        icon={<FavoriteIcon fontSize="inherit" />}
+        emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+      />  
+        </div>
       <div className={`options-menu ${menuVisible ? 'active' : ''}`}>
         <div className="option-item" onClick={handleChangeGrid}>Change grid post</div>
-        <div className="option-item">Rating</div>
+        <div className="option-item" onClick={toggleRating}>Rating</div>
       </div>
     </div>
   );
