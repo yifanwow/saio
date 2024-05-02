@@ -5,6 +5,7 @@ const path = require('path');
 const passport = require('passport');
 const axios = require('axios'); // Import Axios for HTTP requests
 const { log } = require('console');
+const userGamesDir = path.join(__dirname, 'public', 'users_games');
 
 router.get('/auth/steam', passport.authenticate('steam', { failureRedirect: '/' }));
 
@@ -16,7 +17,9 @@ router.get('/auth/steam/return',
       console.log('steamid:  ' + req.user._json.steamid);
       console.log('avatar:  ' + req.user._json.avatarfull);
       //console.log(req.user._json.created);
-
+      if (!fs.existsSync(userGamesDir)) {
+        fs.mkdirSync(userGamesDir, { recursive: true });
+      }
       const username = req.user.displayName || 'User'; // Fallback to 'User' if displayName is not available
       // In your /auth/steam/return route
       const currentTimestamp = Math.floor(Date.now() / 1000);
@@ -104,7 +107,7 @@ async function fetchUserAccountData(steamID, apiKey) {
   const userGameIdsData = fs.readFileSync('./public/users_games.json', 'utf8');
 
   try {
-    const filePath = path.join(__dirname, 'public', 'users_games.json');
+    const filePath = path.join(userGamesDir, `${steamID}.json`);
     const jsonData = fs.readFileSync(filePath, 'utf8');
     let parsedData = JSON.parse(jsonData);
     gameCount = parsedData.response.game_count;
@@ -187,7 +190,7 @@ async function fetchUserparsedData(steamID, apiKey) {
     });
 
     if (responseGames.data && responseGames.data.response) {
-      const parsedDataFilePath = path.join(__dirname, 'public', 'users_games.json');
+      const parsedDataFilePath = path.join(userGamesDir, `${steamID}.json`);
       if (!fs.existsSync(parsedDataFilePath)) {
         // If the file doesn't exist, create an empty file with the same name
         fs.writeFileSync(parsedDataFilePath, '{}');
