@@ -11,10 +11,6 @@ function GameCard({ game }) {
   const [tags, setTags] = useState(game.categories || []); // Assuming categories are passed in the game object
   const [inputValue, setInputValue] = useState('');
 
-  // const [tagVisible, setCategoryVisible] = useState(false);
-  // const [category, setCategory] = useState(game.category);
-
-
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
