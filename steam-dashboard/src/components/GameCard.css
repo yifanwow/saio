@@ -1,16 +1,16 @@
 .game-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1vw;
   margin-right: 2vw;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw; /* Add some space at the bottom */
   margin-left: 2vw;
   transition: transform 0.7s ease-in-out;
   max-width: 11vw;
   min-width: 5vw;
-  /* 最大宽度为游戏海报的宽度 */
 }
 
 .game-card:hover {
@@ -123,4 +123,51 @@
 
 .option-item:hover {
   background-color: #333; /* 悬停时的背景色 */
+}
+
+.tag-input-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  position: absolute;
+  bottom: 35px; /* Adjust this to position just below the image */
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  box-sizing: border-box;
+  justify-content: center;
+  max-width: calc(100% - 10px); /* Provide some padding inside the container */
+  margin: 0 5px; /* Center the container within the card */
+  z-index: 150; /* Ensure it's above other elements */
+}
+
+.tag {
+  background: #ccc;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.close-button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 4px;
+  margin: 0;
+  flex-grow: 1;
+  max-width: calc(100% - 30px); /* Prevents overflow by considering padding and button width */
+}
+
+.tag-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
