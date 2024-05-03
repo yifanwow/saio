@@ -20,8 +20,14 @@ function GameCard({ game }) {
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
   const [imageUrl, setImageUrl] = useState(game.grid);
+
   const [ratingVisible, setRatingVisible] = useState(false);
   const [rating, setRating] = useState(game.rate); // State to hold the rating
+
+  const [inputVisible, setInputVisible] = useState(false);
+  const [tags, setTags] = useState(game.categories || []); // Assuming categories are passed in the game object
+  const [inputValue, setInputValue] = useState('');
+
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
@@ -30,7 +36,7 @@ function GameCard({ game }) {
   const onUpdateGrid = (appId, newGridUrl) => {
     if (!newGridUrl) return; // 如果用户没有输入 URL，不执行任何操作
 
-    fetch(`${process.env.REACT_APP_API_BASE}/update-grid`, {
+    fetch('http://localhost:3001/update-grid', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -46,21 +52,15 @@ function GameCard({ game }) {
         console.error('Error:', error);
         alert('Failed to update grid URL.');
       });
-      .then(response => response.json())
-      .then(data => {
-        alert('Grid URL updated successfully.');
-        setImageUrl(newGridUrl);  // 成功后更新图片 URL
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        alert('Failed to update grid URL.');
-      });
   };
 
   const handleChangeGrid = () => {
     const newGridUrl = prompt("Please enter the new grid URL:");
     onUpdateGrid(game.appid, newGridUrl);
   };
+
+
+  // Gloria
 
   const toggleRating = () => {
     setRatingVisible(!ratingVisible);
@@ -103,6 +103,50 @@ function GameCard({ game }) {
   };
 
 
+  // Hongyang's feature of implementing categories
+  const handleAddOrDeleteCategory = () => {
+    if (tags.length > 0) {
+      // Clear categories if they exist
+      updateCategories(game.appid, []);
+      setTags([]);
+    } else {
+      // Show input to add a new category
+      setInputVisible(true);
+    }
+  };
+
+  const addTag = (e) => {
+    if (e.key === 'Enter' && inputValue.trim()) {
+      const newTags = [...tags, inputValue];
+      updateCategories(game.appid, newTags);
+      setTags(newTags);
+      setInputValue('');
+      setInputVisible(false);  // Hide the input field after adding
+    }
+  };
+
+  const updateCategories = (appId, categories) => {
+    fetch(`${process.env.REACT_APP_API_BASE}/update-categories`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ appid: appId, newCategories: categories })
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (categories === -1) {
+          alert('Category deleted succesfully');
+
+        }
+        alert('Categories updated successfully.');
+      })
+      .catch(error => {
+        console.error('Error updating categories:', error);
+        alert('Failed to update categories.');
+      });
+  };
+
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
       setIsLongText(true); // 如果文本宽度超出容器宽度，则启动滚动
@@ -120,7 +164,6 @@ function GameCard({ game }) {
         <div ref={textRef} className={`game-name ${isLongText ? 'long-text' : ''}`}>
           {game.name.toUpperCase()}
         </div>
-
       </div>
       <div className="game-rate-container">
         {ratingVisible ?
@@ -143,12 +186,16 @@ function GameCard({ game }) {
           />
         }
       </div>
+
       <div className={`options-menu ${menuVisible ? 'active' : ''}`}>
         <div className="option-item" onClick={handleChangeGrid}>Change grid post</div>
         {rating ?
           <div className="option-item" onClick={handleDeleteRate}>Delete</div> :
           <div className="option-item" onClick={toggleRating}>Rating</div>
         }
+        <div className="option-item" onClick={handleAddOrDeleteCategory}>
+          {tags.length > 0 ? "Delete Category" : "Add Category"}
+        </div>
       </div>
       {inputVisible && (
         <div className='tag-input-container'>
@@ -175,5 +222,7 @@ function GameCard({ game }) {
     </div>
   );
 }
+
+
 
 export default GameCard;

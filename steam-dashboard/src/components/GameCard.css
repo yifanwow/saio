@@ -11,6 +11,7 @@
   transition: transform 0.7s ease-in-out;
   max-width: 11vw;
   min-width: 5vw;
+  position: relative;
 }
 
 .game-card:hover {
@@ -128,6 +129,34 @@
 .option-item:hover {
   background-color: #333; /* 悬停时的背景色 */
 }
+
+.option-item-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiRating-root {
+  color: #ff6d75;
+}
+
+.option-item .MuiRating-root {
+  margin-left: 8px;
+}
+
+.MuiRating-iconFilled {
+  color: #ff3d47;
+}
+
+.MuiRating-iconEmpty {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.MuiRating-iconHover {
+  color: #ff6d75;
+
+}
+
 
 .tag-input-container {
   display: flex;
