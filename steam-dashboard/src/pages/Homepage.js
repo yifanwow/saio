@@ -4,6 +4,8 @@ import './Homepage.css';
 import ProfileBackground_big from '../components/ProfileBackground_big.js';
 import Header from '../components/Header.js';
 import GameGrid from '../components/GameGrid.js';
+import GameLibrary from '../components/GameLibrary.js';
+import GameRank from '../components/GameRank.js';
 const Homepage = () => {
     const [userInfo, setUserInfo] = useState(null);
     const [showProfile, setShowProfile] = useState(false);
@@ -67,6 +69,20 @@ const Homepage = () => {
         fetchGames();
     }, []);
 
+    const [current, setCurrent] = useState('grid') // grid,rank,library
+
+    const getCurrentPage = () => {
+        console.log('current:', current);
+        if (current === 'rank') {
+            return <GameRank />;
+        }
+        else if (current === 'library') {
+            return <GameLibrary />;
+        } else {
+            return <GameGrid games={games} />;
+        }
+    }
+
     return (
         <div className='background' style={{ display: 'flex', width: '100vw' }}>
             {/* 左半部分 */}
@@ -80,8 +96,12 @@ const Homepage = () => {
 
             {/* 右半部分 */}
             <div style={{ width: '50vw' }}>
-                <div className="fade-in"><Header/></div>
-                <div style={{ marginTop: '0px' }}><GameGrid games={games} /> </div> {/* 添加 GameGrid 组件来显示游戏 */}
+                <div className="fade-in">
+                    <Header current={current} onChange={(val) => { setCurrent(val) }} />
+                </div>
+                <div style={{ marginTop: '0px' }}>
+                    {getCurrentPage()}
+                </div> {/* Add GameGrid to show the game */}
             </div>
             <ProfileBackground_big />
         </div>

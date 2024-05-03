@@ -1,0 +1,32 @@
+.library-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    padding-top: 130px;
+}
+
+.library-card {
+    display: flex;
+    align-items: center;
+    padding: 45px 30px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    transition: transform 0.7s ease-in-out;
+    width: 40vw;
+    background: linear-gradient(90deg, rgba(79, 58, 143, 0.7) 0%, rgba(235, 58, 74, 0.7) 100%);
+    border-radius: 10px;
+}
+
+.library-card-category {
+    color: #ffffff;
+    font-size: 30px;
+    width: 40%;
+}
+
+.library-card-content {
+    color: #ffffffB2;
+    width: 46%;
+}

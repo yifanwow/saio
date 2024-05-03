@@ -1,11 +1,17 @@
 import React from 'react';
 
-function Header() {
+function Header({ current, onChange }) {
+  const handleClick = (val) => {
+    if (val === current) {
+      onChange('grid')
+    } else {
+      onChange(val)
+    }
+  }
   return (
     <div style={headerContainerStyle}>
-      <button style={buttonStyle}>RANKING</button>
-      <button style={buttonStyle}>LIBRARIES</button>
-      <button style={buttonStyle}>SETTING</button>
+      <button style={buttonStyle} onClick={() => handleClick('rank')}>RANKING</button>
+      <button style={buttonStyle} onClick={() => handleClick('library')}>LIBRARY</button>
     </div>
   );
 }
@@ -22,7 +28,7 @@ const headerContainerStyle = {
   margin: 'auto',
   width: '70%',
   height: '2.7vh',
-  marginBottom: '7vh', 
+  marginBottom: '7vh',
 
   // 高斯模糊
   borderRadius: '17px',

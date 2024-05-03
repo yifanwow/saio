@@ -1,0 +1,29 @@
+.library-game-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px 16px;
+    transition: transform 0.7s ease-in-out;
+    width: 30%;
+    height: 200px;
+    background: linear-gradient(90deg, rgba(79, 58, 143, 0.7) 0%, rgba(235, 58, 74, 0.7) 100%);
+    border-radius: 10px;
+}
+
+.library-game-left {
+    width: 30%;
+    height: 100%;
+}
+
+.library-game-image {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.77);
+    object-fit: cover;
+}
+
+.library-game-content {
+    width: 70%;
+    color: #D2D2D2;
+}
