@@ -374,7 +374,8 @@
         "rtime_last_played": 1649930038,
         "playtime_disconnected": 0,
         "price": 0,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/12110/library_600x900_2x.jpg"
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/12110/library_600x900_2x.jpg",
+        "categories": []
       },
       {
         "appid": 12240,
@@ -1219,6 +1220,7 @@
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
         "price": 509,
+        "price": 509,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/322330/library_600x900_2x.jpg"
       },
       {
@@ -1458,6 +1460,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703301708,
         "playtime_disconnected": 0,
+        "price": 999,
         "price": 999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/429330/library_600x900_2x.jpg"
       },
@@ -1702,6 +1705,7 @@
         "rtime_last_played": 1703307394,
         "playtime_disconnected": 0,
         "price": 1999,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/477160/library_600x900_2x.jpg"
       },
       {
@@ -1753,6 +1757,7 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
+        "price": 999,
         "price": 999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/504130/library_600x900_2x.jpg"
       },
@@ -1844,6 +1849,7 @@
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
         "price": 1499,
+        "price": 1499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/522210/library_600x900_2x.jpg"
       },
       {
@@ -1877,6 +1883,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1593211216,
         "playtime_disconnected": 0,
+        "price": 1999,
         "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/527230/library_600x900_2x.jpg"
       },
@@ -3022,6 +3029,7 @@
         ],
         "playtime_disconnected": 0,
         "price": 2039,
+        "price": 2039,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/779340/library_600x900_2x.jpg"
       },
       {
@@ -3751,6 +3759,7 @@
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
         "price": 2999,
+        "price": 2999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1057090/library_600x900_2x.jpg"
       },
       {
@@ -4115,6 +4124,7 @@
         "rtime_last_played": 1595598078,
         "playtime_disconnected": 0,
         "price": 3999,
+        "price": 3999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1172620/library_600x900_2x.jpg"
       },
       {
@@ -4329,6 +4339,7 @@
         "playtime_deck_forever": 4,
         "rtime_last_played": 1682430021,
         "playtime_disconnected": 0,
+        "price": 849,
         "price": 849,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1145360/library_600x900_2x.jpg"
       },
@@ -5214,6 +5225,7 @@
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
         "price": 599,
+        "price": 599,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/34330/library_600x900_2x.jpg"
       },
       {
@@ -5243,6 +5255,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
+        "price": 999,
         "price": 999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/435790/library_600x900_2x.jpg"
       },
@@ -5981,6 +5994,7 @@
         "has_leaderboards": true,
         "playtime_disconnected": 0,
         "price": 1999,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/537800/library_600x900_2x.jpg"
       },
       {
@@ -6082,6 +6096,7 @@
           5
         ],
         "playtime_disconnected": 0,
+        "price": 1999,
         "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1180660/library_600x900_2x.jpg"
       },
@@ -6621,6 +6636,7 @@
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
         "price": 1099,
+        "price": 1099,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1880330/library_600x900_2x.jpg"
       },
       {
@@ -6938,6 +6954,7 @@
         "rtime_last_played": 1704202828,
         "playtime_disconnected": 0,
         "price": 5999,
+        "price": 5999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/368260/library_600x900_2x.jpg"
       },
       {
@@ -7079,6 +7096,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
+        "price": 1499,
         "price": 1499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/383270/library_600x900_2x.jpg"
       },

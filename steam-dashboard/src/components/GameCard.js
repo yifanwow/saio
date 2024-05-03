@@ -46,6 +46,15 @@ function GameCard({ game }) {
         console.error('Error:', error);
         alert('Failed to update grid URL.');
       });
+      .then(response => response.json())
+      .then(data => {
+        alert('Grid URL updated successfully.');
+        setImageUrl(newGridUrl);  // 成功后更新图片 URL
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        alert('Failed to update grid URL.');
+      });
   };
 
   const handleChangeGrid = () => {
@@ -141,6 +150,28 @@ function GameCard({ game }) {
           <div className="option-item" onClick={toggleRating}>Rating</div>
         }
       </div>
+      {inputVisible && (
+        <div className='tag-input-container'>
+          <img src="/img/ICON/tag_icon.png" alt="Tag Icon" className="tag-icon" />
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onKeyPress={(e) => e.key === 'Enter' && addTag(e)}
+            placeholder='Add a tag...'
+          />
+        </div>
+      )}
+      {tags.length > 0 && (
+        <div className='tag-container'>
+          {tags.map((tag, index) => (
+            <div className='tag' key={index}>
+              <img src="/img/ICON/tag_icon.png" alt="Tag Icon" className="tag-icon" />
+              {tag}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
