@@ -31,7 +31,38 @@ router.post('/update-grid', async (req, res) => {
   }
 });
 
-// Category 
+// Gloria's rating feature backend process
+// Post route to update game rating 
+router.post('/update-rate', async (req, res) => {
+  const { appid, newRate } = req.body;
+  const filePath = path.join(__dirname, 'public', 'users_games.json'); // Stablized 
+
+
+  try {
+    // Read the existing file
+    const jsonData = fs.readFileSync(filePath, 'utf8');
+    let gamesData = JSON.parse(jsonData);
+
+    // Find the game and update the rating 
+    const game = gamesData.response.games.find(game => game.appid === appid);
+    if (game) {
+      if(newRate === -1 && game.rate) {
+        delete game.rate
+      }else {
+        game.rate = newRate;
+      }
+      fs.writeFileSync(filePath, JSON.stringify(gamesData, null, 2));
+      res.status(200).send({ message: 'Rating updated successfully' });
+    } else {
+      res.status(404).send({ message: 'Game not found' });
+    }
+  } catch (error) {
+    console.error('Failed to update rating:', error);
+    res.status(500).send({ message: 'Failed to update rating' });
+  }
+});
+
+// Hongyang's category feature backend process
 // POST route to update game categories
 router.post('/update-categories', async (req, res) => {
   const { appid, newCategories } = req.body;
@@ -60,6 +91,5 @@ router.post('/update-categories', async (req, res) => {
     res.status(500).send({ message: 'Failed to update categories' });
   }
 });
-
 
 module.exports = router;

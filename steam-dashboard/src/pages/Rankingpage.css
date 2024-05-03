@@ -1,0 +1,33 @@
+.ranking-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ranking-list {
+    width: 60vw;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow-y: auto;
+    background: linear-gradient(90deg, rgba(253, 166, 112, 0.7) 0%, rgba(124, 218, 218, 0.7) 100%);
+}
+
+.ranking-page-game-image {
+    height: 120px;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.77);
+    object-fit: cover;
+}
+
+.ranking-game-card {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10px 16px;
+}
+
+.ranking-page-game-content {
+    color: #ffffff;
+    margin-left: 20px;
+}
