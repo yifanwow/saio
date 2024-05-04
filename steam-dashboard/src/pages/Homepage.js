@@ -4,6 +4,8 @@ import './Homepage.css';
 import ProfileBackground_big from '../components/ProfileBackground_big.js';
 import Header from '../components/Header.js';
 import GameGrid from '../components/GameGrid.js';
+import { Link } from 'react-router-dom'; // for logo & ensure its installed
+
 const Homepage = () => {
     const [userInfo, setUserInfo] = useState(null);
     const [showProfile, setShowProfile] = useState(false);
@@ -69,6 +71,11 @@ const Homepage = () => {
 
     return (
         <div className='background' style={{ display: 'flex', width: '100vw' }}>
+            {/* Logo at the top left corner */}
+            <Link to="/" style={{ position: 'absolute', top: 0, left: 0, zIndex: 1000 }}>
+                <img src="/img/ICON/logo.png" alt="Logo" style={{ width: '180px', height: 'auto', padding: '10px' }} />
+            </Link>
+
             {/* 左半部分 */}
             <div style={{ width: '50vw' }}>
                 {showProfile && (
@@ -80,7 +87,7 @@ const Homepage = () => {
 
             {/* 右半部分 */}
             <div style={{ width: '50vw' }}>
-                <div className="fade-in"><Header/></div>
+                <div className="fade-in"><Header /></div>
                 <div style={{ marginTop: '0px' }}><GameGrid games={games} /> </div> {/* 添加 GameGrid 组件来显示游戏 */}
             </div>
             <ProfileBackground_big />
