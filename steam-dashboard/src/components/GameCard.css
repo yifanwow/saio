@@ -170,7 +170,7 @@
   box-sizing: border-box;
   justify-content: center;
   max-width: calc(100% - 10px); /* Provide some padding inside the container */
-  margin: 0 5px; /* Center the container within the card */
+  margin: 1.5vh 1vw; /* Center the container within the card */
   z-index: 150; /* Ensure it's above other elements */
 }
 
@@ -178,11 +178,11 @@
   position: relative;
   color: #D2D2D2; /* Light gray text color */
   border-radius: 12px; /* Rounder and blunter edges */
-  padding: 4px 8px; /* Slightly larger padding to accommodate smaller icon and larger text */
-  margin-right: 5px; /* Space between tags */
+  padding: 1vh 1vh; /* Slightly larger padding to accommodate smaller icon and larger text */
+  margin-right: 10px; /* Space between tags */
   display: flex;
   align-items: center;
-  font-size: 0.85rem; /* Slightly larger text relative to the icon */
+  font-size: 0.79rem; /* Slightly larger text relative to the icon */
   pointer-events: auto; /* Ensures the tags themselves can be interacted with */
   background: transparent; /* Transparent background for the tag itself */
   z-index: 2;
@@ -204,7 +204,7 @@
 input[type="text"] {
   border: none;
   outline: none;
-  padding: 4px;
+  padding: 0.8vh;
   margin: 0;
   flex-grow: 1;
   max-width: calc(100% - 30px); /* Prevents overflow by considering padding and button width */
@@ -219,8 +219,8 @@ input[type="text"] {
 .tag-container {
   display: flex;
   position: absolute;
-  bottom: 38px; /* Adjusted to move the tags inside the game card at the bottom */
-  left: 3px; /* Starts tags from the left side */
+  bottom: 4.7vh; /* Adjusted to move the tags inside the game card at the bottom */
+  left: 0.3vw; /* Starts tags from the left side */
   align-items: center;
   flex-wrap: wrap;
   pointer-events: none; /* Makes the container not block clicks on items below it, if necessary */
