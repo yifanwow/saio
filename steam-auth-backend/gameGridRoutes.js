@@ -3,24 +3,22 @@ const router = express.Router();
 const fs = require('fs');
 const path = require('path');
 const app = express();
+const Game = require('./models/Games');  // 确保路径是正确的
 
 app.use(express.json());
 
 // POST route to update game grid URL
 router.post('/update-grid', async (req, res) => {
   const { appid, newGridUrl } = req.body;
-  const filePath = path.join(__dirname, 'public', 'users_games.json');
 
   try {
-    // Read the existing file
-    const jsonData = fs.readFileSync(filePath, 'utf8');
-    let gamesData = JSON.parse(jsonData);
-
-    // Find the game and update the grid URL
-    const game = gamesData.response.games.find(game => game.appid === appid);
+    const game = await Game.findOne({ 'games.appid': appid });  // 根据 appid 查找游戏
     if (game) {
-      game.grid = newGridUrl;
-      fs.writeFileSync(filePath, JSON.stringify(gamesData, null, 2));
+      // 找到对应的游戏，并更新 diyGrid 而不是 grid
+      const gameToUpdate = game.games.find(g => g.appid === appid);
+      gameToUpdate.diyGrid = newGridUrl;  // 更新 diyGrid 字段
+
+      await game.save();  // 保存更新
       res.status(200).send({ message: 'Grid URL updated successfully' });
     } else {
       res.status(404).send({ message: 'Game not found' });
@@ -30,7 +28,31 @@ router.post('/update-grid', async (req, res) => {
     res.status(500).send({ message: 'Failed to update grid URL' });
   }
 });
+// POST route to clear the custom grid URL
+router.post('/clear-grid', async (req, res) => {
+  const { appid, steamID } = req.body;
 
+  try {
+    const gameData = await Game.findOne({ steamID });
+    if (!gameData) {
+      return res.status(404).send({ message: 'User games data not found' });
+    }
+
+    // Find the game and clear the diyGrid URL
+    const gameIndex = gameData.games.findIndex(game => game.appid === appid);
+    if (gameIndex !== -1 && gameData.games[gameIndex].diyGrid) {
+      // Use $unset to remove the diyGrid field
+      const unsetField = `games.$.diyGrid`;
+      await Game.updateOne({ steamID, "games.appid": appid }, { $unset: { [unsetField]: 1 } });
+      res.status(200).send({ message: 'Custom grid URL cleared successfully' });
+    } else {
+      res.status(404).send({ message: 'Game not found or no custom grid URL to clear' });
+    }
+  } catch (error) {
+    console.error('Failed to clear custom grid URL:', error);
+    res.status(500).send({ message: 'Failed to clear custom grid URL' });
+  }
+});
 // Gloria's rating feature backend process
 // Post route to update game rating 
 router.post('/update-rate', async (req, res) => {

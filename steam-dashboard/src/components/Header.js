@@ -12,6 +12,7 @@ function Header({ current, onChange }) {
     <div style={headerContainerStyle}>
       <button style={buttonStyle} onClick={() => handleClick('rank')}>RANKING</button>
       <button style={buttonStyle} onClick={() => handleClick('library')}>LIBRARY</button>
+      <button style={buttonStyle} >SETTING</button>
     </div>
   );
 }

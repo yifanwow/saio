@@ -329,7 +329,7 @@
         "playtime_deck_forever": 1,
         "rtime_last_played": 1676349574,
         "playtime_disconnected": 0,
-        "price": 999,
+        "price": 199,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/206440/library_600x900_2x.jpg"
       },
       {
@@ -374,10 +374,7 @@
         "rtime_last_played": 1649930038,
         "playtime_disconnected": 0,
         "price": 0,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/12110/library_600x900_2x.jpg",
-        "categories": [
-          "horror"
-        ]
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/12110/library_600x900_2x.jpg"
       },
       {
         "appid": 12240,
@@ -1467,15 +1464,16 @@
       {
         "appid": 431960,
         "name": "Wallpaper Engine",
-        "playtime_2weeks": 16531,
-        "playtime_forever": 674301,
+
+        "playtime_2weeks": 20100,
+        "playtime_forever": 671028,
         "img_icon_url": "72edaed9d748c6cf7397ffb1c83f0b837b9ebd9d",
         "has_community_visible_stats": true,
-        "playtime_windows_forever": 673449,
+        "playtime_windows_forever": 670176,
         "playtime_mac_forever": 0,
         "playtime_linux_forever": 21,
         "playtime_deck_forever": 8141,
-        "rtime_last_played": 1714845994,
+        "rtime_last_played": 1714434725,
         "playtime_disconnected": 12,
         "price": 399,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/431960/library_600x900_2x.jpg"
@@ -2166,14 +2164,16 @@
       {
         "appid": 616720,
         "name": "Live2DViewerEX",
+
         "playtime_2weeks": 17187,
         "playtime_forever": 934175,
+
         "img_icon_url": "eaf779fd309b4fc47a67247666c43dfe566187fc",
-        "playtime_windows_forever": 934175,
+        "playtime_windows_forever": 929918,
         "playtime_mac_forever": 0,
         "playtime_linux_forever": 0,
         "playtime_deck_forever": 0,
-        "rtime_last_played": 1714845994,
+        "rtime_last_played": 1714434725,
         "playtime_disconnected": 930,
         "price": 499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/616720/library_600x900_2x.jpg"
@@ -2855,7 +2855,7 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 999,
+        "price": 699,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/852480/library_600x900_2x.jpg"
       },
       {
@@ -3105,7 +3105,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1674441552,
         "playtime_disconnected": 0,
-        "price": 199,
+        "price": 159,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/939400/library_600x900_2x.jpg"
       },
       {
@@ -3320,7 +3320,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1606952593,
         "playtime_disconnected": 0,
-        "price": 2999,
+        "price": 449,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/304390/library_600x900_2x.jpg"
       },
       {
@@ -3471,7 +3471,7 @@
         "playtime_deck_forever": 3,
         "rtime_last_played": 1664234821,
         "playtime_disconnected": 0,
-        "price": 2999,
+        "price": 1499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/994280/library_600x900_2x.jpg"
       },
       {
@@ -3901,6 +3901,7 @@
         "playtime_disconnected": 0,
         "price": 5999,
         "grid": "https://d.furaffinity.net/art/snejek/1707208625/1707208625.snejek_img_0266.gif"
+
       },
       {
         "appid": 703080,
@@ -4286,8 +4287,7 @@
         ],
         "playtime_disconnected": 0,
         "price": 1199,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1200110/library_600x900_2x.jpg",
-        "categories": []
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1200110/library_600x900_2x.jpg"
       },
       {
         "appid": 1202310,
@@ -4405,15 +4405,14 @@
       {
         "appid": 1217060,
         "name": "Gunfire Reborn",
-        "playtime_2weeks": 1,
-        "playtime_forever": 18055,
+        "playtime_forever": 18053,
         "img_icon_url": "446d10e4c62466203a4c60e3416d4307048710b8",
         "has_community_visible_stats": true,
-        "playtime_windows_forever": 18038,
+        "playtime_windows_forever": 18037,
         "playtime_mac_forever": 0,
         "playtime_linux_forever": 16,
         "playtime_deck_forever": 14,
-        "rtime_last_played": 1714797975,
+        "rtime_last_played": 1708768303,
         "playtime_disconnected": 0,
         "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1217060/library_600x900_2x.jpg"
@@ -6586,10 +6585,7 @@
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
         "price": 5999,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1817070/library_600x900_2x.jpg",
-        "categories": [
-          "aaaa"
-        ]
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1817070/library_600x900_2x.jpg"
       },
       {
         "appid": 1832640,
@@ -7170,7 +7166,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2499,
+        "price": 249,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/235900/library_600x900_2x.jpg"
       }
     ]

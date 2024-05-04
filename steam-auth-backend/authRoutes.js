@@ -6,7 +6,7 @@
   const axios = require('axios');
   const { log } = require('console');
   const { saveUserGames, fetchUserGames } = require('./db/mongo');
-  const userGamesDir = path.join(__dirname, 'public', 'users_games');
+  // const userGamesDir = path.join(__dirname, 'public', 'users_games');
 
   router.get('/auth/steam', passport.authenticate('steam', { failureRedirect: '/' }));
 
@@ -29,7 +29,7 @@
         const daysDiff = Math.floor(secondsDiff / (60 * 60 * 24));
         console.log('days:  ' + daysDiff);
 
-        const gameCount = gameData.length;
+        let gameCount = gameData.length;
         let totalGameHours = calculateTotalHours(gameData);
         totalGameHours = Math.floor(totalGameHours / 60);
         const accountValue = calculateTotalValue(gameData);
@@ -102,37 +102,25 @@
       const url = `https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamID}&include_appinfo=1&format=json`;
       const response = await axios.get(url);
       const games = response.data.response.games;
-  
-      const detailedGames = await Promise.all(games.map(async (game) => {
-        const detailUrl = `https://store.steampowered.com/api/appdetails?appids=${game.appid}&filters=price_overview`;
-        try {
-          const detailResponse = await axios.get(detailUrl);
-          if (detailResponse.data[game.appid].success) {
-            const details = detailResponse.data[game.appid].data;
-            return {
-              ...game, // 保留所有原始字段
-              price: details.price_overview ? details.price_overview.final / 100 : 0, // 添加价格
-              grid: `https://steamcdn-a.akamaihd.net/steam/apps/${game.appid}/library_600x900_2x.jpg` // 添加封面图
-              
-            };
-          } else {
-            throw new Error(`No success for game ${game.appid}`);
-          }
-        } catch (error) {
-          //console.error('Failed to fetch additional details for:', game.appid, error);
-          return {
-            ...game,
-            price: 0,
-            grid: `https://steamcdn-a.akamaihd.net/steam/apps/${game.appid}/library_600x900_2x.jpg`
-          };
-        }
-      }));
-  
-      // 打印处理后的游戏数据
-      //console.log("Detailed Games Data:", JSON.stringify(detailedGames, null, 2));
+      const gameIds = games.map(game => game.appid).join(',');
+
+      // 一次性获取所有游戏的价格信息
+      const detailsUrl = `https://store.steampowered.com/api/appdetails?appids=${gameIds}&filters=price_overview`;
+      const detailsResponse = await axios.get(detailsUrl);
+      const pricesData = detailsResponse.data;
+
+      const detailedGames = games.map(game => {
+        const details = pricesData[game.appid] && pricesData[game.appid].success ? pricesData[game.appid].data : null;
+        return {
+          ...game,
+          price: details && details.price_overview ? details.price_overview.final / 100 : 0, // 添加价格
+          grid: `https://steamcdn-a.akamaihd.net/steam/apps/${game.appid}/library_600x900_2x.jpg` // 添加封面图
+        };
+      });
+
       return detailedGames;
     } catch (error) {
-      //console.error('Error fetching games from Steam:', error);
+      console.error('Error fetching games from Steam:', error);
       return [];
     }
   }
