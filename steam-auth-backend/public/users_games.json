@@ -1464,6 +1464,7 @@
       {
         "appid": 431960,
         "name": "Wallpaper Engine",
+
         "playtime_2weeks": 20100,
         "playtime_forever": 671028,
         "img_icon_url": "72edaed9d748c6cf7397ffb1c83f0b837b9ebd9d",
@@ -1584,7 +1585,10 @@
         ],
         "playtime_disconnected": 0,
         "price": 1499,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/447530/library_600x900_2x.jpg"
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/447530/library_600x900_2x.jpg",
+        "categories": [
+          "fsdf"
+        ]
       },
       {
         "appid": 460790,
@@ -2160,8 +2164,10 @@
       {
         "appid": 616720,
         "name": "Live2DViewerEX",
-        "playtime_2weeks": 19771,
-        "playtime_forever": 929918,
+
+        "playtime_2weeks": 17187,
+        "playtime_forever": 934175,
+
         "img_icon_url": "eaf779fd309b4fc47a67247666c43dfe566187fc",
         "playtime_windows_forever": 929918,
         "playtime_mac_forever": 0,
@@ -2657,7 +2663,6 @@
         "playtime_mac_forever": 0,
         "playtime_linux_forever": 0,
         "playtime_deck_forever": 0,
-        "rtime_last_played": 1714434170,
         "playtime_disconnected": 3344,
         "price": 399,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/786520/library_600x900_2x.jpg"
@@ -3895,7 +3900,8 @@
         ],
         "playtime_disconnected": 0,
         "price": 5999,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1091500/library_600x900_2x.jpg"
+        "grid": "https://d.furaffinity.net/art/snejek/1707208625/1707208625.snejek_img_0266.gif"
+
       },
       {
         "appid": 703080,
@@ -5035,7 +5041,10 @@
         "rtime_last_played": 1712883539,
         "playtime_disconnected": 0,
         "price": 0,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1284410/library_600x900_2x.jpg"
+        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1284410/library_600x900_2x.jpg",
+        "categories": [
+          "fsd"
+        ]
       },
       {
         "appid": 680360,
