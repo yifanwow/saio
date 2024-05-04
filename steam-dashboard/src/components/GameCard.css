@@ -11,6 +11,7 @@
   transition: transform 0.7s ease-in-out;
   max-width: 11vw;
   min-width: 5vw;
+  position: relative;
 }
 
 .game-card:hover {
@@ -22,11 +23,12 @@
 .game-image {
   width: 100%;
   /* 宽度占满父容器 */
-  height: auto;
+  height: 100%;
   /* 自适应高度 */
   /* 最大宽度为200px */
   border-radius: 10px;
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.77);
+  object-fit: cover;
 }
 
 .game-name-container {
@@ -36,11 +38,11 @@
   /* 隐藏超出容器的文本 */
   white-space: nowrap;
   /* 保证文本在一行显示 */
+  margin-top: 10px;
 }
 
 /* GameCard.css */
 .game-name {
-  margin-top: 10px;
   color: rgba(255, 255, 255, 0.801);
   font-size: 15px;
   font-style: normal;
@@ -75,6 +77,10 @@
   animation: scrollText 20s linear infinite;
   display: inline-block;
   /* 由于文本需要移动，因此将其设置为 inline-block */
+}
+
+.game-rate-container {
+  margin-top: 5px;
 }
 
 .option-button {
@@ -123,6 +129,34 @@
 .option-item:hover {
   background-color: #333; /* 悬停时的背景色 */
 }
+
+.option-item-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiRating-root {
+  color: #ff6d75;
+}
+
+.option-item .MuiRating-root {
+  margin-left: 8px;
+}
+
+.MuiRating-iconFilled {
+  color: #ff3d47;
+}
+
+.MuiRating-iconEmpty {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.MuiRating-iconHover {
+  color: #ff6d75;
+
+}
+
 
 .tag-input-container {
   display: flex;

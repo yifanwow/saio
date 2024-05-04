@@ -4,6 +4,8 @@ import HomeLoggedIn from './pages/HomeLoggedIn';
 import HomeLoggedOut from './pages/HomeLoggedOut';
 import Homepage from './pages/Homepage';
 import LoginPage from './LoginPage';
+import Librarypage from './pages/Librarypage';
+import Rankingpage from './pages/Rankingpage';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={isLoggedIn ? <HomeLoggedIn /> : <HomeLoggedOut />} />
         <Route path="/home" element={<HomeLoggedIn />} />
         <Route path="/Homepage" element={<Homepage />} />
+        <Route path="/Librarypage" element={<Librarypage />} />
+        <Route path="/Rankingpage" element={<Rankingpage />} />
       </Routes>
     </Router>
   );

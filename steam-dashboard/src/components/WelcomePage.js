@@ -102,3 +102,4 @@ function WelcomePage({ userInfo, bg1Position, bg2Position, setShowWelcomePage })
 }
 
 export default WelcomePage;
+

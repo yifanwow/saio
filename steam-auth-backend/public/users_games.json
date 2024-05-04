@@ -269,7 +269,7 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 279,
+        "price": 999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/620/library_600x900_2x.jpg"
       },
       {
@@ -799,7 +799,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2499,
+        "price": 1624,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/303310/library_600x900_2x.jpg"
       },
       {
@@ -1074,7 +1074,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 599,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/311560/library_600x900_2x.jpg"
       },
       {
@@ -1088,7 +1088,7 @@
         "playtime_deck_forever": 5,
         "rtime_last_played": 1663005166,
         "playtime_disconnected": 0,
-        "price": 299,
+        "price": 999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/354380/library_600x900_2x.jpg"
       },
       {
@@ -1221,7 +1221,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 509,
+        "price": 1499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/322330/library_600x900_2x.jpg"
       },
       {
@@ -1461,12 +1461,13 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703301708,
         "playtime_disconnected": 0,
-        "price": 999,
+        "price": 249,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/429330/library_600x900_2x.jpg"
       },
       {
         "appid": 431960,
         "name": "Wallpaper Engine",
+
         "playtime_2weeks": 16531,
         "playtime_forever": 674301,
         "img_icon_url": "72edaed9d748c6cf7397ffb1c83f0b837b9ebd9d",
@@ -1704,7 +1705,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1703307394,
         "playtime_disconnected": 0,
-        "price": 1999,
+        "price": 599,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/477160/library_600x900_2x.jpg"
       },
       {
@@ -1756,7 +1757,7 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 999,
+        "price": 99,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/504130/library_600x900_2x.jpg"
       },
       {
@@ -1846,7 +1847,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499,
+        "price": 149,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/522210/library_600x900_2x.jpg"
       },
       {
@@ -1880,7 +1881,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1593211216,
         "playtime_disconnected": 0,
-        "price": 1999,
+        "price": 499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/527230/library_600x900_2x.jpg"
       },
       {
@@ -1944,7 +1945,7 @@
         "playtime_deck_forever": 70,
         "rtime_last_played": 1664239141,
         "playtime_disconnected": 0,
-        "price": 1099,
+        "price": 384,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/553640/library_600x900_2x.jpg"
       },
       {
@@ -2163,6 +2164,7 @@
       {
         "appid": 616720,
         "name": "Live2DViewerEX",
+
         "playtime_2weeks": 17187,
         "playtime_forever": 934175,
         "img_icon_url": "eaf779fd309b4fc47a67247666c43dfe566187fc",
@@ -2336,7 +2338,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704066543,
         "playtime_disconnected": 0,
-        "price": 974,
+        "price": 1499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/673750/library_600x900_2x.jpg"
       },
       {
@@ -2652,15 +2654,16 @@
       {
         "appid": 786520,
         "name": "SAO Utils: Beta",
-        "playtime_2weeks": 17569,
-        "playtime_forever": 1583592,
+
+        "playtime_2weeks": 20110,
+        "playtime_forever": 1579295,
         "img_icon_url": "d527c45dab38c87f3eabf8bf943388a3cfb62d26",
         "has_community_visible_stats": true,
-        "playtime_windows_forever": 1583592,
+        "playtime_windows_forever": 1579295,
         "playtime_mac_forever": 0,
         "playtime_linux_forever": 0,
         "playtime_deck_forever": 0,
-        "rtime_last_played": 1714847236,
+
         "playtime_disconnected": 3344,
         "price": 399,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/786520/library_600x900_2x.jpg"
@@ -2668,14 +2671,16 @@
       {
         "appid": 877280,
         "name": "SAO Utils 2: Progressive",
-        "playtime_2weeks": 17570,
-        "playtime_forever": 285195,
+
+        "playtime_2weeks": 20110,
+        "playtime_forever": 280898,
         "img_icon_url": "ab16d51fcd68f9b86c1313fe1d9beb0e563afce1",
-        "playtime_windows_forever": 285195,
+        "playtime_windows_forever": 280898,
         "playtime_mac_forever": 0,
         "playtime_linux_forever": 0,
         "playtime_deck_forever": 0,
-        "rtime_last_played": 1714847236,
+        "rtime_last_played": 1714434170,
+
         "playtime_disconnected": 3336,
         "price": 0,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/877280/library_600x900_2x.jpg"
@@ -2783,7 +2788,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499,
+        "price": 974,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/804700/library_600x900_2x.jpg"
       },
       {
@@ -3024,7 +3029,7 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 2039,
+        "price": 5999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/779340/library_600x900_2x.jpg"
       },
       {
@@ -3578,7 +3583,7 @@
           4
         ],
         "playtime_disconnected": 0,
-        "price": 799,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1015730/library_600x900_2x.jpg"
       },
       {
@@ -3753,7 +3758,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 2999,
+        "price": 989,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1057090/library_600x900_2x.jpg"
       },
       {
@@ -3898,10 +3903,8 @@
         ],
         "playtime_disconnected": 0,
         "price": 5999,
-        "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1091500/library_600x900_2x.jpg",
-        "categories": [
-          "action"
-        ]
+        "grid": "https://d.furaffinity.net/art/snejek/1707208625/1707208625.snejek_img_0266.gif"
+
       },
       {
         "appid": 703080,
@@ -4120,7 +4123,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1595598078,
         "playtime_disconnected": 0,
-        "price": 3999,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1172620/library_600x900_2x.jpg"
       },
       {
@@ -4336,7 +4339,7 @@
         "playtime_deck_forever": 4,
         "rtime_last_played": 1682430021,
         "playtime_disconnected": 0,
-        "price": 849,
+        "price": 2499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1145360/library_600x900_2x.jpg"
       },
       {
@@ -4467,7 +4470,7 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 499,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1227890/library_600x900_2x.jpg"
       },
       {
@@ -4693,15 +4696,17 @@
       {
         "appid": 1267910,
         "name": "Melvor Idle",
-        "playtime_2weeks": 17518,
-        "playtime_forever": 305504,
+
+        "playtime_2weeks": 19949,
+        "playtime_forever": 301230,
         "img_icon_url": "88eca64c662c128de095b4e452881398ac71969c",
         "has_community_visible_stats": true,
-        "playtime_windows_forever": 305504,
+        "playtime_windows_forever": 301230,
         "playtime_mac_forever": 0,
         "playtime_linux_forever": 0,
         "playtime_deck_forever": 18246,
-        "rtime_last_played": 1714846072,
+        "rtime_last_played": 1714433784,
+
         "playtime_disconnected": 717,
         "price": 999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1267910/library_600x900_2x.jpg"
@@ -4889,7 +4894,7 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 899,
+        "price": 1499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1278390/library_600x900_2x.jpg"
       },
       {
@@ -4951,7 +4956,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 99,
+        "price": 49,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/420740/library_600x900_2x.jpg"
       },
       {
@@ -5221,7 +5226,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 599,
+        "price": 2999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/34330/library_600x900_2x.jpg"
       },
       {
@@ -5251,7 +5256,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 999,
+        "price": 99,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/435790/library_600x900_2x.jpg"
       },
       {
@@ -5691,7 +5696,7 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1399,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1419750/library_600x900_2x.jpg"
       },
       {
@@ -5799,7 +5804,7 @@
         "rtime_last_played": 1656468982,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1399,
+        "price": 979,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1455840/library_600x900_2x.jpg"
       },
       {
@@ -5988,7 +5993,7 @@
         "rtime_last_played": 0,
         "has_leaderboards": true,
         "playtime_disconnected": 0,
-        "price": 1999,
+        "price": 199,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/537800/library_600x900_2x.jpg"
       },
       {
@@ -6090,7 +6095,7 @@
           5
         ],
         "playtime_disconnected": 0,
-        "price": 1999,
+        "price": 499,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1180660/library_600x900_2x.jpg"
       },
       {
@@ -6631,7 +6636,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1099,
+        "price": 879,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/1880330/library_600x900_2x.jpg"
       },
       {
@@ -6948,7 +6953,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 1704202828,
         "playtime_disconnected": 0,
-        "price": 5999,
+        "price": 1999,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/368260/library_600x900_2x.jpg"
       },
       {
@@ -6963,7 +6968,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 399,
+        "price": 299,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/2296990/library_600x900_2x.jpg"
       },
       {
@@ -7090,7 +7095,7 @@
         "playtime_deck_forever": 0,
         "rtime_last_played": 0,
         "playtime_disconnected": 0,
-        "price": 1499,
+        "price": 299,
         "grid": "https://steamcdn-a.akamaihd.net/steam/apps/383270/library_600x900_2x.jpg"
       },
       {

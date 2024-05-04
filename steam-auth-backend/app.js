@@ -3,11 +3,13 @@ const express = require('express');
 const passport = require('passport');
 const authRoutes = require('./authRoutes');
 const SteamStrategy = require('passport-steam').Strategy;
+const mongoose = require('mongoose');
 const session = require('express-session');
 const cors = require('cors');
 const app = express();
 const path = require('path');
 var bodyParser = require('body-parser');
+
 
 const corsOptions = {
   origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
@@ -21,6 +23,11 @@ app.use(express.static('public'));
 // Configure the Steam strategy for use by Passport.
 
 //application/json
+const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://yifanovo:771593872yU!@saiodb.hd7aqm8.mongodb.net/';
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
 app.use(bodyParser.json());
 //application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
