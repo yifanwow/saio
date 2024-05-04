@@ -177,17 +177,15 @@
 }
 
 .tag {
-  background: #ccc;
+  background: linear-gradient(135deg, #25104D 40%, #D2D2D2 100%);
+  color: #D2D2D2; /* Light gray text color */
   border-radius: 4px;
   padding: 2px 8px;
-  margin-right: 5px;
+  margin-right: 5px; /* Space between tags */
   display: flex;
   align-items: center;
-}
-
-.close-button {
-  margin-left: 10px;
-  cursor: pointer;
+  font-size: 0.8rem; /* Adjust font size as needed */
+  pointer-events: auto; /* Ensures the tags themselves can be interacted with */
 }
 
 input[type="text"] {
@@ -203,4 +201,14 @@ input[type="text"] {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+}
+
+.tag-container {
+  display: flex;
+  position: absolute;
+  bottom: 35px; /* Adjusted to move the tags inside the game card at the bottom */
+  left: 3px; /* Starts tags from the left side */
+  align-items: center;
+  flex-wrap: wrap;
+  pointer-events: none; /* Makes the container not block clicks on items below it, if necessary */
 }
