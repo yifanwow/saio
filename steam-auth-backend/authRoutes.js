@@ -30,7 +30,7 @@
         console.log('days:  ' + daysDiff);
 
         const gameCount = gameData.length;
-        const totalGameHours = calculateTotalHours(gameData);
+        let totalGameHours = calculateTotalHours(gameData);
         totalGameHours = Math.floor(totalGameHours / 60);
         const accountValue = calculateTotalValue(gameData);
 

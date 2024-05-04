@@ -177,15 +177,30 @@
 }
 
 .tag {
-  background: linear-gradient(135deg, #25104D 40%, #D2D2D2 100%);
+  position: relative;
   color: #D2D2D2; /* Light gray text color */
-  border-radius: 4px;
-  padding: 2px 8px;
+  border-radius: 12px; /* Rounder and blunter edges */
+  padding: 4px 8px; /* Slightly larger padding to accommodate smaller icon and larger text */
   margin-right: 5px; /* Space between tags */
   display: flex;
   align-items: center;
-  font-size: 0.8rem; /* Adjust font size as needed */
+  font-size: 0.85rem; /* Slightly larger text relative to the icon */
   pointer-events: auto; /* Ensures the tags themselves can be interacted with */
+  background: transparent; /* Transparent background for the tag itself */
+  z-index: 2;
+}
+
+.tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(37, 16, 77, 0.95) 30%, rgba(210, 210, 210, 0.95) 100%);
+  border-radius: 12px;
+  filter: blur(0.8px); /* Gaussian blur effect on the background */
+  z-index: -1;
 }
 
 input[type="text"] {
@@ -198,15 +213,15 @@ input[type="text"] {
 }
 
 .tag-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+  width: 16px; /* Smaller icon */
+  height: 16px; /* Smaller icon */
+  margin-right: 5px; /* Adjust margin to visually balance the icon and text */
 }
 
 .tag-container {
   display: flex;
   position: absolute;
-  bottom: 35px; /* Adjusted to move the tags inside the game card at the bottom */
+  bottom: 38px; /* Adjusted to move the tags inside the game card at the bottom */
   left: 3px; /* Starts tags from the left side */
   align-items: center;
   flex-wrap: wrap;
