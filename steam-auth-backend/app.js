@@ -9,6 +9,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 var bodyParser = require('body-parser');
+const gamesRouter = require('./routes/gamesRouter');
 
 
 const corsOptions = {
@@ -20,6 +21,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.static('public'));
+app.use(express.json());
 // Configure the Steam strategy for use by Passport.
 
 //application/json
@@ -66,6 +68,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(authRoutes);
 app.use(gameGridRoutes);
+app.use('/api', gamesRouter); 
+
 // 在所有API路由之后，提供静态文件
 app.use(express.static(path.join(__dirname, '../steam-dashboard/build')));
 

@@ -40,23 +40,25 @@ const Homepage = () => {
 
         // 获取游戏信息
         const fetchGames = async () => {
+            console.log("fetchGames in the homepage");
+            console.log(`${process.env.REACT_APP_API_BASE}/api/games/${username}`);
             try {
-                const response = await fetch(`${process.env.REACT_APP_API_BASE}/users_games.json`, {
+                const response = await fetch(`${process.env.REACT_APP_API_BASE}/api/games/${username}`, {
                     method: 'GET',
                 });
 
                 if (response.ok) {
-                    const data = await response.json();
+                    const data = await response.json(); // 直接得到游戏数组
+                    console.log("Fetched Games Data:", data);
                     if (username === '76561198856798776') {
                         const initialGameIds = [1091500, 1145360, 1284410, 1200110, 1817070, 12110, 447530, 303310, 1113560];
-                        const gamesToShow = data.response.games.filter(game => initialGameIds.includes(game.appid));
+                        const gamesToShow = data.filter(game => initialGameIds.includes(game.appid));
                         setGames(gamesToShow);
                     }
                     else {
-                        const shuffled = data.response.games.sort(() => 0.5 - Math.random());
+                        const shuffled = data.sort(() => 0.5 - Math.random());
                         setGames(shuffled.slice(0, 10));
                     }
-
                 } else {
                     console.error('Failed to fetch games:', response.statusText);
                 }

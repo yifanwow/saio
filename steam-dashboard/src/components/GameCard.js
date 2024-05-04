@@ -19,7 +19,8 @@ function GameCard({ game }) {
   const textRef = useRef(null);
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
-  const [imageUrl, setImageUrl] = useState(game.grid);
+  const [imageUrl, setImageUrl] = useState(game.diyGrid || game.grid);
+
 
   const [ratingVisible, setRatingVisible] = useState(false);
   const [rating, setRating] = useState(game.rate); // State to hold the rating
@@ -45,7 +46,7 @@ function GameCard({ game }) {
     })
       .then(response => response.json())
       .then(data => {
-        alert('Grid URL updated successfully.');
+        alert('Grid URL updated successfully.');// 成功后更新图片 URL
         setImageUrl(newGridUrl);  // 成功后更新图片 URL
       })
       .catch((error) => {
@@ -147,6 +148,25 @@ function GameCard({ game }) {
       });
   };
 
+  const clearCustomGrid = () => {
+    fetch(`${process.env.REACT_APP_API_BASE}/clear-grid`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ appid: game.appid, steamID: game.steamID }) // Assume steamID is passed to the game object or obtained differently
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert('Custom grid cleared successfully.');
+      setImageUrl(game.grid); // Reset the image URL to the default grid
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      alert('Failed to clear custom grid.');
+    });
+  };
+
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
       setIsLongText(true); // 如果文本宽度超出容器宽度，则启动滚动
@@ -188,7 +208,10 @@ function GameCard({ game }) {
       </div>
 
       <div className={`options-menu ${menuVisible ? 'active' : ''}`}>
-        <div className="option-item" onClick={handleChangeGrid}>Change grid post</div>
+        <div className="option-item" onClick={handleChangeGrid}>Change Grid Post</div>
+        {game.diyGrid && (
+          <div className="option-item" onClick={clearCustomGrid}>Clear Grid</div>
+        )}
         {rating ?
           <div className="option-item" onClick={handleDeleteRate}>Delete</div> :
           <div className="option-item" onClick={toggleRating}>Rating</div>
