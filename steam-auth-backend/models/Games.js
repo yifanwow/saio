@@ -7,6 +7,7 @@ const GameSchema = new mongoose.Schema({
     name: String,
     playtime_forever: Number,
     img_icon_url: String,
+    has_community_visible_stats: Boolean,
     playtime_windows_forever: Number,
     playtime_mac_forever: Number,
     playtime_linux_forever: Number,

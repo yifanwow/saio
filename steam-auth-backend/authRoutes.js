@@ -31,12 +31,13 @@
 
         const gameCount = gameData.length;
         const totalGameHours = calculateTotalHours(gameData);
+        totalGameHours = Math.floor(totalGameHours / 60);
         const accountValue = calculateTotalValue(gameData);
 
         //获取用户信息
         const response = await axios.get(`https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamID}`);
         const user = response.data.response.players[0];
-        console.log(user); // Get the first player object
+        //console.log(user); // Get the first player object
 
         //检查本地是否已经有数据文件
         const filePath = path.join(__dirname, 'public', 'users_summary.json'); // 确保路径正确
@@ -112,12 +113,13 @@
               ...game, // 保留所有原始字段
               price: details.price_overview ? details.price_overview.final / 100 : 0, // 添加价格
               grid: `https://steamcdn-a.akamaihd.net/steam/apps/${game.appid}/library_600x900_2x.jpg` // 添加封面图
+              
             };
           } else {
             throw new Error(`No success for game ${game.appid}`);
           }
         } catch (error) {
-          console.error('Failed to fetch additional details for:', game.appid, error);
+          //console.error('Failed to fetch additional details for:', game.appid, error);
           return {
             ...game,
             price: 0,
@@ -127,10 +129,10 @@
       }));
   
       // 打印处理后的游戏数据
-      console.log("Detailed Games Data:", JSON.stringify(detailedGames, null, 2));
+      //console.log("Detailed Games Data:", JSON.stringify(detailedGames, null, 2));
       return detailedGames;
     } catch (error) {
-      console.error('Error fetching games from Steam:', error);
+      //console.error('Error fetching games from Steam:', error);
       return [];
     }
   }

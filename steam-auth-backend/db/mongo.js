@@ -14,7 +14,7 @@
         }
 
         await gameData.save();
-        console.log('Games data saved successfully for', steamID);
+        //console.log('Games data saved successfully for', steamID);
     } catch (err) {
         console.error('Failed to save games data:', err);
     }
@@ -23,7 +23,7 @@
     async function fetchUserGames(steamID) {
         try {
           const gameData = await Game.findOne({ steamID });
-          console.log("Loaded games data:", JSON.stringify(gameData, null, 2)); // Log the loaded data
+          //console.log("Loaded games data:", JSON.stringify(gameData, null, 2)); // Log the loaded data
           return gameData ? gameData.games : [];
         } catch (err) {
           console.error('Failed to fetch games data:', err);
