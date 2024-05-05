@@ -37,7 +37,7 @@ function GameCard({ game }) {
   const onUpdateGrid = (appId, newGridUrl) => {
     if (!newGridUrl) return; // 如果用户没有输入 URL，不执行任何操作
 
-    fetch('http://localhost:3001/update-grid', {
+    fetch(`${process.env.REACT_APP_API_BASE}/update-grid`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
