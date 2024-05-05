@@ -11,11 +11,13 @@ function GameGrid({ games, gamesPerPage = 8 }) {
 
   return (
     <div className="game-grid-container">
+
+      <div className='game-grid-big'>
       <div className="game-grid">
         {selectedGames.map(game => (
           <GameCard key={game.appid} game={game} />
         ))}
-      </div>
+      </div></div>
       <div className="pagination">
         {Array.from({ length: numOfPages }, (_, index) => (
           <button
