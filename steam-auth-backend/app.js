@@ -10,6 +10,7 @@ const app = express();
 const path = require('path');
 var bodyParser = require('body-parser');
 const gamesRouter = require('./routes/gamesRouter');
+const gameGridRoutes = require('./gameGridRoutes');
 
 
 const corsOptions = {
@@ -62,7 +63,7 @@ passport.deserializeUser(function(obj, done) {
 app.use(session({
     secret: 'change',
 }));
-const gameGridRoutes = require('./gameGridRoutes');
+
 // Initialize Passport and restore authentication state, if any, from the session.
 app.use(passport.initialize());
 app.use(passport.session());

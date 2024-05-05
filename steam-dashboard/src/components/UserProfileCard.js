@@ -10,7 +10,7 @@ const UserProfileCard = ({ userInfo }) => {
     alignItems: 'center',
     width: '100%',
     height: '100vh',
-    padding: '0 5vw', 
+   
     // Include ProfileBackground as the background
   };
 
@@ -37,7 +37,7 @@ const UserProfileCard = ({ userInfo }) => {
     color: '#fff',
     fontWeight: 550,
     letterSpacing: '3px',
-    textShadow: '0px 0px 1.9vw rgba(0, 0, 0, 0.91)',
+    textShadow: '0px 0px 1.1vw rgba(0, 0, 0, 0.97)',
     marginBottom: '77px',
   };
 
@@ -50,7 +50,7 @@ const UserProfileCard = ({ userInfo }) => {
     width: '100%',
     textShadow: '0px 3px 0.7vw rgba(0, 0, 0, 0.79)',
     textAlign: 'center',
-    padding: '0 0px',
+    padding: '0 1.7vw', 
   };
   const dataContainerStyle = {
     width: '30%',
@@ -60,19 +60,19 @@ const UserProfileCard = ({ userInfo }) => {
     
   };
   const dataValueStyle = {
-    fontSize: 'clamp(0.5rem, 2.1vw, 3.1rem)', // Adjusted for better responsiveness
+    fontSize: 'clamp(1.7rem, 3.7vh, 3.1rem)', // Adjusted for better responsiveness
     color: '#fff',
-    letterSpacing: 'clamp(-5px, 0.5vw, 9px)',
+    letterSpacing: 'clamp(-5px, 0.19vw, 5px)',
     fontWeight: 'bold',
     marginBottom: '1.5vh',
   };
   const dataLabelStyle = {
-    fontSize: 'clamp(0.7rem, 1.3vw, 1.3rem)',
+    fontSize: 'clamp(0.3rem, 0.9vw, 1.1rem)',
     fontWeight: '550',
     textTransform: 'uppercase',
     color: '#fff',
     letterSpacing: 'clamp(-5px, 0.5vw, 7px)',// Adjusted margin for visual balance
-    marginBottom: '5px', // Consistent bottom margin for a cleaner look
+    marginBottom: '0.1vh', // Consistent bottom margin for a cleaner look
   };
   const dataLabelStyle2 = {
     ...dataLabelStyle, // Inherits properties from dataLabelStyle

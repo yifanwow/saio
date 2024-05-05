@@ -83,7 +83,7 @@ const Homepage = () => {
         else if (current === 'library') {
             return <GameLibrary />;
         } else {
-            return <GameGrid games={games} />;
+            return <GameGrid games={games} gamesPerPage={8} />;
         }
     }
 
@@ -95,7 +95,7 @@ const Homepage = () => {
             </Link>
 
             {/* 左半部分 */}
-            <div style={{ width: '50vw' }}>
+            <div style={{ width: '30vw' }}>
                 {showProfile && (
                     <div className="fade-in">
                         <UserProfileCard userInfo={userInfo} />
@@ -104,7 +104,7 @@ const Homepage = () => {
             </div>
 
             {/* 右半部分 */}
-            <div style={{ width: '50vw' }}>
+            <div style={{ width: '70vw' }}>
 
                <div className="fade-in">
                     <Header current={current} onChange={(val) => { setCurrent(val) }} />

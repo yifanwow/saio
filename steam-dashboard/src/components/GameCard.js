@@ -16,6 +16,8 @@ const StyledRating = styled(Rating)({
 });
 
 function GameCard({ game }) {
+  const params = new URLSearchParams(window.location.search);
+  const steamID = params.get('steamid');
   const textRef = useRef(null);
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
@@ -34,7 +36,7 @@ function GameCard({ game }) {
     setMenuVisible(!menuVisible);
   };
 
-  const onUpdateGrid = (appId, newGridUrl) => {
+  const onUpdateGrid = (appId, newGridUrl, steamID) => {
     if (!newGridUrl) return; // 如果用户没有输入 URL，不执行任何操作
 
     fetch(`${process.env.REACT_APP_API_BASE}/update-grid`, {
@@ -42,7 +44,7 @@ function GameCard({ game }) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ appid: appId, newGridUrl })
+      body: JSON.stringify({ appid: appId, newGridUrl, steamID})
     })
       .then(response => response.json())
       .then(data => {
@@ -55,9 +57,30 @@ function GameCard({ game }) {
       });
   };
 
+  const clearCustomGrid = () => {
+    console.log(`${process.env.REACT_APP_API_BASE}/clear-grid`);
+    fetch(`${process.env.REACT_APP_API_BASE}/clear-grid`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ appid: game.appid, steamID }) // Assume steamID is passed to the game object or obtained differently
+    })
+    .then(response => response.json())
+    .then(data => {
+      alert('Custom grid cleared successfully.');
+      setImageUrl(game.grid); // Reset the image URL to the default grid
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      alert('Failed to clear custom grid.');
+    });
+  };
+
+
   const handleChangeGrid = () => {
     const newGridUrl = prompt("Please enter the new grid URL:");
-    onUpdateGrid(game.appid, newGridUrl);
+    onUpdateGrid(game.appid, newGridUrl, steamID);
   };
 
 
@@ -148,24 +171,6 @@ function GameCard({ game }) {
       });
   };
 
-  const clearCustomGrid = () => {
-    fetch(`${process.env.REACT_APP_API_BASE}/clear-grid`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ appid: game.appid, steamID: game.steamID }) // Assume steamID is passed to the game object or obtained differently
-    })
-    .then(response => response.json())
-    .then(data => {
-      alert('Custom grid cleared successfully.');
-      setImageUrl(game.grid); // Reset the image URL to the default grid
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      alert('Failed to clear custom grid.');
-    });
-  };
 
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {

@@ -9,16 +9,16 @@ app.use(express.json());
 
 // POST route to update game grid URL
 router.post('/update-grid', async (req, res) => {
-  const { appid, newGridUrl } = req.body;
+  const { appid, newGridUrl, steamID } = req.body; // 现在也需要 steamID
 
   try {
-    const game = await Game.findOne({ 'games.appid': appid });  // 根据 appid 查找游戏
-    if (game) {
-      // 找到对应的游戏，并更新 diyGrid 而不是 grid
-      const gameToUpdate = game.games.find(g => g.appid === appid);
+    // 根据 steamID 和 appid 查找特定的游戏
+    const gameData = await Game.findOne({ steamID, 'games.appid': appid });
+    if (gameData) {
+      const gameToUpdate = gameData.games.find(g => g.appid === appid);
       gameToUpdate.diyGrid = newGridUrl;  // 更新 diyGrid 字段
 
-      await game.save();  // 保存更新
+      await gameData.save();  // 保存更新
       res.status(200).send({ message: 'Grid URL updated successfully' });
     } else {
       res.status(404).send({ message: 'Game not found' });

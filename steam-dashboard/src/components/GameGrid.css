@@ -1,3 +1,7 @@
+.game-grid-container {
+  position: relative;
+}
+
 .game-grid {
   position: relative;
   display: flex;
@@ -5,9 +9,30 @@
   z-index: 1000;
   justify-content: center;
   align-items: left;
-  margin-top: 0vh;
-  /* 与上方元素的间距 */
-  margin-bottom: 20px;
-  /* 与下方元素的间距 */
+  margin-top: 0vh; /* 与上方元素的间距 */
+  margin-bottom: 0px; /* 与下方元素的间距 */
+}
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1vw; /* 控制按钮之间的距离 */
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); /* 添加阴影效果 */
+}
+
+.page-item {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  filter: blur(1.3px); /* 添加高斯模糊效果 */
+}
+
+.page-item.active {
+  color: rgb(236, 205, 235); /* 当前页面的圆点颜色 */
+  filter: blur(0px); /* 激活状态下移除模糊效果 */
+}
+
+.page-item:not(.active) {
+  color: rgb(142, 120, 146); /* 非当前页面的圆点颜色 */
 }
