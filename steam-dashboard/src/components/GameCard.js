@@ -137,10 +137,10 @@ function GameCard({ game }) {
       .then(response => response.json())
       .then(data => {
         if (categories === -1) {
-          alert('Category deleted succesfully');
+         // alert('Category deleted succesfully');
 
         }
-        alert('Categories updated successfully.');
+        // alert('Categories updated successfully.');
       })
       .catch(error => {
         console.error('Error updating categories:', error);
