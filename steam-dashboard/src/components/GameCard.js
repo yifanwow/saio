@@ -22,6 +22,8 @@ const StyledRating = styled(Rating)(({ rating }) => ({
     opacity: rating ? 0 : 0.9,// Conditionally setting opacity
     width: rating ? '0px' : 'auto',
     fontSize: '1.5vh',
+    color: 'white', // 将颜色改为白色
+    filter: 'blur(0px) drop-shadow(0vh 0.19vh 0.50vh rgba(0,0,0,0.9))', // 添加阴影效果
   }
 }));
 

@@ -97,7 +97,7 @@ const Homepage = () => {
         <div className='background' style={{ display: 'flex', width: '100vw' }}>
             {/* Logo at the top left corner */}
             <Link to="/" style={{ position: 'absolute', top: 0, left: 0, zIndex: 1000 }}>
-                <img src="/img/ICON/logo.png" alt="Logo" style={{ width: '7.7vw', height: 'auto', padding: '1vw' }} />
+                <img src="/img/ICON/logo.png" alt="Logo" style={{ width: '7.1vw', height: 'auto', padding: '1vw', filter: 'blur(0px) drop-shadow(0vh 0.11vh 0.79vh rgba(0,0,0,0.5))'}} />
             </Link>
 
             {/* 左半部分 */}
