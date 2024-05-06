@@ -248,10 +248,14 @@ function GameCard({ game, games, setGames }) {
       const temp = newGames[gameIndex];
       newGames[gameIndex] = newGames[gameIndex - 1];
       newGames[gameIndex - 1] = temp;
-      setGames(newGames);
+      setGames(newGames.map((game, index) => ({
+        ...game,
+        animateOut: index === gameIndex ? true : false, // 标记离开动画
+        animateIn: index === gameIndex - 1 ? true : false // 标记进入动画
+      })));
     }
   };
-
+  
   const moveGameBehind = (appId) => {
     const gameIndex = games.findIndex(game => game.appid === appId);
     if (gameIndex < games.length - 1) {
@@ -259,11 +263,34 @@ function GameCard({ game, games, setGames }) {
       const temp = newGames[gameIndex];
       newGames[gameIndex] = newGames[gameIndex + 1];
       newGames[gameIndex + 1] = temp;
-      setGames(newGames);
+      setGames(newGames.map((game, index) => ({
+        ...game,
+        animateOut: index === gameIndex ? true : false, // 标记离开动画
+        animateIn: index === gameIndex + 1 ? true : false // 标记进入动画
+      })));
     }
   };
 
-
+  useEffect(() => {
+    if (game.animateOut) {
+      // 添加离开动画类
+      setTimeout(() => {
+        setGames(prevGames => prevGames.map(prevGame => ({
+          ...prevGame,
+          animateOut: false
+        })));
+      }, 900); // 等待动画结束
+    }
+    if (game.animateIn) {
+      // 添加进入动画类
+      setTimeout(() => {
+        setGames(prevGames => prevGames.map(prevGame => ({
+          ...prevGame,
+          animateIn: false
+        })));
+      }, 900); // 等待动画结束
+    }
+  }, [game, setGames]);
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
       setIsLongText(true); // 如果文本宽度超出容器宽度，则启动滚动
@@ -287,7 +314,7 @@ function GameCard({ game, games, setGames }) {
 
 
   return (
-    <div className="game-card" onMouseLeave={() => setMenuVisible(false)}>
+    <div className={`game-card ${game.animateOut ? 'game-card-move-out' : ''} ${game.animateIn ? 'game-card-move-in' : ''}`} onMouseLeave={() => setMenuVisible(false)}>
       <div className="game-image-container">
         <img src={imageUrl} alt={game.name} className="game-image" onError={handleImageError} />
         {tags.length > 0 && (

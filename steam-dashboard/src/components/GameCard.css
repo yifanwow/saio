@@ -258,3 +258,42 @@ input[type="text"] {
 .game-image-container {
   position: relative; /* 使得内部的绝对定位元素相对于此容器定位 */
 }
+
+
+
+/* 定义进入动画 */
+@keyframes game-card-enter {
+  from {
+    opacity: 0;
+    transform: translateX(3vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* 定义离开动画 */
+@keyframes game-card-exit {
+  from {
+    opacity: 0;
+    transform: translateX(-3vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* 应用动画 */
+.game-card {
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.game-card-move-in {
+  animation: game-card-enter 0.9s ease;
+}
+
+.game-card-move-out {
+  animation: game-card-exit 0.9s ease;
+}
