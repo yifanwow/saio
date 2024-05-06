@@ -52,11 +52,11 @@ const headerContainerStyle = {
   justifyContent: 'space-around',
   alignItems: 'center',
   position: 'relative',
-  top: '3.9vh',
+  top: '2vh',
   margin: 'auto',
   width: '70%',
-  height: '2.7vh',
-  marginBottom: '7vh',
+  height: '5vh',
+  marginBottom: '1vh',
   borderRadius: '17px',
   zIndex: '999',
 };
@@ -75,7 +75,7 @@ const buttonStyle = {
   backgroundColor: 'rgba(240, 240, 240, 0.5)',
   boxShadow: '0px 0px 11px rgba(0, 0, 0, 0.57)',
   backdropFilter: 'blur(11px)',
-  fontSize: 'clamp(0.7rem, 1vw, 2.7rem)',
+  fontSize: 'clamp(0.7rem, 0.9vw, 2.3rem)',
   fontWeight: 'bold',
   textShadow: '0px 0px 0.7vw rgba(0, 0, 0, 0.95)',
 };
