@@ -7,7 +7,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { styled } from '@mui/material/styles';
 import GameRating from './GameRating'; // 导入自定义的评分组件
 
-const StyledRating = styled(Rating)(({ rating }) =>({
+const StyledRating = styled(Rating)(({ rating }) => ({
   '& .MuiRating-iconFilled': {
     color: 'rgba(255, 255, 255, 0.7)', // 灰白色半透明
     filter: 'blur(0px) drop-shadow(0vh 0.19vh 0.39vh rgba(0,0,0,0.7))', // 添加阴影
@@ -21,11 +21,11 @@ const StyledRating = styled(Rating)(({ rating }) =>({
   '& .MuiRating-iconEmpty': {
     opacity: rating ? 0 : 0.9,// Conditionally setting opacity
     width: rating ? '0px' : 'auto',
-    fontSize: '1.5vh', 
+    fontSize: '1.5vh',
   }
 }));
 
-function GameCard({game, games, setGames}) {
+function GameCard({ game, games, setGames }) {
   const params = new URLSearchParams(window.location.search);
   const steamID = params.get('steamid');
   const textRef = useRef(null);
@@ -46,9 +46,11 @@ function GameCard({game, games, setGames}) {
 
   const onUpdateGrid = (appId, newGridUrl, steamID) => {
     if (!newGridUrl) return; // 如果用户没有输入 URL，不执行任何操作
+
+    //Optimistic Updates for local data to be updates before the server response
     const updatedGames = games.map(g => {
       if (g.appid === game.appid) {
-          return { ...g, diyGrid: newGridUrl };
+        return { ...g, diyGrid: newGridUrl };
       }
       return g;
     });
@@ -59,13 +61,13 @@ function GameCard({game, games, setGames}) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ appid: appId, newGridUrl, steamID})
+      body: JSON.stringify({ appid: appId, newGridUrl, steamID })
     })
       .then(response => response.json())
       .then(data => {
         alert('Grid URL updated successfully.');// 成功后更新图片 URL
         setImageUrl(newGridUrl);  // 成功后更新图片 URL
-        
+
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -75,15 +77,15 @@ function GameCard({game, games, setGames}) {
 
   const clearCustomGrid = () => {
     console.log(`${process.env.REACT_APP_API_BASE}/clear-grid`);
-
+    //Optimistic Updates for local data to be updates before the server response
     const updatedGames = games.map(g => {
       if (g.appid === game.appid) {
-          const { diyGrid, ...rest } = g; // 从对象中解构出 diyGrid 并保留其他属性
-          return { ...rest };
+        const { diyGrid, ...rest } = g; // 从对象中解构出 diyGrid 并保留其他属性
+        return { ...rest };
       }
       return g;
-  });
-  setGames(updatedGames);
+    });
+    setGames(updatedGames);
 
 
     fetch(`${process.env.REACT_APP_API_BASE}/clear-grid`, {
@@ -93,15 +95,15 @@ function GameCard({game, games, setGames}) {
       },
       body: JSON.stringify({ appid: game.appid, steamID }) // Assume steamID is passed to the game object or obtained differently
     })
-    .then(response => response.json())
-    .then(data => {
-      //alert('Custom grid cleared successfully.');
-      setImageUrl(game.grid); // Reset the image URL to the default grid
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      //alert('Failed to clear custom grid.');
-    });
+      .then(response => response.json())
+      .then(data => {
+        //alert('Custom grid cleared successfully.');
+        setImageUrl(game.grid); // Reset the image URL to the default grid
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        //alert('Failed to clear custom grid.');
+      });
   };
 
 
@@ -128,6 +130,15 @@ function GameCard({game, games, setGames}) {
 
   // Update Rating front-end
   const onUpdateRating = (appId, rate) => {
+
+    const updatedGames = games.map(g => {
+      if (g.appid === appId) {
+        return { ...g, rate: rate }; // 更新评分
+      }
+      return g;
+    });
+    setGames(updatedGames); // 更新状态
+
     fetch(`${process.env.REACT_APP_API_BASE}/update-rate`, {
       method: 'POST',
       headers: {
@@ -139,10 +150,10 @@ function GameCard({game, games, setGames}) {
       .then(data => {
         console.log("Update rating response:", data); // 打印响应以调试
         if (rate === -1) {
-         
+
           setRating(null);  // 当评分被清除时设置为 null
         } else {
-          
+
           setRating(rate);  // 更新评分
         }
         setRatingVisible(false);
@@ -177,17 +188,25 @@ function GameCard({game, games, setGames}) {
   };
 
   const updateCategories = (appId, categories) => {
+    const updatedGames = games.map(g => {
+      if (g.appid === appId) {
+        return { ...g, categories: categories };
+      }
+      return g;
+    });
+    setGames(updatedGames); // 更新状态
+
     fetch(`${process.env.REACT_APP_API_BASE}/update-categories`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ appid: appId, newCategories: categories, steamID})
+      body: JSON.stringify({ appid: appId, newCategories: categories, steamID })
     })
       .then(response => response.json())
       .then(data => {
         if (categories === -1) {
-         // alert('Category deleted succesfully');
+          // alert('Category deleted succesfully');
 
         }
         // alert('Categories updated successfully.');
@@ -198,7 +217,7 @@ function GameCard({game, games, setGames}) {
       });
   };
 
-  
+
 
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
@@ -207,28 +226,28 @@ function GameCard({game, games, setGames}) {
       const clonedText = `${game.name.toUpperCase()}${'\u00A0'.repeat(10)}${game.name.toUpperCase()}`;
       textRef.current.innerText = clonedText;
     }
-    
+
   }, []);
 
   useEffect(() => {
     setImageUrl(game.diyGrid || game.grid);
   }, [game.diyGrid, game.grid]);
 
-  
+
   return (
     <div className="game-card" onMouseLeave={() => setMenuVisible(false)}>
       <div className="game-image-container">
-      <img src={imageUrl} alt={game.name} className="game-image" />
-      {tags.length > 0 && (
-        <div className='tag-container'>
-          {tags.map((tag, index) => (
-            <div className='tag' key={index}>
-              <img src="/img/ICON/tag_icon.png" alt="Tag Icon" className="tag-icon" />
-              {tag}
-            </div>
-          ))}
-        </div>
-      )}</div>
+        <img src={imageUrl} alt={game.name} className="game-image" />
+        {tags.length > 0 && (
+          <div className='tag-container'>
+            {tags.map((tag, index) => (
+              <div className='tag' key={index}>
+                <img src="/img/ICON/tag_icon.png" alt="Tag Icon" className="tag-icon" />
+                {tag}
+              </div>
+            ))}
+          </div>
+        )}</div>
       <div className="option-button" onClick={toggleMenu}></div>
       <div className="game-name-container">
         <div ref={textRef} className={`game-name ${isLongText ? 'long-text' : ''}`}>
@@ -238,12 +257,12 @@ function GameCard({game, games, setGames}) {
       <div className="game-rate-container">
         {ratingVisible ?
           <StyledRating
-          name="customized-color"
-          value={rating}
-          precision={1}
-          icon={<FavoriteIcon fontSize="inherit" />}
-          emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
-          onChange={(event, newValue) => {
+            name="customized-color"
+            value={rating}
+            precision={1}
+            icon={<FavoriteIcon fontSize="inherit" />}
+            emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+            onChange={(event, newValue) => {
               handleChangeRating(newValue);
             }}
             rating={rating}
@@ -284,7 +303,7 @@ function GameCard({game, games, setGames}) {
           />
         </div>
       )}
-      
+
     </div>
   );
 }
