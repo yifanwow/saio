@@ -49,6 +49,9 @@ function GameCard({ game, games, setGames }) {
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
+  const closeMenu = () => {
+    setMenuVisible(!menuVisible);
+  };
 
   const onUpdateGrid = (appId, newGridUrl, steamID) => {
     if (!newGridUrl) return; // 如果用户没有输入 URL，不执行任何操作
@@ -82,6 +85,7 @@ function GameCard({ game, games, setGames }) {
   };
 
   const clearCustomGrid = () => {
+    closeMenu(); // 关闭菜单
     console.log(`${process.env.REACT_APP_API_BASE}/clear-grid`);
     //Optimistic Updates for local data to be updates before the server response
     const updatedGames = games.map(g => {
@@ -133,6 +137,7 @@ function GameCard({ game, games, setGames }) {
   };
 
   const handleChangeGrid = () => {
+    closeMenu(); // 关闭菜单
     const newGridUrl = prompt("Please enter the new grid URL:");
     onUpdateGrid(game.appid, newGridUrl, steamID);
   };
@@ -141,6 +146,7 @@ function GameCard({ game, games, setGames }) {
   // Gloria
 
   const toggleRating = () => {
+    closeMenu(); // 关闭菜单
     setRatingVisible(!ratingVisible);
   };
 
@@ -150,6 +156,7 @@ function GameCard({ game, games, setGames }) {
   };
 
   const handleDeleteRate = () => {
+    closeMenu(); // 关闭菜单
     onUpdateRating(game.appid, -1)
   }
 
@@ -192,6 +199,7 @@ function GameCard({ game, games, setGames }) {
 
   // Hongyang's feature of implementing categories
   const handleAddOrDeleteCategory = () => {
+    closeMenu(); // 关闭菜单
     if (tags.length > 0) {
       // Clear categories if they exist
       updateCategories(game.appid, []);
@@ -213,6 +221,7 @@ function GameCard({ game, games, setGames }) {
   };
 
   const updateCategories = (appId, categories) => {
+    
     const updatedGames = games.map(g => {
       if (g.appid === appId) {
         return { ...g, categories: categories };
@@ -255,6 +264,7 @@ function GameCard({ game, games, setGames }) {
         animateIn: index === gameIndex - 1 ? true : false // 标记进入动画
       })));
     }
+    closeMenu(); // 关闭菜单
   };
   
   const moveGameBehind = (appId) => {
@@ -270,6 +280,7 @@ function GameCard({ game, games, setGames }) {
         animateIn: index === gameIndex + 1 ? true : false // 标记进入动画
       })));
     }
+    closeMenu(); // 关闭菜单
   };
 
   useEffect(() => {

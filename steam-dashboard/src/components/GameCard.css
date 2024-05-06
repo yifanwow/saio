@@ -6,10 +6,10 @@
   align-items: center;
   margin-top: 1vw;
   margin-right: 2vw;
-  margin-bottom: 2vw; /* Add some space at the bottom */
+  margin-bottom: 1.5vh; /* Add some space at the bottom */
   margin-left: 2vw;
   transition: transform 0.7s ease-in-out;
-  max-width: 11vw;
+  max-width: 11.7vw;
   min-width: 5vw;
   position: relative;
   overflow: visible;
@@ -41,7 +41,7 @@
   /* 隐藏超出容器的文本 */
   white-space: nowrap;
   /* 保证文本在一行显示 */
-  margin-top: 10px;
+  margin-top: 0.7vh;
   display: flex;
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
@@ -88,7 +88,7 @@
 
 .game-rate-container {
   position: absolute;
-  bottom: -2.7vh; /* 将评分组件放置在卡片外部的底部 */
+  bottom: -2.3vh; /* 将评分组件放置在卡片外部的底部 */
   left: 0;
   width: 100%; /* 确保评分组件宽度与卡片一致 */
   display: flex;
@@ -120,14 +120,14 @@
   visibility: hidden; /* 初始设置为不可见 */
   opacity: 0; /* 初始透明度为0 */
   position: absolute;
-  right: 10px;
-  top: 40px;
+  right: 0.5vw;
+  top: 3.3vh;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  border-radius: 5px;
+  border-radius: 1vh;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 100;
-  transition: visibility 0s linear 0.3s, opacity 0.3s linear; /* 注意顺序和延迟设置 */
+  transition: visibility 0s linear 0.7s, opacity 0.7s linear; /* 注意顺序和延迟设置 */
   color: white;
   font-size: 0.8rem;
 }
@@ -141,12 +141,12 @@
 }
 
 .option-item {
-  padding: 8px 12px;
+  padding: 1vh 1vw;
   cursor: pointer;
 }
 
 .option-item:hover {
-  border-radius: 5px;
+  border-radius: 1vh;
   background-color: #33333393; /* 悬停时的背景色 */
   
 }
@@ -247,12 +247,11 @@ input[type="text"] {
 .tag-container {
   display: flex;
   position: absolute;
-  bottom: 1.1vh; /* Adjusted to move the tags inside the game card at the bottom */
-  left: 0.3vw; /* Starts tags from the left side */
+  bottom: 1.3vh; /* Adjusted to move the tags inside the game card at the bottom */
+  left: 0.5vw; /* Starts tags from the left side */
   align-items: center;
   flex-wrap: wrap;
   pointer-events: none; /* Makes the container not block clicks on items below it, if necessary */
-  
 }
 
 .game-image-container {

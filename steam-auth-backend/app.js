@@ -14,7 +14,7 @@ const gameGridRoutes = require('./gameGridRoutes');
 
 
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: [process.env.CORS_ORIGIN, 'http://localhost:3000', 'http://saio.us-east-2.elasticbeanstalk.com'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   allowedHeaders: 'Content-Type,Authorization'
@@ -53,7 +53,10 @@ app.use(session({
   secret: 'change',
   resave: false,
   saveUninitialized: true,
-  cookie: { secure: 'auto' }
+  cookie: { 
+    secure: false, // Important for HTTP, true requires an HTTPS connection
+    httpOnly: true  // Recommended to mitigate the risk of client side script accessing the protected cookie
+}
 }));
 app.use(passport.initialize());
 app.use(passport.session());
