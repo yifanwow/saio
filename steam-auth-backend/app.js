@@ -49,6 +49,14 @@ passport.use(new SteamStrategy({
     });
   }
 ));
+app.use(session({
+  secret: 'change',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: 'auto' }
+}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Configure Passport authenticated session persistence.
 passport.serializeUser(function(user, done) {
@@ -58,15 +66,23 @@ passport.serializeUser(function(user, done) {
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
-
+app.post('/api/logout', (req, res) => {
+  console.log('Backend: Logging out');
+  if (req.isAuthenticated()) { // Check if the user is logged in
+    req.logout(function(err) {
+      if (err) { return next(err); }
+      req.session.destroy();
+      res.send({ message: 'Logged out' });
+    });
+  } else {
+    res.status(401).send({ message: 'No user to log out' });
+  }
+});
 // Use application-level middleware for common functionality.
-app.use(session({
-    secret: 'change',
-}));
+
 
 // Initialize Passport and restore authentication state, if any, from the session.
-app.use(passport.initialize());
-app.use(passport.session());
+
 app.use(authRoutes);
 app.use(gameGridRoutes);
 app.use('/api', gamesRouter); 

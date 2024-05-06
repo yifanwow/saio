@@ -93,7 +93,6 @@ function GameCard({ game, games, setGames }) {
     });
     setGames(updatedGames);
 
-
     fetch(`${process.env.REACT_APP_API_BASE}/clear-grid`, {
       method: 'POST',
       headers: {
@@ -124,7 +123,9 @@ function GameCard({ game, games, setGames }) {
   const updateGameDiyGrid = (appId, newGridUrl) => {
     const updatedGames = games.map(g => {
       if (g.appid === appId) {
+        console.log("newGridUrl", newGridUrl);
         return { ...g, diyGrid: newGridUrl };
+        
       }
       return g;
     });
@@ -308,7 +309,7 @@ function GameCard({ game, games, setGames }) {
       setImageUrl(localPath);
       updateGameDiyGrid(game.appid, localPath);
     } else {
-      setImageUrl(game.diyGrid || game.grid);
+      
     }
   }, [game]);
 

@@ -15,7 +15,7 @@
 .game-grid {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1000;
+  z-index: 1100;
   justify-content: flex-start; /* 改为从左开始排列 */
   align-items: flex-start; /* 从顶部开始对齐 */
   margin-top: 0vh; /* 与上方元素的间距 */
@@ -24,6 +24,10 @@
   margin-right: 5vw; */
   width: 86%;
   height: 83vh;
+}
+
+.game-grid.hover {
+  z-index: 1100;
 }
 
 .pagination {
