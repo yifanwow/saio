@@ -2,47 +2,48 @@ import React, { useState, useEffect } from 'react';
 import GameCard from './GameCard';
 import './GameGrid.css';
 
-function GameGrid({ games, gamesPerPage = 8 }) {
+function GameGrid({ games, setGames, gamesPerPage = 8}) {
   const [currentPage, setCurrentPage] = useState(0);
-  const [animating, setAnimating] = useState(false);
   const [animatingOut, setAnimatingOut] = useState(false);
-  const [pendingPage, setPendingPage] = useState(null); // 新增：用于存储将要切换到的页面
+  const [animatingIn, setAnimatingIn] = useState(false);
+  const [newPage, setNewPage] = useState(0); // 存储新页面索引
+  
 
   const numOfPages = Math.ceil(games.length / gamesPerPage);
-  const startIndex = currentPage * gamesPerPage;
-  const selectedGames = games.slice(startIndex, startIndex + gamesPerPage);
 
   useEffect(() => {
     if (animatingOut) {
-      const timer = setTimeout(() => {
+      const timerOut = setTimeout(() => {
         setAnimatingOut(false);
-        setAnimating(true);
-        setCurrentPage(pendingPage); // 在动画完成后切换到新页面
-        setPendingPage(null); // 清除待处理的页面
-      }, 700);
-      return () => clearTimeout(timer);
+        setCurrentPage(newPage); // 同时更新页面
+      }, 700); // 渐出动画持续时间
+      return () => clearTimeout(timerOut);
     }
-    if (animating) {
-      const timer = setTimeout(() => {
-        setAnimating(false);
-      }, 700);
-      return () => clearTimeout(timer);
+    if (animatingIn) {
+      const timerIn = setTimeout(() => {
+        setAnimatingIn(false);
+      }, 700); // 渐入动画持续时间
+      return () => clearTimeout(timerIn);
     }
-  }, [animating, animatingOut, pendingPage]);
+  }, [animatingOut, animatingIn, newPage]);
 
-  const handlePageChange = (newPage) => {
-    if (currentPage !== newPage) {
-      setAnimatingOut(true);
-      setPendingPage(newPage); // 在开始渐出动画前设置将要切换的页面
+  const handlePageChange = (newPageIndex) => {
+    if (currentPage !== newPageIndex) {
+      setNewPage(newPageIndex);
+      setAnimatingOut(true); // 启动渐出动画
+      setAnimatingIn(true); 
     }
   };
+
+  const startIndex = currentPage * gamesPerPage;
+  const selectedGames = games.slice(startIndex, startIndex + gamesPerPage);
 
   return (
     <div className="game-grid-container">
       <div className='game-grid-big'>
-        <div className={`game-grid ${animating ? 'game-grid-fade-in' : ''} ${animatingOut ? 'game-grid-fade-out' : ''}`}>
+        <div className={`game-grid ${animatingOut ? 'game-grid-fade-out' : ''} ${animatingIn ? 'game-grid-fade-in' : ''}`}>
           {selectedGames.map(game => (
-            <GameCard key={game.appid} game={game} />
+            <GameCard key={game.appid} game={game} games={games} setGames={setGames} />
           ))}
         </div>
       </div>

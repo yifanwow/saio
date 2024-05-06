@@ -60,7 +60,6 @@ const Homepage = () => {
                         let otherGames = data.filter(game => !initialGameIds.includes(game.appid));
                         // 合并两个数组
                         const sortedGames = priorityGames.concat(otherGames);
-                        // 更新游戏数据状态
                         const topGames = sortedGames.slice(0, 50);
                         setGames(topGames);
                     }
@@ -90,7 +89,7 @@ const Homepage = () => {
         else if (current === 'library') {
             return <GameLibrary />;
         } else {
-            return <GameGrid games={games} gamesPerPage={8} />;
+            return <GameGrid games={games} setGames={setGames} gamesPerPage={8} />;
         }
     }
 

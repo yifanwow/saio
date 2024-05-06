@@ -25,7 +25,7 @@ const StyledRating = styled(Rating)(({ rating }) =>({
   }
 }));
 
-function GameCard({ game }) {
+function GameCard({game, games, setGames}) {
   const params = new URLSearchParams(window.location.search);
   const steamID = params.get('steamid');
   const textRef = useRef(null);
@@ -46,6 +46,13 @@ function GameCard({ game }) {
 
   const onUpdateGrid = (appId, newGridUrl, steamID) => {
     if (!newGridUrl) return; // 如果用户没有输入 URL，不执行任何操作
+    const updatedGames = games.map(g => {
+      if (g.appid === game.appid) {
+          return { ...g, diyGrid: newGridUrl };
+      }
+      return g;
+    });
+    setGames(updatedGames);
 
     fetch(`${process.env.REACT_APP_API_BASE}/update-grid`, {
       method: 'POST',
@@ -58,6 +65,7 @@ function GameCard({ game }) {
       .then(data => {
         alert('Grid URL updated successfully.');// 成功后更新图片 URL
         setImageUrl(newGridUrl);  // 成功后更新图片 URL
+        
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -67,6 +75,17 @@ function GameCard({ game }) {
 
   const clearCustomGrid = () => {
     console.log(`${process.env.REACT_APP_API_BASE}/clear-grid`);
+
+    const updatedGames = games.map(g => {
+      if (g.appid === game.appid) {
+          const { diyGrid, ...rest } = g; // 从对象中解构出 diyGrid 并保留其他属性
+          return { ...rest };
+      }
+      return g;
+  });
+  setGames(updatedGames);
+
+
     fetch(`${process.env.REACT_APP_API_BASE}/clear-grid`, {
       method: 'POST',
       headers: {
@@ -191,6 +210,11 @@ function GameCard({ game }) {
     
   }, []);
 
+  useEffect(() => {
+    setImageUrl(game.diyGrid || game.grid);
+  }, [game.diyGrid, game.grid]);
+
+  
   return (
     <div className="game-card" onMouseLeave={() => setMenuVisible(false)}>
       <div className="game-image-container">
