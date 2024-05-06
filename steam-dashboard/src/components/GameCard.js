@@ -33,13 +33,16 @@ function GameCard({ game, games, setGames }) {
   const textRef = useRef(null);
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
-  const [imageUrl, setImageUrl] = useState(game.diyGrid || game.grid);
+  const defaultDiyGridUrl = 'https://imageforsteamgrid.s3.us-east-2.amazonaws.com/pvz.png';
+  const [imageUrl, setImageUrl] = useState(game.diyGrid || game.grid || defaultDiyGridUrl);
   const [ratingVisible, setRatingVisible] = useState(false);
   const [rating, setRating] = useState(game.rate && game.rate > 0 ? game.rate : null); // 初始化时只在评分大于0时设置评分// State to hold the rating
 
   const [inputVisible, setInputVisible] = useState(false);
   const [tags, setTags] = useState(game.categories || []); // Assuming categories are passed in the game object
   const [inputValue, setInputValue] = useState('');
+
+  
 
 
   const toggleMenu = () => {
@@ -108,6 +111,24 @@ function GameCard({ game, games, setGames }) {
       });
   };
 
+  // Handler for image load error
+  const handleImageError = () => {
+    if (imageUrl !== defaultDiyGridUrl) {
+      setImageUrl(defaultDiyGridUrl);
+      updateGameDiyGrid(game.appid, defaultDiyGridUrl);
+    }
+  };
+
+  // Function to update game diyGrid URL in the local state and possibly sync with the backend
+  const updateGameDiyGrid = (appId, newGridUrl) => {
+    const updatedGames = games.map(g => {
+      if (g.appid === appId) {
+        return { ...g, diyGrid: newGridUrl };
+      }
+      return g;
+    });
+    setGames(updatedGames);
+  };
 
   const handleChangeGrid = () => {
     const newGridUrl = prompt("Please enter the new grid URL:");
@@ -239,7 +260,7 @@ function GameCard({ game, games, setGames }) {
   return (
     <div className="game-card" onMouseLeave={() => setMenuVisible(false)}>
       <div className="game-image-container">
-        <img src={imageUrl} alt={game.name} className="game-image" />
+        <img src={imageUrl} alt={game.name} className="game-image" onError={handleImageError} />
         {tags.length > 0 && (
           <div className='tag-container'>
             {tags.map((tag, index) => (

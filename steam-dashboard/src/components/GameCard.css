@@ -29,7 +29,7 @@
  /* 高度自动调整以保持宽高比 */
   aspect-ratio: 2 / 3; /* 保持2:3的宽高比 */
   border-radius: 10px;
-  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.77);
+  box-shadow: 0px 4px 3vh rgba(0, 0, 0, 0.77);
   object-fit: cover;
 }
 
@@ -122,7 +122,7 @@
   position: absolute;
   right: 10px;
   top: 40px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
