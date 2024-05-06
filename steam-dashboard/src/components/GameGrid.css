@@ -18,7 +18,7 @@
   z-index: 1100;
   justify-content: flex-start; /* 改为从左开始排列 */
   align-items: flex-start; /* 从顶部开始对齐 */
-  margin-top: -4vh; /* 与上方元素的间距 */
+  margin-top: 1vh; /* 与上方元素的间距 */
   margin-bottom: 0px; 
   /* margin-left: 5vw;
   margin-right: 5vw; */
@@ -33,18 +33,19 @@
 /* Pagination and page items styles */
 .pagination {
   display: flex;
-  margin-top: 5vh;
+  margin-top: 1vh;
   justify-content: center; /* 这将确保所有子元素（按钮）都水平居中 */
   gap: 1.1vw;
   width: 100%; /* 容器宽度为100% */
 }
 
 .page-item {
+  min-height: 5vh;
   border: none;
   background: none;
   cursor: pointer;
   color: rgba(253, 241, 255, 0.363); 
-  font-size: clamp(0.7rem, 1.5vh, 1.2rem);
+  font-size: clamp(0.9rem, 1.3vw, 1.7rem);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* 添加渐变效果 */
 }
 
@@ -58,7 +59,7 @@
 }
 
 .page-item:not(.active) {
-  font-size: clamp(0.7rem, 1.5vh, 1.2rem);
+  font-size: clamp(0.9rem, 1.3vw, 1.7rem);
   color: rgba(253, 241, 255, 0.363); 
   filter: drop-shadow(0px 0px 0.19vw rgb(0, 0, 0,1.0));/* 非当前页面的圆点颜色 */
 }
