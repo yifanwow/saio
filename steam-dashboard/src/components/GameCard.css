@@ -22,6 +22,7 @@
 
 .game-image {
   width: 100%;   /* 宽度占满父容器 */
+  position: relative; /* 设置相对定位 */
  /* 高度自动调整以保持宽高比 */
  aspect-ratio: 2 / 3; /* 保持2:3的宽高比 */
   border-radius: 10px;
@@ -162,16 +163,17 @@
   flex-wrap: wrap;
   padding: 5px;
   position: absolute;
-  bottom: 35px; /* Adjust this to position just below the image */
+  bottom: 35px; /* 调整到图像正下方 */
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6); /* 半透明背景 */
   border-radius: 8px;
   box-sizing: border-box;
   justify-content: center;
-  max-width: calc(100% - 10px); /* Provide some padding inside the container */
-  margin: 1.5vh 1vw; /* Center the container within the card */
-  z-index: 150; /* Ensure it's above other elements */
+  max-width: calc(100% - 10px);
+  margin: 1.5vh 1vw;
+  z-index: 150;
+  backdrop-filter: blur(10px); /* 添加模糊效果 */
 }
 
 .tag {
@@ -197,7 +199,6 @@
   bottom: 0;
   background: linear-gradient(135deg, rgba(37, 16, 77, 0.95) 30%, rgba(210, 210, 210, 0.95) 100%);
   border-radius: 12px;
-  filter: blur(0.8px); /* Gaussian blur effect on the background */
   z-index: -1;
 }
 
@@ -207,8 +208,11 @@ input[type="text"] {
   padding: 0.8vh;
   margin: 0;
   flex-grow: 1;
-  max-width: calc(100% - 30px); /* Prevents overflow by considering padding and button width */
+  max-width: calc(100% - 30px);
+  background: rgba(255, 255, 255, 0.6); 
+  border-radius: 5px; /* 半透明背景 */ /* Prevents overflow by considering padding and button width */
 }
+
 
 .tag-icon {
   width: 16px; /* Smaller icon */
@@ -219,9 +223,13 @@ input[type="text"] {
 .tag-container {
   display: flex;
   position: absolute;
-  bottom: 4.7vh; /* Adjusted to move the tags inside the game card at the bottom */
+  bottom: 1.1vh; /* Adjusted to move the tags inside the game card at the bottom */
   left: 0.3vw; /* Starts tags from the left side */
   align-items: center;
   flex-wrap: wrap;
   pointer-events: none; /* Makes the container not block clicks on items below it, if necessary */
+}
+
+.game-image-container {
+  position: relative; /* 使得内部的绝对定位元素相对于此容器定位 */
 }

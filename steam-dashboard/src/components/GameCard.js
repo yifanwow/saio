@@ -99,7 +99,6 @@ function GameCard({ game }) {
 
   // Update Rating front-end
   const onUpdateRating = (appId, rate) => {
-
     fetch(`${process.env.REACT_APP_API_BASE}/update-rate`, {
       method: 'POST',
       headers: {
@@ -109,18 +108,19 @@ function GameCard({ game }) {
     })
       .then(response => response.json())
       .then(data => {
+        console.log("Update rating response:", data); // 打印响应以调试
         if (rate === -1) {
-          alert('Rating deleted successfully.');
-          setRating(null);
+         
+          setRating(null);  // 当评分被清除时设置为 null
         } else {
-          alert('Rating updated successfully.');
-          setRating(rate);  // Enables rating succesfully
+          
+          setRating(rate);  // 更新评分
         }
-        setRatingVisible(false)
+        setRatingVisible(false);
       })
       .catch((error) => {
         console.error('Error:', error);
-        alert('Failed to update grid URL.');
+        alert('Failed to update rating.');
       });
   };
 
@@ -177,11 +177,23 @@ function GameCard({ game }) {
       const clonedText = `${game.name.toUpperCase()}${'\u00A0'.repeat(10)}${game.name.toUpperCase()}`;
       textRef.current.innerText = clonedText;
     }
+    
   }, []);
 
   return (
     <div className="game-card" onMouseLeave={() => setMenuVisible(false)}>
+      <div className="game-image-container">
       <img src={imageUrl} alt={game.name} className="game-image" />
+      {tags.length > 0 && (
+        <div className='tag-container'>
+          {tags.map((tag, index) => (
+            <div className='tag' key={index}>
+              <img src="/img/ICON/tag_icon.png" alt="Tag Icon" className="tag-icon" />
+              {tag}
+            </div>
+          ))}
+        </div>
+      )}</div>
       <div className="option-button" onClick={toggleMenu}></div>
       <div className="game-name-container">
         <div ref={textRef} className={`game-name ${isLongText ? 'long-text' : ''}`}>
@@ -216,7 +228,7 @@ function GameCard({ game }) {
           <div className="option-item" onClick={clearCustomGrid}>Clear Grid</div>
         )}
         {rating ?
-          <div className="option-item" onClick={handleDeleteRate}>Delete</div> :
+          <div className="option-item" onClick={handleDeleteRate}>Clear Rating</div> :
           <div className="option-item" onClick={toggleRating}>Rating</div>
         }
         <div className="option-item" onClick={handleAddOrDeleteCategory}>
@@ -235,16 +247,7 @@ function GameCard({ game }) {
           />
         </div>
       )}
-      {tags.length > 0 && (
-        <div className='tag-container'>
-          {tags.map((tag, index) => (
-            <div className='tag' key={index}>
-              <img src="/img/ICON/tag_icon.png" alt="Tag Icon" className="tag-icon" />
-              {tag}
-            </div>
-          ))}
-        </div>
-      )}
+      
     </div>
   );
 }

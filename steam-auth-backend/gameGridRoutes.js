@@ -35,7 +35,7 @@ router.post('/clear-grid', async (req, res) => {
   try {
     const gameData = await Game.findOne({ steamID });
     if (!gameData) {
-      return res.status(404).send({ message: 'User games data not found' });
+      return res.status(407).send({ message: 'User games data not found' });
     }
 
     // Find the game and clear the diyGrid URL
@@ -46,7 +46,7 @@ router.post('/clear-grid', async (req, res) => {
       await Game.updateOne({ steamID, "games.appid": appid }, { $unset: { [unsetField]: 1 } });
       res.status(200).send({ message: 'Custom grid URL cleared successfully' });
     } else {
-      res.status(404).send({ message: 'Game not found or no custom grid URL to clear' });
+      res.status(409).send({ message: 'Game not found or no custom grid URL to clear' });
     }
   } catch (error) {
     console.error('Failed to clear custom grid URL:', error);
@@ -55,32 +55,33 @@ router.post('/clear-grid', async (req, res) => {
 });
 
 router.post('/update-rate', async (req, res) => {
-  const { appid, newRate, steamID } = req.body; // 添加 steamID
+  const { appid, newRate, steamID } = req.body;
 
   try {
-    // 根据 steamID 和 appid 查找特定的游戏
-    const gameData = await Game.findOne({ steamID, 'games.appid': appid });
-    if (gameData) {
-      const gameToUpdate = gameData.games.find(g => g.appid === appid);
-      if (newRate === -1 && gameToUpdate.rate) {
-        delete gameToUpdate.rate; // 删除评分
-      } else {
-        gameToUpdate.rate = newRate; // 更新或添加评分
-      }
-      await gameData.save();
-      res.status(200).send({ message: 'Rating updated successfully' });
+    let updateResult;
+    if (newRate === -1) {
+      updateResult = await Game.updateOne(
+        { "steamID": steamID, "games.appid": appid },
+        { $unset: { "games.$.rate": "" } }
+      );
     } else {
+      updateResult = await Game.updateOne(
+        { "steamID": steamID, "games.appid": appid },
+        { $set: { "games.$.rate": newRate } }
+      );
+    }
+
+    if (updateResult.modifiedCount === 0) {
       res.status(404).send({ message: 'Game not found' });
+    } else {
+      res.status(200).send({ message: 'Rating updated successfully' });
     }
   } catch (error) {
     console.error('Failed to update rating:', error);
     res.status(500).send({ message: 'Failed to update rating' });
   }
 });
-
 // Hongyang's category feature backend process
-// POST route to update game categories
-// POST route to update game categories
 router.post('/update-categories', async (req, res) => {
   const { appid, newCategories, steamID } = req.body; // 添加 steamID
 
