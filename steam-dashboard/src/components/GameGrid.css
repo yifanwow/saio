@@ -1,13 +1,90 @@
-.game-grid {
+.game-grid-container {
+  display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+  justify-content: center; /* 垂直居中，如果需要 */
+  min-height: 10vh; /* 如果你希望整个容器填满视窗的高度 */
+}
+
+.game-grid-big{
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}
+.game-grid {
   display: flex;
   flex-wrap: wrap;
-  z-index: 1000;
-  justify-content: center;
-  align-items: left;
-  margin-top: 0vh;
-  /* 与上方元素的间距 */
-  margin-bottom: 20px;
-  /* 与下方元素的间距 */
+  z-index: 1100;
+  justify-content: flex-start; /* 改为从左开始排列 */
+  align-items: flex-start; /* 从顶部开始对齐 */
+  margin-top: 0vh; /* 与上方元素的间距 */
+  margin-bottom: 0px; 
+  /* margin-left: 5vw;
+  margin-right: 5vw; */
+  width: 90%;
+  height: 83vh;
+}
 
+.game-grid.hover {
+  z-index: 1100;
+}
+
+/* Pagination and page items styles */
+.pagination {
+  display: flex;
+  margin-top: 1vh;
+  justify-content: center; /* 这将确保所有子元素（按钮）都水平居中 */
+  gap: 1.1vw;
+  width: 100%; /* 容器宽度为100% */
+}
+
+.page-item {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: rgba(253, 241, 255, 0.363); 
+  font-size: 1.5rem;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* 添加渐变效果 */
+}
+
+.page-item.active {
+  color: rgba(163, 72, 162, 0.664);
+}
+
+.page-item:hover {
+  opacity: 0.5; /* 鼠标悬停时渐隐 */
+  transform: scale(1.5); /* 鼠标悬停时放大 */
+}
+
+.page-item:not(.active) {
+  font-size: 1.5rem;
+  color: rgba(253, 241, 255, 0.363); 
+  filter: drop-shadow(0px 0px 0.19vw rgb(0, 0, 0,1.0));/* 非当前页面的圆点颜色 */
+}
+
+.game-grid-fade-in {
+  animation: fadeIn 700ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.game-grid-fade-out {
+  animation: fadeOut 700ms ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

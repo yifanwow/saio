@@ -17,6 +17,8 @@ const GameSchema = new mongoose.Schema({
     price: Number,
     grid: String,
     diyGrid: String,
+    rate: Number,
+    categories: [{ type: String }],
   }]
 });
 

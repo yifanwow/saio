@@ -1,56 +1,93 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 
 function Header({ current, onChange }) {
+  const [activeMenu, setActiveMenu] = useState(null);
+
   const handleClick = (val) => {
     if (val === current) {
-      onChange('grid')
+      onChange('grid');
     } else {
-      onChange(val)
+      onChange(val);
     }
-  }
+    setActiveMenu(null);
+  };
+  const handleLogout = () => {
+    console.log('Logging out...');
+    fetch(`${process.env.REACT_APP_API_BASE}/api/logout`, {
+      method: 'POST',
+      credentials: 'include'  // Make sure to include credentials if your API requires session cookies
+    })
+    .then(response => {
+      if(response.ok) {
+        // Assuming the logout redirects to a login page or updates the UI to reflect the logout
+        window.location.href = '/'; // or any other logic
+      }
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  };
+
+  const toggleMenu = (menu) => {
+    setActiveMenu(activeMenu === menu ? null : menu);
+  };
+
   return (
     <div style={headerContainerStyle}>
-      <button style={buttonStyle} onClick={() => handleClick('rank')}>RANKING</button>
-      <button style={buttonStyle} onClick={() => handleClick('library')}>LIBRARY</button>
-      <button style={buttonStyle} >SETTING</button>
+      <div style={menuContainerStyle}>
+        <button style={buttonStyle} onClick={() => handleClick('rank')}>RANKING</button>
+      </div>
+      <div style={menuContainerStyle}>
+        <button style={buttonStyle} onClick={() => handleClick('library')}>LIBRARY</button>
+      </div>
+      <div style={menuContainerStyle}>
+      <button style={buttonStyle} onClick={handleLogout}>LOGOUT</button>
+      </div>
     </div>
   );
 }
 
 const headerContainerStyle = {
-  display: 'flex',        // 启用 flexbox 以水平排列按钮
-  justifyContent: 'space-around', // 将按钮均匀分布在容器中
-  alignItems: 'center',   // 垂直居中按钮
+  display: 'flex',
+  justifyContent: 'space-around',
+  alignItems: 'center',
   position: 'relative',
   top: '3.9vh',
-  left: '0',
-  right: '0',
-  bottom: '0',
   margin: 'auto',
   width: '70%',
   height: '2.7vh',
   marginBottom: '7vh',
-
-  // 高斯模糊
   borderRadius: '17px',
+  zIndex: '999',
+};
 
-  zIndex: '999', // 确保在最上层
+const menuContainerStyle = {
+  position: 'relative',
+  display: 'inline-block'
 };
 
 const buttonStyle = {
-  padding: '1.3vh 2vw',   // 按钮内部间距
-  background: 'none',    // 透明背景
-  // border: '2px solid white', // 白色边框
-  borderRadius: '2vw',  // 圆角
-  cursor: 'pointer',     // 鼠标样式变为指针
+  padding: '1.3vh 2vw',
+  background: 'none',
+  borderRadius: '2vw',
+  cursor: 'pointer',
   color: 'white',
   backgroundColor: 'rgba(240, 240, 240, 0.5)',
   boxShadow: '0px 0px 11px rgba(0, 0, 0, 0.57)',
-  backdropFilter: 'blur(11px)',       // 文字颜色
-  fontSize: 'clamp(0.7rem, 1vw, 2.7rem)',      // 字号
-  fontWeight: 'bold',     // 字体加粗
-  textShadow: '0px 0px 0.7vw rgba(0, 0, 0, 0.95)'
+  backdropFilter: 'blur(11px)',
+  fontSize: 'clamp(0.7rem, 1vw, 2.7rem)',
+  fontWeight: 'bold',
+  textShadow: '0px 0px 0.7vw rgba(0, 0, 0, 0.95)',
+};
 
+const settingsMenuStyle = {
+  position: 'absolute',
+  top: '100%', // Positioned right below the button
+  width: '100%', // Same width as the button
+  background: 'rgba(255, 255, 255, 0.9)',
+  boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)',
+  borderRadius: '5px',
+  animation: 'slideDown 0.3s ease-out'
 };
 
 export default Header;

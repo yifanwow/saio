@@ -53,13 +53,19 @@ const Homepage = () => {
                     const data = await response.json(); // 直接得到游戏数组
                     console.log("Fetched Games Data:", data);
                     if (username === '76561198856798776') {
-                        const initialGameIds = [1091500, 1145360, 1284410, 1200110, 1817070, 12110, 447530, 303310, 1113560];
-                        const gamesToShow = data.filter(game => initialGameIds.includes(game.appid));
-                        setGames(gamesToShow);
+                        const initialGameIds = [1091500, 1145360, 292030,1200110,48190,33230, 201870,230410,1817070, 447530,1284410, 303310, 1113560];
+                        // 创建一个新的数组，首先添加 initialGameIds 中的游戏，如果它们存在于 data 中
+                        let priorityGames = initialGameIds.map(id => data.find(game => game.appid === id)).filter(game => game !== undefined);
+                        // 添加剩余的游戏，排除已在 priorityGames 中的游戏ID
+                        let otherGames = data.filter(game => !initialGameIds.includes(game.appid));
+                        // 合并两个数组
+                        const sortedGames = priorityGames.concat(otherGames);
+                        const topGames = sortedGames.slice(0, 100);
+                        setGames(topGames);
                     }
                     else {
                         const shuffled = data.sort(() => 0.5 - Math.random());
-                        setGames(shuffled.slice(0, 10));
+                        setGames(shuffled.slice(0, 100));
                     }
                 } else {
                     console.error('Failed to fetch games:', response.statusText);
@@ -83,7 +89,7 @@ const Homepage = () => {
         else if (current === 'library') {
             return <GameLibrary />;
         } else {
-            return <GameGrid games={games} />;
+            return <GameGrid games={games} setGames={setGames} gamesPerPage={8} />;
         }
     }
 
@@ -91,11 +97,11 @@ const Homepage = () => {
         <div className='background' style={{ display: 'flex', width: '100vw' }}>
             {/* Logo at the top left corner */}
             <Link to="/" style={{ position: 'absolute', top: 0, left: 0, zIndex: 1000 }}>
-                <img src="/img/ICON/logo.png" alt="Logo" style={{ width: '180px', height: 'auto', padding: '10px' }} />
+                <img src="/img/ICON/logo.png" alt="Logo" style={{ width: '7.1vw', height: 'auto', padding: '1vw', filter: 'blur(0px) drop-shadow(0vh 0.11vh 0.79vh rgba(0,0,0,0.5))'}} />
             </Link>
 
             {/* 左半部分 */}
-            <div style={{ width: '50vw' }}>
+            <div style={{ width: '30vw' }}>
                 {showProfile && (
                     <div className="fade-in">
                         <UserProfileCard userInfo={userInfo} />
@@ -104,12 +110,12 @@ const Homepage = () => {
             </div>
 
             {/* 右半部分 */}
-            <div style={{ width: '50vw' }}>
+            <div style={{ width: '70vw' }}>
 
-               <div className="fade-in">
+                <div className="fade-in">
                     <Header current={current} onChange={(val) => { setCurrent(val) }} />
                 </div>
-                <div style={{ marginTop: '0px' }}> 
+                <div style={{ marginTop: '0px' }}>
                     {getCurrentPage()}
                 </div> {/* Add GameGrid to show the game */}
 

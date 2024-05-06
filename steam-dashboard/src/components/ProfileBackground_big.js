@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import BIRDS from 'vanta/dist/vanta.halo.min';
 
-const ProfileBackground = () => {
+const ProfileBackground_big = () => {
     const vantaRef = useRef(null);
 
     useEffect(() => {
@@ -29,4 +29,4 @@ const ProfileBackground = () => {
     return <div ref={vantaRef} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100vh', zIndex: -7 }}></div>;
 };
 
-export default ProfileBackground;
+export default React.memo(ProfileBackground_big);
