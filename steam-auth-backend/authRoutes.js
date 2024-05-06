@@ -8,7 +8,11 @@
   const { saveUserGames, fetchUserGames } = require('./db/mongo');
   // const userGamesDir = path.join(__dirname, 'public', 'users_games');
 
-  router.get('/auth/steam', passport.authenticate('steam', { failureRedirect: '/' }));
+  router.get('/auth/steam', (req, res, next) => {
+    console.log('Initiating Steam authentication');
+    passport.authenticate('steam', { failureRedirect: '/' })(req, res, next);
+    console.log('Initiating Steam authentication check-point 2');
+});
 
   router.get('/auth/steam/return',
     passport.authenticate('steam', { failureRedirect: '/' }),

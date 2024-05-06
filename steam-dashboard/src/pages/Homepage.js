@@ -65,7 +65,7 @@ const Homepage = () => {
                     }
                     else {
                         const shuffled = data.sort(() => 0.5 - Math.random());
-                        setGames(shuffled.slice(0, 10));
+                        setGames(shuffled.slice(0, 100));
                     }
                 } else {
                     console.error('Failed to fetch games:', response.statusText);

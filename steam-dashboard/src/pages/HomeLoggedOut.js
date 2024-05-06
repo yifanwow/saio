@@ -79,10 +79,11 @@ const GitHubStyle ={
 
 function HomeLoggedOut() {
   // Function to handle the form submission
-  console.log('API Base URL:', process.env.REACT_APP_API_BASE_URL);
+  console.log('Try to login in using API Base URL:', process.env.REACT_APP_API_BASE_URL);
   const handleSubmit = (e) => {
     e.preventDefault();
     window.location.href = authUrl;
+    console.log('LOGIN IN HomeLoggedOut-checkpoint 2');
     // Perform your login logic here
   };
 
