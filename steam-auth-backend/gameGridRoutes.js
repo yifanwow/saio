@@ -53,27 +53,21 @@ router.post('/clear-grid', async (req, res) => {
     res.status(500).send({ message: 'Failed to clear custom grid URL' });
   }
 });
-// Gloria's rating feature backend process
-// Post route to update game rating 
-router.post('/update-rate', async (req, res) => {
-  const { appid, newRate } = req.body;
-  const filePath = path.join(__dirname, 'public', 'users_games.json'); // Stablized 
 
+router.post('/update-rate', async (req, res) => {
+  const { appid, newRate, steamID } = req.body; // 添加 steamID
 
   try {
-    // Read the existing file
-    const jsonData = fs.readFileSync(filePath, 'utf8');
-    let gamesData = JSON.parse(jsonData);
-
-    // Find the game and update the rating 
-    const game = gamesData.response.games.find(game => game.appid === appid);
-    if (game) {
-      if(newRate === -1 && game.rate) {
-        delete game.rate
-      }else {
-        game.rate = newRate;
+    // 根据 steamID 和 appid 查找特定的游戏
+    const gameData = await Game.findOne({ steamID, 'games.appid': appid });
+    if (gameData) {
+      const gameToUpdate = gameData.games.find(g => g.appid === appid);
+      if (newRate === -1 && gameToUpdate.rate) {
+        delete gameToUpdate.rate; // 删除评分
+      } else {
+        gameToUpdate.rate = newRate; // 更新或添加评分
       }
-      fs.writeFileSync(filePath, JSON.stringify(gamesData, null, 2));
+      await gameData.save();
       res.status(200).send({ message: 'Rating updated successfully' });
     } else {
       res.status(404).send({ message: 'Game not found' });
@@ -86,24 +80,18 @@ router.post('/update-rate', async (req, res) => {
 
 // Hongyang's category feature backend process
 // POST route to update game categories
+// POST route to update game categories
 router.post('/update-categories', async (req, res) => {
-  const { appid, newCategories } = req.body;
-  const filePath = path.join(__dirname, 'public', 'users_games.json');
+  const { appid, newCategories, steamID } = req.body; // 添加 steamID
 
   try {
-    // Read the existing file
-    const jsonData = fs.readFileSync(filePath, 'utf8');
-    let gamesData = JSON.parse(jsonData);
-
-    // Find the game and update the categories
-    const game = gamesData.response.games.find(game => game.appid === appid);
-    if (game) {
-      // Here, we assume that the categories are stored in an array.
-      // If the game has no categories, initialize it as an empty array.
-      game.categories = newCategories || [];
-
-      // Write the updated games data back to the file
-      fs.writeFileSync(filePath, JSON.stringify(gamesData, null, 2));
+    // 根据 steamID 和 appid 查找特定的游戏
+    const gameData = await Game.findOne({ steamID, 'games.appid': appid });
+    if (gameData) {
+      const gameToUpdate = gameData.games.find(g => g.appid === appid);
+      // 这里假设 categories 应当是一个数组
+      gameToUpdate.categories = newCategories || [];
+      await gameData.save();
       res.status(200).send({ message: 'Categories updated successfully' });
     } else {
       res.status(404).send({ message: 'Game not found' });

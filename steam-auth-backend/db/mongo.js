@@ -2,19 +2,23 @@ const Game = require('../models/Games');
 
 async function saveUserGames(steamID, games) {
     try {
-        // Check if the user's games already exist
         let gameData = await Game.findOne({ steamID });
 
         if (!gameData) {
-            // If not, create a new entry
+            // 如果找不到用户的游戏数据，则创建新条目
             gameData = new Game({ steamID, games });
         } else {
-            // 如果找到了，更新现有条目，但保留diyGrid的值
+            // 如果找到了用户的游戏数据，更新现有条目，保留特定字段的值
             gameData.games = games.map(newGame => {
                 const existingGame = gameData.games.find(g => g.appid === newGame.appid);
-                // 如果找到了现有游戏，保持原有的diyGrid，否则使用新的数据
-                if (existingGame && existingGame.diyGrid) {
-                    return { ...newGame, diyGrid: existingGame.diyGrid };
+                if (existingGame) {
+                    // 保留 diyGrid, rating 和 categories 的值（如果存在）
+                    return {
+                        ...newGame,
+                        diyGrid: existingGame.diyGrid ?? newGame.diyGrid,
+                        rate: existingGame.rate ?? newGame.rate,
+                        categories: existingGame.categories ?? newGame.categories
+                    };
                 }
                 return newGame;
             });
@@ -30,7 +34,7 @@ async function saveUserGames(steamID, games) {
 async function fetchUserGames(steamID) {
     try {
         const gameData = await Game.findOne({ steamID });
-        //console.log("Loaded games data:", JSON.stringify(gameData, null, 2)); // Log the loaded data
+        //console.log("Loaded games data:", JSON.stringify(gameData, null, 2)); // 可以用于调试
         return gameData ? gameData.games : [];
     } catch (err) {
         console.error('Failed to fetch games data:', err);

@@ -22,10 +22,8 @@ function GameCard({ game }) {
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
   const [imageUrl, setImageUrl] = useState(game.diyGrid || game.grid);
-
-
   const [ratingVisible, setRatingVisible] = useState(false);
-  const [rating, setRating] = useState(game.rate); // State to hold the rating
+  const [rating, setRating] = useState(game.rate && game.rate > 0 ? game.rate : null); // 初始化时只在评分大于0时设置评分// State to hold the rating
 
   const [inputVisible, setInputVisible] = useState(false);
   const [tags, setTags] = useState(game.categories || []); // Assuming categories are passed in the game object
@@ -107,7 +105,7 @@ function GameCard({ game }) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ appid: appId, newRate: rate })
+      body: JSON.stringify({ appid: appId, newRate: rate, steamID })
     })
       .then(response => response.json())
       .then(data => {
@@ -155,7 +153,7 @@ function GameCard({ game }) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ appid: appId, newCategories: categories })
+      body: JSON.stringify({ appid: appId, newCategories: categories, steamID})
     })
       .then(response => response.json())
       .then(data => {
@@ -193,12 +191,12 @@ function GameCard({ game }) {
       <div className="game-rate-container">
         {ratingVisible ?
           <StyledRating
-            name="customized-color"
-            value={rating}
-            precision={0.5}
-            icon={<FavoriteIcon fontSize="inherit" />}
-            emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
-            onChange={(event, newValue) => {
+          name="customized-color"
+          value={rating}
+          precision={0.5}
+          icon={<FavoriteIcon fontSize="inherit" />}
+          emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+          onChange={(event, newValue) => {
               handleChangeRating(newValue);
             }}
           /> : rating && <StyledRating
