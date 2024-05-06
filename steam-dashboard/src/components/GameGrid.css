@@ -30,31 +30,37 @@
   z-index: 1100;
 }
 
+/* Pagination and page items styles */
 .pagination {
-  margin-top: 1vh;
   display: flex;
-  justify-content: center;
-  gap: 1.1vw; /* 控制按钮之间的距离 */
-  filter: drop-shadow(0px 0px 1vw rgba(0, 0, 0, 0.9)); /* 添加阴影效果 */
+  margin-top: 1vh;
+  justify-content: center; /* 这将确保所有子元素（按钮）都水平居中 */
+  gap: 1.1vw;
+  width: 100%; /* 容器宽度为100% */
 }
 
 .page-item {
   border: none;
   background: none;
-  font-size: 24px;
   cursor: pointer;
-  filter: blur(1.3px); /* 添加高斯模糊效果 */
-  filter: drop-shadow(0px 0px 0.1vw rgba(0, 0, 0, 0.5));
+  color: rgba(253, 241, 255, 0.363); 
+  font-size: 1.5rem;
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* 添加渐变效果 */
 }
 
 .page-item.active {
-  color: rgba(148, 104, 147, 0.664); /* 当前页面的圆点颜色 */
-  filter: blur(0px); /* 激活状态下移除模糊效果 */
-  filter: drop-shadow(0px 0px 0.3vw rgba(0, 0, 0, 0.9));
+  color: rgba(163, 72, 162, 0.664);
+}
+
+.page-item:hover {
+  opacity: 0.5; /* 鼠标悬停时渐隐 */
+  transform: scale(1.5); /* 鼠标悬停时放大 */
 }
 
 .page-item:not(.active) {
-  color: rgba(241, 211, 247, 0.664); /* 非当前页面的圆点颜色 */
+  font-size: 1.5rem;
+  color: rgba(253, 241, 255, 0.363); 
+  filter: drop-shadow(0px 0px 0.19vw rgb(0, 0, 0,1.0));/* 非当前页面的圆点颜色 */
 }
 
 .game-grid-fade-in {
