@@ -4,14 +4,14 @@
   flex-direction: column;/* 水平居中 */
   padding: 0;
    /* 垂直居中，如果需要 */
-  min-height: 92vh; /* 如果你希望整个容器填满视窗的高度 */
+  min-height: 91vh; /* 如果你希望整个容器填满视窗的高度 */
 }
 
 .game-grid-big{
   display: flex;
   justify-content: center; 
   width: 100%;
-  height: 83vh;
+  height: 90vh;
 }
 
 .game-grid {
@@ -36,7 +36,7 @@
 .pagination {
   display: flex;
   margin: auto;
-  margin-bottom: 0.5vh;
+  margin-bottom: 1vh;
   justify-content: center; /* 这将确保所有子元素（按钮）都水平居中 */
   gap: 1.1vw;
   height: 5vh;
@@ -49,7 +49,7 @@
   background: none;
   cursor: pointer;
   color: rgba(253, 241, 255, 0.363); 
-  font-size: clamp(0.9rem, 1.3vw, 1.7rem);
+  font-size: clamp(0.9rem, 2.5vh, 1.7rem);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* 添加渐变效果 */
 }
 
@@ -63,7 +63,7 @@
 }
 
 .page-item:not(.active) {
-  font-size: clamp(0.9rem, 1.3vw, 1.7rem);
+  font-size: clamp(0.9rem, 2.5vh, 1.7rem);
   color: rgba(253, 241, 255, 0.363); 
   filter: drop-shadow(0px 0px 0.19vw rgb(0, 0, 0,1.0));/* 非当前页面的圆点颜色 */
 }
