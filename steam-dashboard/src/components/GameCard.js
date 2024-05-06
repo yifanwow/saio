@@ -31,7 +31,7 @@ function GameCard({ game, games, setGames }) {
   const params = new URLSearchParams(window.location.search);
   const steamID = params.get('steamid');
   const textRef = useRef(null);
-  const localGameIds = [33230, 48190, 201870, 230410, 292030, 1091500];
+  const localGameIds = [33230, 48190, 201870, 230410, 292030, 1091500,1145360];
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
   const defaultDiyGridUrl = 'https://imageforsteamgrid.s3.us-east-2.amazonaws.com/pvz.png';
