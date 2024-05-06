@@ -1,29 +1,31 @@
 .game-grid-container {
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center; /* 水平居中 */
-  justify-content: center; /* 垂直居中，如果需要 */
-  min-height: 95vh; /* 如果你希望整个容器填满视窗的高度 */
+  flex-direction: column;/* 水平居中 */
+  padding: 0;
+   /* 垂直居中，如果需要 */
+  min-height: 92vh; /* 如果你希望整个容器填满视窗的高度 */
 }
 
 .game-grid-big{
   display: flex;
   justify-content: center; 
   width: 100%;
+  height: 83vh;
 }
+
 .game-grid {
   display: flex;
   flex-wrap: wrap;
   z-index: 1100;
   justify-content: flex-start; /* 改为从左开始排列 */
   align-items: flex-start; /* 从顶部开始对齐 */
-  margin-top: 1vh; /* 与上方元素的间距 */
+  margin-top: 0vh; /* 与上方元素的间距 */
   margin-bottom: 0px; 
   /* margin-left: 5vw;
   margin-right: 5vw; */
   width: 90%;
-  height: 83vh;
+  
 }
 
 .game-grid.hover {
@@ -33,9 +35,11 @@
 /* Pagination and page items styles */
 .pagination {
   display: flex;
-  margin-top: 1vh;
+  margin: auto;
+  margin-bottom: 0.5vh;
   justify-content: center; /* 这将确保所有子元素（按钮）都水平居中 */
   gap: 1.1vw;
+  height: 5vh;
   width: 100%; /* 容器宽度为100% */
 }
 

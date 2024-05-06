@@ -1,6 +1,4 @@
-.fade-in {
-    animation: fadeIn 0.7s ease-in;
-  }
+
   
   @keyframes fadeIn {
     0% {

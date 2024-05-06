@@ -53,7 +53,7 @@ const Homepage = () => {
                     const data = await response.json(); // 直接得到游戏数组
                     console.log("Fetched Games Data:", data);
                     if (username === '76561198856798776') {
-                        const initialGameIds = [1091500, 1145360, 292030,1200110,48190,33230, 201870,230410,1817070, 447530,1284410, 303310, 1113560];
+                        const initialGameIds = [1091500, 1145360, 292030, 1200110, 48190, 33230, 201870, 230410, 1817070, 447530, 1284410, 303310, 1113560];
                         // 创建一个新的数组，首先添加 initialGameIds 中的游戏，如果它们存在于 data 中
                         let priorityGames = initialGameIds.map(id => data.find(game => game.appid === id)).filter(game => game !== undefined);
                         // 添加剩余的游戏，排除已在 priorityGames 中的游戏ID
@@ -97,7 +97,7 @@ const Homepage = () => {
         <div className='background' style={{ display: 'flex', width: '100vw' }}>
             {/* Logo at the top left corner */}
             <Link to="/" style={{ position: 'absolute', top: 0, left: 0, zIndex: 1000 }}>
-                <img src="/img/ICON/logo.png" alt="Logo" style={{ width: '7.1vw', height: 'auto', padding: '1vw', filter: 'blur(0px) drop-shadow(0vh 0.11vh 0.79vh rgba(0,0,0,0.5))'}} />
+                <img src="/img/ICON/logo.png" alt="Logo" style={{ width: '7.1vw', height: 'auto', padding: '1vw', filter: 'blur(0px) drop-shadow(0vh 0.11vh 0.79vh rgba(0,0,0,0.5))' }} />
             </Link>
 
             {/* 左半部分 */}
@@ -110,14 +110,14 @@ const Homepage = () => {
             </div>
 
             {/* 右半部分 */}
-            <div style={{ width: '70vw' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', width: '70vw', height: '100vh' }}>
 
-                <div className="fade-in">
-                    <Header current={current} onChange={(val) => { setCurrent(val) }} />
-                </div>
-                <div style={{ marginTop: '0px' }}>
-                    {getCurrentPage()}
-                </div> {/* Add GameGrid to show the game */}
+
+                <Header current={current} onChange={(val) => { setCurrent(val) }} />
+
+
+                {getCurrentPage()}
+                {/* Add GameGrid to show the game */}
 
             </div>
             <ProfileBackground_big />

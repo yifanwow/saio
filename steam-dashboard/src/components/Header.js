@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { HelixCurve } from 'three/examples/jsm/curves/CurveExtras.js';
 
 function Header({ current, onChange }) {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -52,13 +53,13 @@ const headerContainerStyle = {
   justifyContent: 'space-around',
   alignItems: 'center',
   position: 'relative',
-  top: '2vh',
   margin: 'auto',
+  marginTop: '1vh',
   width: '70%',
-  height: '5vh',
-  marginBottom: '1vh',
   borderRadius: '17px',
   zIndex: '999',
+  minHeight: '5vh',
+  maxHeight: '5vh',
 };
 
 const menuContainerStyle = {
