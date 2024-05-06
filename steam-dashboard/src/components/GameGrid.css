@@ -1,5 +1,6 @@
 .game-grid-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center; /* 水平居中 */
   justify-content: center; /* 垂直居中，如果需要 */
@@ -26,6 +27,7 @@
 }
 
 .pagination {
+  margin-top: 1vh;
   display: flex;
   justify-content: center;
   gap: 1vw; /* 控制按钮之间的距离 */
@@ -47,4 +49,30 @@
 
 .page-item:not(.active) {
   color: rgb(142, 120, 146); /* 非当前页面的圆点颜色 */
+}
+
+.game-grid-fade-in {
+  animation: fadeIn 700ms ease-in-out;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.game-grid-fade-out {
+  animation: fadeOut 700ms ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

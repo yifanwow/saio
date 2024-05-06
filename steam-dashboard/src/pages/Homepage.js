@@ -54,8 +54,15 @@ const Homepage = () => {
                     console.log("Fetched Games Data:", data);
                     if (username === '76561198856798776') {
                         const initialGameIds = [1091500, 1145360, 1284410, 1200110, 1817070, 230410, 447530, 303310, 1113560];
-                        const gamesToShow = data.filter(game => initialGameIds.includes(game.appid));
-                        setGames(gamesToShow);
+                        // 创建一个新的数组，首先添加 initialGameIds 中的游戏，如果它们存在于 data 中
+                        let priorityGames = initialGameIds.map(id => data.find(game => game.appid === id)).filter(game => game !== undefined);
+                        // 添加剩余的游戏，排除已在 priorityGames 中的游戏ID
+                        let otherGames = data.filter(game => !initialGameIds.includes(game.appid));
+                        // 合并两个数组
+                        const sortedGames = priorityGames.concat(otherGames);
+                        // 更新游戏数据状态
+                        const topGames = sortedGames.slice(0, 50);
+                        setGames(topGames);
                     }
                     else {
                         const shuffled = data.sort(() => 0.5 - Math.random());
@@ -106,10 +113,10 @@ const Homepage = () => {
             {/* 右半部分 */}
             <div style={{ width: '70vw' }}>
 
-               <div className="fade-in">
+                <div className="fade-in">
                     <Header current={current} onChange={(val) => { setCurrent(val) }} />
                 </div>
-                <div style={{ marginTop: '0px' }}> 
+                <div style={{ marginTop: '0px' }}>
                     {getCurrentPage()}
                 </div> {/* Add GameGrid to show the game */}
 
