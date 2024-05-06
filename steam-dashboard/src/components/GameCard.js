@@ -5,15 +5,25 @@ import Rating from '@mui/material/Rating'; // Import the Rating Component
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { styled } from '@mui/material/styles';
+import GameRating from './GameRating'; // 导入自定义的评分组件
 
-const StyledRating = styled(Rating)({
+const StyledRating = styled(Rating)(({ rating }) =>({
   '& .MuiRating-iconFilled': {
-    color: '#ffffff',
+    color: 'rgba(255, 255, 255, 0.7)', // 灰白色半透明
+    filter: 'blur(0px) drop-shadow(0vh 0.19vh 0.39vh rgba(0,0,0,0.7))', // 添加阴影
+    fontSize: '1.5vh',
+    margin: '0 0.07vw',
   },
   '& .MuiRating-iconHover': {
-    color: '#ffffff',
+    color: 'rgba(255, 255, 255, 0.9)', // 鼠标悬停时稍微增加透明度
+    filter: 'drop-shadow(2px 4px 6px black)', // 添加阴影
   },
-});
+  '& .MuiRating-iconEmpty': {
+    opacity: rating ? 0 : 0.9,// Conditionally setting opacity
+    width: rating ? '0px' : 'auto',
+    fontSize: '1.5vh', 
+  }
+}));
 
 function GameCard({ game }) {
   const params = new URLSearchParams(window.location.search);
@@ -66,12 +76,12 @@ function GameCard({ game }) {
     })
     .then(response => response.json())
     .then(data => {
-      alert('Custom grid cleared successfully.');
+      //alert('Custom grid cleared successfully.');
       setImageUrl(game.grid); // Reset the image URL to the default grid
     })
     .catch((error) => {
       console.error('Error:', error);
-      alert('Failed to clear custom grid.');
+      //alert('Failed to clear custom grid.');
     });
   };
 
@@ -169,6 +179,7 @@ function GameCard({ game }) {
       });
   };
 
+  
 
   useEffect(() => {
     if (textRef.current.scrollWidth > textRef.current.offsetWidth) {
@@ -205,19 +216,21 @@ function GameCard({ game }) {
           <StyledRating
           name="customized-color"
           value={rating}
-          precision={0.5}
+          precision={1}
           icon={<FavoriteIcon fontSize="inherit" />}
           emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
           onChange={(event, newValue) => {
               handleChangeRating(newValue);
             }}
+            rating={rating}
           /> : rating && <StyledRating
             name="customized-color"
             value={rating}
             readOnly
-            precision={0.5}
+            precision={1}
             icon={<FavoriteIcon fontSize="inherit" />}
             emptyIcon={<FavoriteBorderIcon fontSize="inherit" />}
+            rating={rating}
           />
         }
       </div>
