@@ -241,6 +241,27 @@ function GameCard({ game, games, setGames }) {
       });
   };
 
+  const moveGameAhead = (appId) => {
+    const gameIndex = games.findIndex(game => game.appid === appId);
+    if (gameIndex > 0) {
+      const newGames = [...games];
+      const temp = newGames[gameIndex];
+      newGames[gameIndex] = newGames[gameIndex - 1];
+      newGames[gameIndex - 1] = temp;
+      setGames(newGames);
+    }
+  };
+
+  const moveGameBehind = (appId) => {
+    const gameIndex = games.findIndex(game => game.appid === appId);
+    if (gameIndex < games.length - 1) {
+      const newGames = [...games];
+      const temp = newGames[gameIndex];
+      newGames[gameIndex] = newGames[gameIndex + 1];
+      newGames[gameIndex + 1] = temp;
+      setGames(newGames);
+    }
+  };
 
 
   useEffect(() => {
@@ -310,6 +331,8 @@ function GameCard({ game, games, setGames }) {
       </div>
 
       <div className={`options-menu ${menuVisible ? 'active' : ''}`}>
+      <div className="option-item" onClick={() => moveGameAhead(game.appid)}>Move Ahead</div>
+      <div className="option-item" onClick={() => moveGameBehind(game.appid)}>Move Behind</div>
         <div className="option-item" onClick={handleChangeGrid}>Change Grid Post</div>
         {game.diyGrid && (
           <div className="option-item" onClick={clearCustomGrid}>Clear Grid</div>
