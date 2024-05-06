@@ -31,6 +31,7 @@ function GameCard({ game, games, setGames }) {
   const params = new URLSearchParams(window.location.search);
   const steamID = params.get('steamid');
   const textRef = useRef(null);
+  const localGameIds = [33230, 48190, 201870, 230410, 292030, 1091500];
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
   const defaultDiyGridUrl = 'https://imageforsteamgrid.s3.us-east-2.amazonaws.com/pvz.png';
@@ -253,8 +254,15 @@ function GameCard({ game, games, setGames }) {
   }, []);
 
   useEffect(() => {
-    setImageUrl(game.diyGrid || game.grid);
-  }, [game.diyGrid, game.grid]);
+    // Determine the path for local DIY grid images if applicable
+    if (localGameIds.includes(game.appid) && !game.diyGrid) {
+      const localPath = `/img/gameGrid/${game.appid}.png`;
+      setImageUrl(localPath);
+      updateGameDiyGrid(game.appid, localPath);
+    } else {
+      setImageUrl(game.diyGrid || game.grid);
+    }
+  }, [game]);
 
 
   return (
