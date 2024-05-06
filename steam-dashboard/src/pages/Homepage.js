@@ -60,7 +60,7 @@ const Homepage = () => {
                         let otherGames = data.filter(game => !initialGameIds.includes(game.appid));
                         // 合并两个数组
                         const sortedGames = priorityGames.concat(otherGames);
-                        const topGames = sortedGames.slice(0, 50);
+                        const topGames = sortedGames.slice(0, 100);
                         setGames(topGames);
                     }
                     else {
