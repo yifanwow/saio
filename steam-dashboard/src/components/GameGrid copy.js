@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GameCard from './GameCard';
 import './GameGrid.css';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function GameGrid({ games, gamesPerPage = 8 }) {
   const [currentPage, setCurrentPage] = useState(0);
@@ -17,19 +17,25 @@ function GameGrid({ games, gamesPerPage = 8 }) {
 
   return (
     <div className="game-grid-container">
-
-      <div className='game-grid-big'>
-      <div className="game-grid">
-        {selectedGames.map(game => (
-          <GameCard key={game.appid} game={game} />
-        ))}
-      </div></div>
+      <TransitionGroup className="game-grid-big" component={null}>
+        <CSSTransition
+          key={currentPage}
+          timeout={500}
+          classNames="page"
+        >
+          <div className="game-grid">
+            {selectedGames.map(game => (
+              <GameCard key={game.appid} game={game} />
+            ))}
+          </div>
+        </CSSTransition>
+      </TransitionGroup>
       <div className="pagination">
         {Array.from({ length: numOfPages }, (_, index) => (
           <button
             key={index}
             className={`page-item ${index === currentPage ? 'active' : ''}`}
-            onClick={() => setCurrentPage(index)}
+            onClick={() => handlePageChange(index)}
           >
             &#9679;
           </button>
