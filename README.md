@@ -1,8 +1,5 @@
-
-### Group Members:  
-- Yifan Yu (yy2253)  
-- Hongyang Zhou  
-- Gloria Hu  
+### Open Link for Project
+[S/AIO](http://saio.us-east-2.elasticbeanstalk.com)
 
 ### [DevelopPlan](developPlan.md) for two weeks.
   
