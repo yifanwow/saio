@@ -53,7 +53,7 @@ const Homepage = () => {
                     const data = await response.json(); // 直接得到游戏数组
                     console.log("Fetched Games Data:", data);
                     if (username === '76561198856798776') {
-                        const initialGameIds = [1091500, 1145360, 292030, 1200110, 48190, 33230, 201870, 230410, 1817070, 447530, 1284410, 303310, 1113560];
+                        const initialGameIds = [1091500, 1145360, 292030, 1200110, 1817070, 447530, 1284410, 303310, 1113560, 48190, 33230, 201870, 230410,];
                         // 创建一个新的数组，首先添加 initialGameIds 中的游戏，如果它们存在于 data 中
                         let priorityGames = initialGameIds.map(id => data.find(game => game.appid === id)).filter(game => game !== undefined);
                         // 添加剩余的游戏，排除已在 priorityGames 中的游戏ID

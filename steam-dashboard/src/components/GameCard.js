@@ -31,7 +31,7 @@ function GameCard({ game, games, setGames }) {
   const params = new URLSearchParams(window.location.search);
   const steamID = params.get('steamid');
   const textRef = useRef(null);
-  const localGameIds = [33230, 48190, 201870, 230410, 292030, 1091500,1145360];
+  const localGameIds = [33230, 48190, 201870, 230410, 292030, 1091500, 1145360];
   const [isLongText, setIsLongText] = useState(false);
   const [menuVisible, setMenuVisible] = useState(false);
   const defaultDiyGridUrl = 'https://imageforsteamgrid.s3.us-east-2.amazonaws.com/pvz.png';
@@ -43,7 +43,7 @@ function GameCard({ game, games, setGames }) {
   const [tags, setTags] = useState(game.categories || []); // Assuming categories are passed in the game object
   const [inputValue, setInputValue] = useState('');
 
-  
+
 
 
   const toggleMenu = () => {
@@ -129,7 +129,7 @@ function GameCard({ game, games, setGames }) {
       if (g.appid === appId) {
         console.log("newGridUrl", newGridUrl);
         return { ...g, diyGrid: newGridUrl };
-        
+
       }
       return g;
     });
@@ -221,7 +221,7 @@ function GameCard({ game, games, setGames }) {
   };
 
   const updateCategories = (appId, categories) => {
-    
+
     const updatedGames = games.map(g => {
       if (g.appid === appId) {
         return { ...g, categories: categories };
@@ -266,7 +266,7 @@ function GameCard({ game, games, setGames }) {
     }
     closeMenu(); // 关闭菜单
   };
-  
+
   const moveGameBehind = (appId) => {
     const gameIndex = games.findIndex(game => game.appid === appId);
     if (gameIndex < games.length - 1) {
@@ -314,14 +314,14 @@ function GameCard({ game, games, setGames }) {
   }, []);
 
   useEffect(() => {
-    // Determine the path for local DIY grid images if applicable
-    if (localGameIds.includes(game.appid) && !game.diyGrid) {
-      const localPath = `/img/gameGrid/${game.appid}.png`;
-      setImageUrl(localPath);
-      updateGameDiyGrid(game.appid, localPath);
-    } else {
-      
-    }
+    // // Determine the path for local DIY grid images if applicable
+    // if (localGameIds.includes(game.appid) && !game.diyGrid) {
+    //   const localPath = `/img/gameGrid/${game.appid}.png`;
+    //   setImageUrl(localPath);
+    //   updateGameDiyGrid(game.appid, localPath);
+    // } else {
+
+    // }
   }, [game]);
 
 
@@ -370,8 +370,8 @@ function GameCard({ game, games, setGames }) {
       </div>
 
       <div className={`options-menu ${menuVisible ? 'active' : ''}`}>
-      <div className="option-item" onClick={() => moveGameAhead(game.appid)}>Move Ahead</div>
-      <div className="option-item" onClick={() => moveGameBehind(game.appid)}>Move Behind</div>
+        <div className="option-item" onClick={() => moveGameAhead(game.appid)}>Move Ahead</div>
+        <div className="option-item" onClick={() => moveGameBehind(game.appid)}>Move Behind</div>
         <div className="option-item" onClick={handleChangeGrid}>Change Grid Post</div>
         {game.diyGrid && (
           <div className="option-item" onClick={clearCustomGrid}>Clear Grid</div>
