@@ -15,8 +15,11 @@ Looking ahead, there are plans to expand the application by integrating with C# 
 ![steam](./steam-dashboard/public/img/readme.jpg "steam")   
 
 ## ScreenShot
+### Desktop
 ![steam](./steam-dashboard/public/img/login_sample.png "Before Login")
-![steam](./steam-dashboard/public/img/homepage.png "Home Page")      
+![steam](./steam-dashboard/public/img/homepage.png "Home Page")
+### Mobile
+![steam](./steam-dashboard/public/img/login_sample_ipadmini.png "Home Page")   
 ## How to test
 run install npm  
 run npm install @mui/material @mui/icons-material swiper    
