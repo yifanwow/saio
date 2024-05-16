@@ -14,7 +14,11 @@ Looking ahead, there are plans to expand the application by integrating with C# 
     
 ![steam](./steam-dashboard/public/img/readme.jpg "steam")   
 
-### How to test
+## ScreenShot
+![steam](./steam-dashboard/public/img/login_sample.png "Before Login")
+![steam](./steam-dashboard/public/img/homepage.png "Home Page")      
+## How to test
 run install npm  
+run npm install @mui/material @mui/icons-material swiper    
 run npm start  
 run node app.js  
