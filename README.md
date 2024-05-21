@@ -1,7 +1,5 @@
 ### Open Link for Project
 [S/AIO](http://saio.us-east-2.elasticbeanstalk.com)
-
-### [DevelopPlan](developPlan.md) for two weeks.
   
 ## Introduction
 This project is a dynamic web application aimed at enhancing the gaming experience for Steam users by providing a personalized dashboard. Users can log into the application with their Steam accounts and access extensive information about their gaming libraries. The application showcases user profiles, organizes games into various genres like shooting, adventure, simulation, and casual, and offers detailed statistics on game usage including total playtime and storage requirements.  
