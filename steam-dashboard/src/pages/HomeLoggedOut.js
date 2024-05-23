@@ -115,8 +115,14 @@ const HomeLoggedOut = () => {
             </a>
           </div>
         </div>
-        <div style={{ fontSize: '0.77em', color: '#5a4d54', position: 'absolute', bottom: '10px', alignItems: 'center' }}>
-          version 0.01
+        <div style={{ fontSize: '0.77em', color: '#5a4d54', position: 'absolute', bottom: '50px', alignItems: 'center' }}>
+          Note: You need to set your steam profile to PUBLIC to use all features.
+        </div>
+        <div style={{ fontSize: '0.5em', color: '#5a4d54', position: 'absolute', bottom: '30px', alignItems: 'center' }}>
+          <span>Last Updates 05/22/2024</span>
+        </div>
+        <div style={{ fontSize: '0.5em', color: '#5a4d54', position: 'absolute', bottom: '10px', alignItems: 'center' }}>
+          <span>Version 0.1.1</span>
         </div>
       </div>
 
